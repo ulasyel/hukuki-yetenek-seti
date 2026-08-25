@@ -23,7 +23,7 @@ Bu deponun ayırt edici ilkesi üçlüdür:
 | `is-hukuku` | İş hukuku (İK/SGK/arabuluculuk) | İlk tur ✓ · dayanak katmanı ✓ · adlandırma ✓ |
 | `dava-yonetimi` | Dava yönetimi (HMK/CMK/UYAP) | İlk tur ✓ · dayanak katmanı ✓ · adlandırma ✓ |
 | `kvkk-uyum` | KVKK / veri koruma | İlk tur ✓ · dayanak katmanı ✓ · adlandırma ✓ |
-| `product-legal` | Ürün/tüketici/reklam/e-ticaret (6502/6563) | İlk tur uyarlama ✓ · doğrulama turu sürüyor |
+| `urun-hukuku` | Ürün/tüketici/reklam/e-ticaret (6502/6563) | İlk tur ✓ · dayanak katmanı ✓ · adlandırma ✓ |
 | `regulatory-legal` | Regülasyon izleme (Resmî Gazete/kurumlar) | İlk tur uyarlama ✓ · doğrulama turu sürüyor |
 | `ip-legal` | Fikri mülkiyet (FSEK/SMK/PVK/5651) | Yeniden yazım aşamasında |
 | `ai-governance-legal` | AI yönetişimi (KVKK/TTK ticari sır/FSEK ekseninde) | Başlangıç uyarlaması |

@@ -45,9 +45,9 @@
       }
     },
     {
-      "name": "product-legal",
-      "source": "./product-legal",
-      "description": "Türk ürün, tüketici, reklam ve e-ticaret pratiğine (6502/6563) göre uyarlandı; hukuki dayanak doğrulama turu sürüyor.",
+      "name": "urun-hukuku",
+      "source": "./urun-hukuku",
+      "description": "Türk ürün, tüketici, reklam ve e-ticaret pratiğine (6502/6563 + yönetmelikler) göre uyarlandı; hukuki dayanak katmanı tamamlandı.",
       "author": {
         "name": "hukuki-yetenek-seti"
       }

@@ -1,5 +1,5 @@
 ---
-name: launch-review
+name: lansman-inceleme
 description: >
   Turk urun hukuku cercevesinde PRD, ticket veya lansman dokumanini kategori
   kategori inceler. Kullanici "review this launch", "legal review", "can we
@@ -7,15 +7,15 @@ description: >
 argument-hint: "[PRD file | Drive link | tracker ticket ID]"
 ---
 
-# /launch-review
+# /lansman-inceleme
 
 ## Akis
 
-1. `~/.claude/plugins/config/claude-for-legal/product-legal/CLAUDE.md` profilini oku; placeholder varsa cold-start iste.
+1. `~/.claude/plugins/config/hukuki-yetenek-seti/urun-hukuku/CLAUDE.md` profilini oku; placeholder varsa cold-start iste.
 2. PRD, ticket, tasarim, checkout akisi, reklam/plans, policy ve hedef pazar bilgisini topla.
 3. `references/seven-category-framework.md` icindeki Turk product launch framework'unu veya profilin kendi framework'unu uygula.
 4. Bulgulari profil risk kalibrasyonuna gore `Dusuk / Orta / Yuksek / Bloke` olarak sinifla.
-5. KVKK varsa `/kvkk-uyum:kullanim-triyaji`; AI varsa `/ai-governance-legal:use-case-triage`; reklam iddiasi varsa `/product-legal:marketing-claims-review` handoff'u yap.
+5. KVKK varsa `/kvkk-uyum:kullanim-triyaji`; AI varsa `/ai-governance-legal:use-case-triage`; reklam iddiasi varsa `/urun-hukuku:reklam-iddia-inceleme` handoff'u yap.
 6. Ic hukuk notu ve paylasilabilir ticket yorumu olarak iki ayri cikti uret.
 
 ## Girdi Kontrolu

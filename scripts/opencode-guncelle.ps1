@@ -15,7 +15,7 @@ $plugins = @(
     "kvkk-uyum",            # eski ad: privacy-legal
     "ticari-sozlesmeler",   # eski ad: commercial-legal
     "sirketler-hukuku",     # eski ad: corporate-legal
-    "product-legal",
+    "urun-hukuku",          # eski ad: product-legal
     "regulatory-legal",
     "ip-legal",
     "ai-governance-legal"

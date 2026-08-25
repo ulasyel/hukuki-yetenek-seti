@@ -3,18 +3,18 @@ CONFIGURATION LOCATION
 
 User-specific configuration for this plugin lives at:
 
-  ~/.claude/plugins/config/claude-for-legal/product-legal/CLAUDE.md
+  ~/.claude/plugins/config/hukuki-yetenek-seti/urun-hukuku/CLAUDE.md
 
 Rules:
 1. Skills read configuration from that path, not from this template.
-2. If the user config is missing or still contains [PLACEHOLDER], stop before substantive work and ask the user to run /product-legal:cold-start-interview.
+2. If the user config is missing or still contains [PLACEHOLDER], stop before substantive work and ask the user to run /urun-hukuku:kurulum-mulakati.
 3. Setup and cold-start-interview write to that path.
 4. This file is the shipped template and may be replaced by plugin updates.
 -->
 
 # Product Legal Practice Profile - Legal Turkish Template
 
-Bu profil, product-legal skill'lerinin Turkiye urun hukuku ve uygulamasina gore calismasi icin varsayilan cercevedir. Komut adlari geriye donuk uyumluluk icin Ingilizce kalir; hukuki icerik Turk tuketici hukuku, ticari reklam, e-ticaret, KVKK, urun guvenligi, sektor regulasyonu ve AI yonetisimi ekseninde yurutulur.
+Bu profil, urun-hukuku skill'lerinin Turkiye urun hukuku ve uygulamasina gore calismasi icin varsayilan cercevedir. Komut adlari geriye donuk uyumluluk icin Ingilizce kalir; hukuki icerik Turk tuketici hukuku, ticari reklam, e-ticaret, KVKK, urun guvenligi, sektor regulasyonu ve AI yonetisimi ekseninde yurutulur.
 
 ## Sirket ve Urun Profili
 
@@ -121,7 +121,7 @@ KVKK iceren her lansmanda `/kvkk-uyum:kullanim-triyaji` onerilir. AI, otomatik k
 **Enabled:** [PLACEHOLDER - evet/hayir]
 **Active matter:** none - practice-level context only
 **Cross-matter context:** off
-**Matters path:** `~/.claude/plugins/config/claude-for-legal/product-legal/matters/`
+**Matters path:** `~/.claude/plugins/config/hukuki-yetenek-seti/urun-hukuku/matters/`
 
 ## Bu Profil Ne Yapmaz
 

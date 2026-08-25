@@ -120,6 +120,20 @@ Agent: `dataroom-watcher.md` → `veri-oda-gozlemci.md`
 
 **Bu turda hukuki düzeltme:** material-contract-schedule'daki "hisse devri (TTK m.495)" atfı **TTK m.487 vd.** olarak düzeltildi (m.495 borsada kote paylarda iktisap üst sınırı hükmüdür). managed-agent-cookbooks ve CONNECTORS.md içindeki yol/komut referansları güncellendi.
 
+### product-legal → `urun-hukuku` (2026-08-25)
+
+| Eski skill | Yeni skill |
+|---|---|
+| cold-start-interview | kurulum-mulakati |
+| customize | ozellestir |
+| feature-risk-assessment | ozellik-risk-degerlendirme |
+| is-this-a-problem | sorun-triyaji |
+| launch-review | lansman-inceleme |
+| marketing-claims-review | reklam-iddia-inceleme |
+| matter-workspace | dosya-alani |
+
+Agent: `launch-watcher.md` → `lansman-gozlemci.md`. Ayrıca managed-agent-cookbooks/launch-radar referansları güncellendi.
+
 ## Bekleyen Plugin'ler
 
 commercial-legal, corporate-legal, litigation-legal, privacy-legal, product-legal, regulatory-legal, ip-legal, ai-governance-legal — ilgili turlarda bu tabloya eklenecek.

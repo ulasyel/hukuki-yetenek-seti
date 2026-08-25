@@ -27,7 +27,7 @@ hedef:  %USERPROFILE%\.opencode\skills\employment-legal\
 Tüm set için (repo kökünde PowerShell):
 
 ```powershell
-$plugins = "is-hukuku","dava-yonetimi","kvkk-uyum","ticari-sozlesmeler","sirketler-hukuku","product-legal","regulatory-legal","ip-legal","ai-governance-legal"
+$plugins = "is-hukuku","dava-yonetimi","kvkk-uyum","ticari-sozlesmeler","sirketler-hukuku","urun-hukuku","regulatory-legal","ip-legal","ai-governance-legal"
 foreach ($p in $plugins) {
     Copy-Item -Recurse -Force -LiteralPath ".\$p" -Destination "$env:USERPROFILE\.opencode\skills\"
 }

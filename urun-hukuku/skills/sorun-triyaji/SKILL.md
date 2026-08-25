@@ -1,5 +1,5 @@
 ---
-name: is-this-a-problem
+name: sorun-triyaji
 description: >
   PM, marketing veya founder tarafindan gelen hizli "bu sorun olur mu?"
   sorularina Turk urun hukuku kalibrasyonuyla cevap verir. Kisa triage:
@@ -7,7 +7,7 @@ description: >
 argument-hint: "[the question]"
 ---
 
-# /is-this-a-problem
+# /sorun-triyaji
 
 ## Amac
 

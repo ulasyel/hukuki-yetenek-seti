@@ -30,7 +30,7 @@ tools:
       - { name: grep, enabled: true }
 mcp_servers: []
 skills:
-  - { path: ../../../product-legal/skills/is-this-a-problem }
+  - { path: ../../../urun-hukuku/skills/is-this-a-problem }
 callable_agents: []
 output_schema:
   type: object

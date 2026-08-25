@@ -4,7 +4,7 @@ name: launch-radar
 model: claude-opus-4-7
 
 system:
-  file: ../../product-legal/agents/launch-watcher.md
+  file: ../../urun-hukuku/agents/launch-watcher.md
   append: |
     You are running headless. Produce files in ./out/; do not assume an open
     Slack channel or IDE. When you need another named agent (e.g., a full
@@ -40,7 +40,7 @@ mcp_servers:
   - { type: url, name: gdrive,    url: "${GDRIVE_MCP_URL}" }
 
 skills:
-  - { from_plugin: ../../product-legal }
+  - { from_plugin: ../../urun-hukuku }
 
 callable_agents:
   - { manifest: ./subagents/tracker-reader.yaml }

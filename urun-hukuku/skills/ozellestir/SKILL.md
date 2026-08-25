@@ -1,5 +1,5 @@
 ---
-name: customize
+name: ozellestir
 description: >
   Product-legal profilinde tek bir bolumu degistirir: risk kalibrasyonu,
   lansman framework'u, reklam iddia politikasi, eskalasyon, entegrasyon veya
@@ -7,15 +7,15 @@ description: >
 argument-hint: "[section name, or describe what you want to change]"
 ---
 
-# /customize
+# /ozellestir
 
 ## Ne zaman kullanilir
 
-Kullanici tum cold-start'i yeniden yapmak istemeden product-legal profilini ayarlamak ister.
+Kullanici tum cold-start'i yeniden yapmak istemeden urun-hukuku profilini ayarlamak ister.
 
 ## Akis
 
-1. `~/.claude/plugins/config/claude-for-legal/product-legal/CLAUDE.md` dosyasini oku. Yoksa veya placeholder doluysa once `/product-legal:cold-start-interview` iste.
+1. `~/.claude/plugins/config/hukuki-yetenek-seti/urun-hukuku/CLAUDE.md` dosyasini oku. Yoksa veya placeholder doluysa once `/urun-hukuku:kurulum-mulakati` iste.
 2. Degistirilebilir haritayi goster:
    - Sirket/urun modeli ve hedef pazarlar,
    - lansman sureci ve SLA,

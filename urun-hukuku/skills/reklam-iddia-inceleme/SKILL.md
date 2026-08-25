@@ -1,5 +1,5 @@
 ---
-name: marketing-claims-review
+name: reklam-iddia-inceleme
 description: >
   Reklam, landing page, e-posta, sosyal medya, app store metni, indirim ve
   kampanya iddialarini Turk reklam hukuku ve Reklam Kurulu pratigi acisindan
@@ -8,7 +8,7 @@ description: >
 argument-hint: "[paste copy, or file path]"
 ---
 
-# /marketing-claims-review
+# /reklam-iddia-inceleme
 
 ## Amac
 

@@ -1,5 +1,5 @@
 ---
-name: feature-risk-assessment
+name: ozellik-risk-degerlendirme
 description: >
   Tek bir ozellik veya urun riski icin derin Turk urun hukuku karar notu.
   Lansman review'da yeni/yuksek risk cikarsa, GC/yonetim karar istiyorsa
@@ -77,5 +77,5 @@ Profildeki risk istahi, sektor ve gecmis kararlar okunmadan genel hukuki risk no
 
 - KVKK/veri varsa `/kvkk-uyum:vked-taslagi` veya `use-case-triage`.
 - AI varsa `/ai-governance-legal:aia-generation`.
-- Reklam iddiasi varsa `/product-legal:marketing-claims-review`.
+- Reklam iddiasi varsa `/urun-hukuku:reklam-iddia-inceleme`.
 - Regule sektor varsa ilgili uzman/hukukcu ve guncel resmi kaynak kontrolu.

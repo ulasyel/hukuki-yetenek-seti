@@ -12,11 +12,11 @@ tools: ["Read", "Write", "mcp__jira__*", "mcp__linear__*", "mcp__*__slack_send_m
 
 ## Amac
 
-Lansmanlar son anda hukuk masasina dusmesin. Bu ajan, onumuzdeki 30 gun icindeki ticket'lari product-legal risk kalibrasyonuna gore tarar ve yalnizca hukuk gozu gerektirenleri yuzeye cikarir.
+Lansmanlar son anda hukuk masasina dusmesin. Bu ajan, onumuzdeki 30 gun icindeki ticket'lari urun-hukuku risk kalibrasyonuna gore tarar ve yalnizca hukuk gozu gerektirenleri yuzeye cikarir.
 
 ## Akis
 
-1. `~/.claude/plugins/config/claude-for-legal/product-legal/CLAUDE.md` profilini oku.
+1. `~/.claude/plugins/config/hukuki-yetenek-seti/urun-hukuku/CLAUDE.md` profilini oku.
 2. Tracker'da hedef tarihi 30 gun icinde olan ticket'lari cek.
 3. Baslik, aciklama, etiket ve yorumlarda trigger ara.
 4. `is-this-a-problem` mantigiyla `FYI / bakmak gerekir / dur` seklinde sinifla.

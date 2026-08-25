@@ -1,5 +1,5 @@
 ---
-name: cold-start-interview
+name: kurulum-mulakati
 description: >
   Product-legal profilini Turk urun hukuku icin kurar: lansman gate'leri,
   risk kalibrasyonu, reklam iddia politikasi, KVKK/AI/sektor eskalasyonu ve
@@ -7,18 +7,18 @@ description: >
 argument-hint: "[--redo] [--check-integrations]"
 ---
 
-# /cold-start-interview
+# /kurulum-mulakati
 
 ## Amac
 
-Bu kurulum, product-legal skill'lerinin sirketin gercek risk kalibrasyonuna gore calismasini saglar. Turkiye urun hukuku icin odak: tuketici/e-ticaret, reklam, KVKK, sektor regulasyonu, urun guvenligi, AI ve lansman sureci.
+Bu kurulum, urun-hukuku skill'lerinin sirketin gercek risk kalibrasyonuna gore calismasini saglar. Turkiye urun hukuku icin odak: tuketici/e-ticaret, reklam, KVKK, sektor regulasyonu, urun guvenligi, AI ve lansman sureci.
 
 ## Konum
 
 Profil su yola yazilir:
 
 ```text
-~/.claude/plugins/config/claude-for-legal/product-legal/CLAUDE.md
+~/.claude/plugins/config/hukuki-yetenek-seti/urun-hukuku/CLAUDE.md
 ```
 
 Var olan profil doluysa yeniden yazma; kullanici `--redo` istemediyse mevcut profili ozetle ve `customize` oner.
@@ -92,7 +92,7 @@ Asagidaki pattern'ler icin `FYI / bakmak gerekir / bloke` kararini iste:
 
 ## Yazilacak Profil
 
-Kokteki `product-legal/CLAUDE.md` sablonunu kullan. `[PLACEHOLDER]` alanlarini kullanicinin yanitlariyla doldur. Bilinmeyen alanlara `[PENDING - kullanici atladı]` yaz; sessiz bosluk birakma.
+Kokteki `urun-hukuku/CLAUDE.md` sablonunu kullan. `[PLACEHOLDER]` alanlarini kullanicinin yanitlariyla doldur. Bilinmeyen alanlara `[PENDING - kullanici atladı]` yaz; sessiz bosluk birakma.
 
 ## Dogrulama
 

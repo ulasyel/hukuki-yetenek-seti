@@ -17,12 +17,12 @@ Turkiye urun hukuku, pazarlama ve lansman inceleme plugin'i. Komut adlari orijin
 
 | Komut | Ne yapar |
 |---|---|
-| `/product-legal:cold-start-interview` | Turk urun hukuku profilini, risk kalibrasyonunu ve lansman surecini kurar |
-| `/product-legal:launch-review [PRD/ticket]` | Lansmani kategori kategori inceler |
-| `/product-legal:marketing-claims-review [metin]` | Reklam ve pazarlama iddialarini inceler |
-| `/product-legal:is-this-a-problem [soru]` | Hizli PM/growth sorusuna kalibre triage verir |
-| `/product-legal:feature-risk-assessment [ozellik]` | Tek bir ozellik/riske derin karar notu hazirlar |
-| `/product-legal:matter-workspace` | Cok muvekkilli kullanimda matter izolasyonu yonetir |
+| `/urun-hukuku:kurulum-mulakati` | Turk urun hukuku profilini, risk kalibrasyonunu ve lansman surecini kurar |
+| `/urun-hukuku:lansman-inceleme [PRD/ticket]` | Lansmani kategori kategori inceler |
+| `/urun-hukuku:reklam-iddia-inceleme [metin]` | Reklam ve pazarlama iddialarini inceler |
+| `/urun-hukuku:sorun-triyaji [soru]` | Hizli PM/growth sorusuna kalibre triage verir |
+| `/urun-hukuku:ozellik-risk-degerlendirme [ozellik]` | Tek bir ozellik/riske derin karar notu hazirlar |
+| `/urun-hukuku:dosya-alani` | Cok muvekkilli kullanimda matter izolasyonu yonetir |
 
 ## Turk Hukuku Kontrol Omurgasi
 
@@ -40,7 +40,7 @@ Varsayilan inceleme basliklari:
 ## Ilk Kurulum
 
 ```text
-/product-legal:cold-start-interview
+/urun-hukuku:kurulum-mulakati
 ```
 
 Kurulum; sirketin urun yuzeyini, Turkiye ve diger hedef pazarlarini, regulasyon ayak izini, lansman gate'lerini, reklam iddia politikasini, KVKK/AI eskalasyonlarini ve ornek gecmis lansman kararlarini profil dosyasina yazar.

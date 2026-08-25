@@ -1,12 +1,12 @@
 ---
-name: matter-workspace
+name: dosya-alani
 description: >
   Cok muvekkilli veya cok urunlu kullanimda product matter workspace yonetir:
   new, list, switch, close, none. Context sizintisini onlemek icindir.
 argument-hint: "<new | list | switch | close | none> [slug]"
 ---
 
-# /matter-workspace
+# /dosya-alani
 
 ## Amac
 
@@ -14,16 +14,16 @@ Tek bir sirket ici product counsel kullaniminda genellikle kapali kalir. Ozel hu
 
 ## Subcommands
 
-- `/product-legal:matter-workspace new <slug>` - yeni matter ac, kisa intake yap, `matter.md` yaz.
-- `/product-legal:matter-workspace list` - matter'lari listele.
-- `/product-legal:matter-workspace switch <slug>` - aktif matter'i degistir.
-- `/product-legal:matter-workspace close <slug>` - matter'i arsivle, silme.
-- `/product-legal:matter-workspace none` - practice-level context'e don.
+- `/urun-hukuku:dosya-alani new <slug>` - yeni matter ac, kisa intake yap, `matter.md` yaz.
+- `/urun-hukuku:dosya-alani list` - matter'lari listele.
+- `/urun-hukuku:dosya-alani switch <slug>` - aktif matter'i degistir.
+- `/urun-hukuku:dosya-alani close <slug>` - matter'i arsivle, silme.
+- `/urun-hukuku:dosya-alani none` - practice-level context'e don.
 
 ## Depolama
 
 ```text
-~/.claude/plugins/config/claude-for-legal/product-legal/
+~/.claude/plugins/config/hukuki-yetenek-seti/urun-hukuku/
 ├── CLAUDE.md
 └── matters/
     ├── <slug>/
