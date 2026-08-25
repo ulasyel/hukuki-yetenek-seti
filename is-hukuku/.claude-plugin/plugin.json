@@ -1,0 +1,8 @@
+{
+    "name":  "is-hukuku",
+    "version":  "1.0.2",
+    "description":  "Türk iş hukuku workflows: işe alım ve iş sözleşmesi incelemesi, fesih ve arabuluculuk risk kontrolü, ücret/çalışma süresi Q\u0026A, işçi/bağımsız çalışan/alt işveren sınıflandırması, izin takibi, iç soruşturma ve işyeri politikaları.",
+    "author":  {
+                   "name":  "hukuki-yetenek-seti"
+               }
+}

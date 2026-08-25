@@ -37,9 +37,9 @@
       }
     },
     {
-      "name": "employment-legal",
-      "source": "./employment-legal",
-      "description": "Türk iş hukuku (İK/SGK/6325 arabuluculuk) pratiğine göre uyarlandı; hukuki dayanak doğrulama turu sürüyor.",
+      "name": "is-hukuku",
+      "source": "./is-hukuku",
+      "description": "Türk iş hukuku (İK/SGK/6325 arabuluculuk) pratiğine göre uyarlandı; hukuki dayanak katmanı tamamlandı.",
       "author": {
         "name": "hukuki-yetenek-seti"
       }

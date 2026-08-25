@@ -14,7 +14,7 @@ hedef:  %USERPROFILE%\.opencode\skills\employment-legal\
 Tüm set için (repo kökünde PowerShell):
 
 ```powershell
-$plugins = "commercial-legal","corporate-legal","litigation-legal","privacy-legal","employment-legal","product-legal","regulatory-legal","ip-legal","ai-governance-legal"
+$plugins = "is-hukuku","commercial-legal","corporate-legal","litigation-legal","privacy-legal","product-legal","regulatory-legal","ip-legal","ai-governance-legal"
 foreach ($p in $plugins) {
     Copy-Item -Recurse -Force -LiteralPath ".\$p" -Destination "$env:USERPROFILE\.opencode\skills\"
 }
@@ -39,13 +39,13 @@ Kurulumdan sonra opencode'u yeniden başlatın. Skill'ler açıklamalarındaki t
 /plugin marketplace add <bu-repo'nun-yolu-veya-GitHub-URL'si>
 
 # İhtiyacınız olan plugin'leri kurun
-/plugin install employment-legal@hukuki-yetenek-seti
+/plugin install is-hukuku@hukuki-yetenek-seti
 ```
 
 Claude Code'u yeniden başlattıktan sonra her plugin için cold-start interview çalıştırın:
 
 ```text
-/employment-legal:cold-start-interview
+/is-hukuku:kurulum-mulakati
 ```
 
 Interview, pratik profilinizi `%USERPROFILE%\.claude\plugins\config\hukuki-yetenek-seti\<plugin>\CLAUDE.md` yoluna yazar; diğer tüm skill'ler buradan okur.

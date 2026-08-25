@@ -20,7 +20,7 @@ Bu deponun ayırt edici ilkesi üçlüdür:
 | `corporate-legal` | Şirketler hukuku (TTK/SPK/MERSİS) | İlk tur uyarlama ✓ · doğrulama turu sürüyor |
 | `litigation-legal` | Dava yönetimi (HMK/İİK/UYAP) | İlk tur uyarlama ✓ · doğrulama turu sürüyor |
 | `privacy-legal` | KVKK / veri koruma | İlk tur uyarlama ✓ · doğrulama turu sürüyor |
-| `employment-legal` | İş hukuku (İK/SGK/arabuluculuk) | İlk tur uyarlama ✓ · doğrulama turu sürüyor |
+| `is-hukuku` | İş hukuku (İK/SGK/arabuluculuk) | İlk tur ✓ · dayanak katmanı ✓ · adlandırma ✓ |
 | `product-legal` | Ürün/tüketici/reklam/e-ticaret (6502/6563) | İlk tur uyarlama ✓ · doğrulama turu sürüyor |
 | `regulatory-legal` | Regülasyon izleme (Resmî Gazete/kurumlar) | İlk tur uyarlama ✓ · doğrulama turu sürüyor |
 | `ip-legal` | Fikri mülkiyet (FSEK/SMK/PVK/5651) | Yeniden yazım aşamasında |
@@ -36,6 +36,11 @@ Güncel ve dürüst durum matrisi: [UNIFIED_DURUM.md](UNIFIED_DURUM.md)
 ## Araştırma Omurgası
 
 Citation doğrulaması ve emsal araştırması **Yargı PRO MCP** üzerinden yapılır: Yargıtay/Danıştay/yerel yargı kararları, Anayasa Mahkemesi, AİHM, mevzuat.gov.tr ve kurum kararları (KVKK, Rekabet, SPK, BDDK, BTK, EPDK, GİB vb.). Bağlı olmadığında skill'ler atıf üretmez; konu başlığıyla doğrulamaya yönlendirir.
+
+Yargı PRO'nun dayandığı açık kaynak MCP projeleri, geliştiricisi **Said Sürücü** tarafından yayımlanmıştır:
+
+- [saidsurucu/yargi-mcp](https://github.com/saidsurucu/yargi-mcp) — Türk yargı kararları arama ve tam metin erişimi
+- [saidsurucu/mevzuat-mcp](https://github.com/saidsurucu/mevzuat-mcp) — mevzuat.gov.tr mevzuat arama ve madde erişimi
 
 ## Soyağacı ve Lisans
 

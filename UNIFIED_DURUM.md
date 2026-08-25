@@ -12,7 +12,7 @@ Durum etiketleri:
 
 | Plugin | İlk Tur | Bilinen Açıklar | Sıradaki Adım |
 |---|---|---|---|
-| employment-legal | ✅ | — | Doğrulama turu + `hukuki-dayanak.md` + Türkçe adlandırma |
+| `is-hukuku` (eski adı: employment-legal) | ✅ | — | **Tur tamamlandı** (2026-08-25): dayanak katmanı (`references/hukuki-dayanak.md`) + atıf teyidi + Türkçe adlandırma |
 | litigation-legal | ✅ | `customize/SKILL.md` içinde ölü "FRE 408" referansı | Doğrulama turu + adlandırma |
 | privacy-legal | ✅ | — | Doğrulama turu + adlandırma |
 | commercial-legal | ✅ | — | Doğrulama turu + adlandırma |
@@ -38,7 +38,7 @@ Durum etiketleri:
 
 ## İşlem Sırası
 
-employment → litigation → privacy/KVKK → commercial → corporate → product → regulatory → IP (yeniden yazım dahil) → ai-governance
+~~employment~~ ✓ (2026-08-25) → litigation → privacy/KVKK → commercial → corporate → product → regulatory → IP (yeniden yazım dahil) → ai-governance
 
 Her plugin turunda: denetim (residual/uydurma/ölü referans) → Yargı PRO dayanak araştırması (`hukuki-dayanak.md`) → atıf teyidi (teyitsiz silinir) → Türkçe adlandırma → marketplace senkronu → commit.
 
