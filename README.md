@@ -1,6 +1,6 @@
 # hukuki-yetenek-seti
 
-Türk hukuku pratiği için Claude Code **ve** opencode uyumlu yetenek (skill) seti. [anthropics/claude-for-legal](https://github.com/anthropics/claude-for-legal) projesinin iskeletini; iki ayrı Türk uyarlamasının ([kapital-legal/claude-for-tr-legal](https://github.com/kapital-legal/claude-for-tr-legal) metodolojisi ve yerel "Legal Turkish Adaptation" içeriğini) tek çatıda birleştirir.
+Türk hukuku pratiği için Claude Code **ve** opencode uyumlu yetenek (skill) seti. [anthropics/claude-for-legal](https://github.com/anthropics/claude-for-legal) projesinin iskeletini; iki Türk uyarlamasının ([ZekaiSuni/claude-for-legal-turkish](https://github.com/ZekaiSuni/claude-for-legal-turkish) içerik uyarlaması ve [kapital-legal/claude-for-tr-legal](https://github.com/kapital-legal/claude-for-tr-legal) metodolojisi) tek çatıda birleştirir.
 
 > ⚠️ **Bu set hukuki danışmanlık vermez.** Üretilen her çıktı avukat incelemesine tabi taslaktır. Mevzuat, içtihat, süre ve resmi kaynak kontrolleri somut dosya için ayrıca doğrulanmalıdır.
 

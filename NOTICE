@@ -14,8 +14,9 @@ Bu depo (`hukuki-yetenek-seti`), Apache License 2.0 lisanslı üç kaynaktan tü
    Sponsor/Maintainer: Kapital Legal
    Devralınan metodoloji: karar/madde atfı halüsinasyon önleme disiplini (`karar-atif-kurallari` yaklaşımı), paylaşılan firma profili mekanizması fikri, TBB Meslek Kuralları uyum çerçevesi yaklaşımı.
 
-3. **Yerel Türk hukuku uyarlama çalışması** ("Legal Turkish Adaptation")
-   Bu çalışmanın `commercial/corporate/litigation/privacy/employment/product/regulatory/ip/ai-governance` klasörlerindeki Türk hukuku içerik yeniden yazımları bu deponun temelini oluşturmuştur.
+3. **ZekaiSuni/claude-for-legal-turkish** ("Legal Turkish Adaptation")
+   https://github.com/ZekaiSuni/claude-for-legal-turkish
+   Bu deponun `commercial/corporate/litigation/privacy/employment/product/regulatory/ip/ai-governance` klasörlerindeki Türk hukuku içerik yeniden yazımlarının temelini oluşturan uyarlama çalışmasıdır; `references/` altındaki Türk adaptasyon rehberi ve kaynak arşivi ile klasör denetim dosyaları bu çalışmadan devralınmıştır.
 
 ## Modifikasyonlar (Apache 2.0 madde 4(b))
 
