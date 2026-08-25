@@ -98,6 +98,28 @@ Agent'lar: `deal-debrief.md` → `imza-degerlendirme.md` · `playbook-monitor.md
 
 **Bu turda hukuki düzeltme:** Tüm skill/agent'larda "TBK m.179-185" ibaresi **TBK m.179-182** olarak düzeltildi (ceza sözleşmesi bölümü m.182'de biter; m.183+ alacağın devri). Ayrıca QUICKSTART ve adaptasyon rehberi içindeki komut örnekleri güncellendi.
 
+### corporate-legal → `sirketler-hukuku` (2026-08-25)
+
+| Eski skill | Yeni skill |
+|---|---|
+| ai-tool-handoff | ai-arac-devri |
+| board-minutes | yonetim-kurulu-tutanagi |
+| closing-checklist | kapanis-checklist |
+| cold-start-interview | kurulum-mulakati |
+| customize | ozellestir |
+| deal-team-summary | islem-brifingi |
+| diligence-issue-extraction | durum-tespiti-bulgu-cikarimi |
+| entity-compliance | kurumsal-kayit-takip |
+| integration-management | entegrasyon-yonetimi |
+| material-contract-schedule | onemli-sozlesmeler-eki |
+| matter-workspace | dosya-alani |
+| tabular-review | tablo-inceleme |
+| written-consent | toplantisz-karar |
+
+Agent: `dataroom-watcher.md` → `veri-oda-gozlemci.md`
+
+**Bu turda hukuki düzeltme:** material-contract-schedule'daki "hisse devri (TTK m.495)" atfı **TTK m.487 vd.** olarak düzeltildi (m.495 borsada kote paylarda iktisap üst sınırı hükmüdür). managed-agent-cookbooks ve CONNECTORS.md içindeki yol/komut referansları güncellendi.
+
 ## Bekleyen Plugin'ler
 
 commercial-legal, corporate-legal, litigation-legal, privacy-legal, product-legal, regulatory-legal, ip-legal, ai-governance-legal — ilgili turlarda bu tabloya eklenecek.

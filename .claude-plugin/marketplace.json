@@ -13,9 +13,9 @@
       }
     },
     {
-      "name": "corporate-legal",
-      "source": "./corporate-legal",
-      "description": "Türk şirketler hukuku (TTK/SPK/MERSİS) pratiğine göre uyarlandı; hukuki dayanak doğrulama turu sürüyor.",
+      "name": "sirketler-hukuku",
+      "source": "./sirketler-hukuku",
+      "description": "Türk şirketler hukuku (TTK/SPK/MERSİS/Ticaret Sicili) pratiğine göre uyarlandı; hukuki dayanak katmanı tamamlandı.",
       "author": {
         "name": "hukuki-yetenek-seti"
       }

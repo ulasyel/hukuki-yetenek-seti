@@ -27,7 +27,7 @@
 #     engagement:      signed | pending | none
 #   conflicts:
 #     status:          cleared | pending | not-run | waived
-#     method:          corporate-legal | outside-counsel | system-check | informal | other
+#     method:          kurumsal-hukuk | outside-counsel | system-check | informal | other
 #     cleared_by:      string | null
 #     cleared_date:    YYYY-MM-DD | null
 #     override:                                                          # NEW v2.1

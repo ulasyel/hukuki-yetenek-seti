@@ -14,7 +14,7 @@ $plugins = @(
     "dava-yonetimi",        # eski ad: litigation-legal
     "kvkk-uyum",            # eski ad: privacy-legal
     "ticari-sozlesmeler",   # eski ad: commercial-legal
-    "corporate-legal",
+    "sirketler-hukuku",     # eski ad: corporate-legal
     "product-legal",
     "regulatory-legal",
     "ip-legal",

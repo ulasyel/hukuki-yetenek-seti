@@ -10,7 +10,7 @@ Run `../scripts/deploy-managed-agent.sh <slug>` to upload skills, create leaf wo
 |---|---|---|---|---|
 | [`reg-monitor`](./reg-monitor/) | regulatory-legal | Türkiye düzenleyici kaynakları (Resmi Gazete, Mevzuat, kurum duyuruları) | `Kaynakları <date> itibarıyla kontrol et, önem eşiği: <threshold>` | feed-reader · materiality-filter · **digest-writer** |
 | [`renewal-watcher`](./renewal-watcher/) | commercial-legal | Contract repository (Ironclad) for renewal and cancel-by deadlines | `Scan renewals <X>–<Y> days out, flag playbook deviations` | repo-reader · deadline-calculator · **alert-writer** |
-| [`diligence-grid`](./diligence-grid/) | corporate-legal | Virtual data room (Box, Datasite, Intralinks, iManage) for new uploads + batch review | `Review folder <path> against schema <schema-id>` | doc-reader · extractor · normalizer · **grid-writer** |
+| [`diligence-grid`](./diligence-grid/) | sirketler-hukuku | Virtual data room (Box, Datasite, Intralinks, iManage) for new uploads + batch review | `Review folder <path> against schema <schema-id>` | doc-reader · extractor · normalizer · **grid-writer** |
 | [`launch-radar`](./launch-radar/) | product-legal | Product roadmap / launch tracker (Jira, Linear, Asana) for launches needing legal review | `Scan tracker for launches in next <N> weeks` | tracker-reader · risk-classifier · **memo-writer** |
 | [`docket-watcher`](./docket-watcher/) | litigation-legal | UYAP/Yargı MCP/Lexpera kaynaklarında yeni evrak, süre ve iş kalemleri | `Dosya <case-id>, mahkeme <court>, matter <matter-id> izle` | docket-reader · deadline-mapper · **tracker-writer** |
 

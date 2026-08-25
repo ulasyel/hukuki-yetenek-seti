@@ -27,11 +27,11 @@ Connectors shipped in the default `.mcp.json` of each plugin:
 | **Google Drive** (`gdrive`) | all 12 |
 | **CourtListener** | legal-clinic, ip-legal, litigation-legal, law-student |
 | **Descrybe** | legal-clinic, ip-legal, law-student |
-| **Definely** | commercial-legal, corporate-legal |
-| **iManage** | commercial-legal, corporate-legal |
-| **Solve Intelligence** | corporate-legal, ip-legal |
-| **TopCounsel** | commercial-legal, corporate-legal, litigation-legal |
-| **Box** | corporate-legal |
+| **Definely** | commercial-legal, sirketler-hukuku |
+| **iManage** | commercial-legal, sirketler-hukuku |
+| **Solve Intelligence** | sirketler-hukuku, ip-legal |
+| **TopCounsel** | commercial-legal, sirketler-hukuku, litigation-legal |
+| **Box** | sirketler-hukuku |
 | **Ironclad** | commercial-legal |
 | **DocuSign / DocuSign CLM** | commercial-legal |
 | **Everlaw** | litigation-legal |
@@ -54,7 +54,7 @@ These would make specific plugins significantly more useful. If you build or ope
 - **USPTO TSDR / Trademark Status** — trademark status and deadlines for `ip-legal` brand management
 - **Jira / Linear / Asana for OSS requests** — `ip-legal` OSS clearance can monitor and respond to incoming tickets
 - **Thomson Reuters** (CoCounsel, Practical Law, Westlaw) — research and drafting for every plugin
-- **SS&C Intralinks / Datasite** — VDR access for `corporate-legal` diligence
+- **SS&C Intralinks / Datasite** — VDR access for `sirketler-hukuku` diligence
 - **Relativity / Everlaw beyond read** — eDiscovery workflow for `litigation-legal`
 - **State bar CLE trackers** — `law-student` bar prep
 - **Court e-filing systems** (PACER write, state e-filing) — with a hard irreversibility gate, obviously

@@ -17,7 +17,7 @@ Bu deponun ayırt edici ilkesi üçlüdür:
 | Plugin | Alan | Durum |
 |---|---|---|
 | `ticari-sozlesmeler` | Ticari sözleşmeler (TBK/TTK/DVK/6325) | İlk tur ✓ · dayanak katmanı ✓ · adlandırma ✓ |
-| `corporate-legal` | Şirketler hukuku (TTK/SPK/MERSİS) | İlk tur uyarlama ✓ · doğrulama turu sürüyor |
+| `sirketler-hukuku` | Şirketler hukuku (TTK/SPK/MERSİS) | İlk tur ✓ · dayanak katmanı ✓ · adlandırma ✓ |
 | `litigation-legal` | Dava yönetimi (HMK/İİK/UYAP) | İlk tur uyarlama ✓ · doğrulama turu sürüyor |
 | `privacy-legal` | KVKK / veri koruma | İlk tur uyarlama ✓ · doğrulama turu sürüyor |
 | `is-hukuku` | İş hukuku (İK/SGK/arabuluculuk) | İlk tur ✓ · dayanak katmanı ✓ · adlandırma ✓ |

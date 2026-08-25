@@ -15,7 +15,7 @@ system:
 
     **Mode 1 — watch.** Monitor the VDR for new uploads since a cutoff
     timestamp. Classify each new document against the deploying team's
-    diligence request-list categories (see the corporate-legal plugin
+    diligence request-list categories (see the sirketler-hukuku plugin
     configuration). Flag uploads that match high-priority categories
     (Material Contracts, Litigation, IP). Produce an update report to
     `./out/vdr-update-<date>.md`. Do NOT read document contents in this
@@ -91,7 +91,7 @@ mcp_servers:
   - { type: url, name: definely, url: "${DEFINELY_MCP_URL}" }
 
 skills:
-  - { from_plugin: ../../corporate-legal }
+  - { from_plugin: ../../sirketler-hukuku }
 
 callable_agents:
   - { manifest: ./subagents/doc-reader.yaml }
