@@ -11,7 +11,7 @@ Amaç, dosyaların teknik iskeletini koruyarak hukuki içeriği Türkiye uygulam
 - `SKILL.md` dosyasinin frontmatter yapisini koru.
 - YAML bloklarini, baslik siralamasini, karar agacini ve output formatlarini bozma.
 - Hukuki kavramlari, kurumlari, mahkeme adlarini, sureleri, para birimini ve pratik is akisini Turkiye'ye uyarla.
-- Komut ve klasor adlarini tek basina Turkcelestirme. Repo genelinde yeniden adlandirma yapilmadiysa `/commercial-legal:review` gibi mevcut komutlari koru.
+- Komut ve klasor adlarini tek basina Turkcelestirme. Repo genelinde yeniden adlandirma yapilmadiysa `/ticari-sozlesmeler:inceleme` gibi mevcut komutlari koru.
 - Dosya icinde ornek slug kullaniliyorsa Turk hukuk pratiklerine uygun yaz: `abc-alacak-2026`, `is-davasi-yilmaz-2026`, `nda-xyz-2026`.
 - Para birimini TL yap.
 - Kanun maddelerini kisa referansla yaz: `(HMK m.127)`, `(Av. K. m.36)`, `(KVKK m.11)`, `(TTK m.5/A)`.
@@ -367,20 +367,20 @@ ihtiyati_haciz:
 
 ## 12. Gizlilik Sozlesmesi (NDA) Skill Ek Kurallari
 
-`commercial-legal/skills/nda-review/SKILL.md` Turk hukukuna uyarlanirken su ek kontroller bulunmalidir.
+`ticari-sozlesmeler/skills/nda-review/SKILL.md` Turk hukukuna uyarlanirken su ek kontroller bulunmalidir.
 
 ### Komut ve Klasor Adlari
 
 Repo genelinde plugin yeniden adlandirilmadiysa:
 
-- `/commercial-legal:review` korunur.
-- `commercial-legal/CLAUDE.md` korunur.
+- `/ticari-sozlesmeler:inceleme` korunur.
+- `ticari-sozlesmeler/CLAUDE.md` korunur.
 - Skill adi Turkcelestirilecekse dosya ve marketplace etkisi ayrica kontrol edilir.
 
 Tam Turkcelestirme yapilacaksa bu bir repo-geneli refactor sayilir:
 
-- `commercial-legal` -> `ticari-hukuk`
-- `/commercial-legal:review` -> `ticari-hukuk:incele` (varsayımsal hedef ad; canlı komut değildir)
+- `ticari-sozlesmeler` -> `ticari-hukuk`
+- `/ticari-sozlesmeler:inceleme` -> `ticari-hukuk:incele` (varsayımsal hedef ad; canlı komut değildir)
 - marketplace kayitlari
 - README tablolarindaki komutlar
 - hook ve agent referanslari
@@ -469,20 +469,20 @@ Kapanis aksiyonu NDA icin UYAP'a yonlendirme yapmamalidir. Uygun kapanis ornekle
 
 ## 13. Sözleşme Tadil Geçmişi Skill Ek Kuralları
 
-`commercial-legal/skills/amendment-history/SKILL.md` Türk hukukuna uyarlanırken amaç, ana sözleşme ile ek protokol, zeyilname ve tadil metinleri arasındaki değişiklik zincirini doğru kurmaktır. Bu skill sözleşmenin tarihçesini çıkarır; nihai yorum, geçerlilik veya üstünlük görüşü vermez.
+`ticari-sozlesmeler/skills/amendment-history/SKILL.md` Türk hukukuna uyarlanırken amaç, ana sözleşme ile ek protokol, zeyilname ve tadil metinleri arasındaki değişiklik zincirini doğru kurmaktır. Bu skill sözleşmenin tarihçesini çıkarır; nihai yorum, geçerlilik veya üstünlük görüşü vermez.
 
 ### Komut ve Klasör Adları
 
 Repo genelinde plugin yeniden adlandırılmadıysa:
 
-- `/commercial-legal:amendment-history` korunur.
-- `commercial-legal/CLAUDE.md` korunur.
+- `/ticari-sozlesmeler:tadil-gecmisi` korunur.
+- `ticari-sozlesmeler/CLAUDE.md` korunur.
 - `vendor-agreement-review` veya `stakeholder-summary` gibi yönlendirmeler mevcut repo adlarıyla bırakılır.
 
 Tam Türkçeleştirme yapılacaksa bu bir repo-geneli refactor sayılır:
 
 - `amendment-history` -> `sozlesme-tadil-gecmisi`
-- `/commercial-legal:amendment-history` -> `ticari-hukuk:sozlesme-tadil-gecmisi` (varsayımsal hedef ad; canlı komut değildir)
+- `/ticari-sozlesmeler:tadil-gecmisi` -> `ticari-hukuk:sozlesme-tadil-gecmisi` (varsayımsal hedef ad; canlı komut değildir)
 - README komut tabloları, marketplace kayıtları ve skill yönlendirmeleri birlikte güncellenmelidir.
 
 ### Belge Kaynakları
@@ -629,20 +629,20 @@ Tadil geçmişi çıkarılırken şu başlıklar ayrıca izlenmelidir:
 
 ## 14. Profil Özelleştirme Skill Ek Kuralları
 
-`commercial-legal/skills/customize/SKILL.md` Türk hukukuna uyarlanırken amaç, kullanıcının tüm başlangıç mülakatını tekrar yapmadan ticari hukuk profilindeki tekil ayarları güvenli şekilde değiştirmesidir.
+`ticari-sozlesmeler/skills/customize/SKILL.md` Türk hukukuna uyarlanırken amaç, kullanıcının tüm başlangıç mülakatını tekrar yapmadan ticari hukuk profilindeki tekil ayarları güvenli şekilde değiştirmesidir.
 
 ### Komut ve Klasör Adları
 
 Repo genelinde plugin yeniden adlandırılmadıysa:
 
-- `/commercial-legal:customize` korunur.
-- `~/.claude/plugins/config/claude-for-legal/commercial-legal/CLAUDE.md` korunur.
+- `/ticari-sozlesmeler:ozellestir` korunur.
+- `~/.claude/plugins/config/hukuki-yetenek-seti/ticari-sozlesmeler/CLAUDE.md` korunur.
 - `company-profile.md` yerine `sirket-profili.md` gibi adlar ancak repo genelinde karşılığı güncellenmişse kullanılmalıdır.
 
 Tam Türkçeleştirme yapılacaksa:
 
 - `customize` -> `ozellestir`
-- `/commercial-legal:customize` -> `ticari-hukuk:ozellestir` (varsayımsal hedef ad; canlı komut değildir)
+- `/ticari-sozlesmeler:ozellestir` -> `ticari-hukuk:ozellestir` (varsayımsal hedef ad; canlı komut değildir)
 - README, marketplace, hook ve skill yönlendirmeleri birlikte değiştirilmelidir.
 
 ### Özelleştirilebilir Alanlar
@@ -704,7 +704,7 @@ profil_degisiklik_kaydi:
 
 ## 15. Eskalasyon ve Onay Skill Ek Kuralları
 
-`commercial-legal/skills/escalation-flagger/SKILL.md` Türk hukukuna uyarlanırken amaç, sözleşme veya işlem riskini doğru onay makamına yönlendirmek ve gönderilmeye hazır fakat otomatik gönderilmeyen bir talep taslağı üretmektir.
+`ticari-sozlesmeler/skills/escalation-flagger/SKILL.md` Türk hukukuna uyarlanırken amaç, sözleşme veya işlem riskini doğru onay makamına yönlendirmek ve gönderilmeye hazır fakat otomatik gönderilmeyen bir talep taslağı üretmektir.
 
 ### Onay Matrisi
 
@@ -776,13 +776,13 @@ eskalasyon:
 
 ## 16. Dosya Çalışma Alanı Skill Ek Kuralları
 
-`commercial-legal/skills/matter-workspace/SKILL.md` Türk hukukuna uyarlanırken amaç, birden fazla müvekkil veya dosya ile çalışan kullanıcılarda bağlam sızıntısını önlemektir.
+`ticari-sozlesmeler/skills/matter-workspace/SKILL.md` Türk hukukuna uyarlanırken amaç, birden fazla müvekkil veya dosya ile çalışan kullanıcılarda bağlam sızıntısını önlemektir.
 
 ### Komut ve Klasör Adları
 
 Repo genelinde plugin yeniden adlandırılmadıysa:
 
-- `/commercial-legal:matter-workspace` korunur.
+- `/ticari-sozlesmeler:dosya-alani` korunur.
 - `matters/`, `matter.md`, `history.md`, `notes.md` korunur.
 
 Tam Türkçeleştirme yapılacaksa:
@@ -845,7 +845,7 @@ Dosya kapatma silme değildir. Arşivlenen dosyalar saklama, çıkar çatışmas
 
 ## 17. Sözleşme Yenileme ve Fesih Takibi Skill Ek Kuralları
 
-`commercial-legal/skills/renewal-tracker/SKILL.md` ve `renewal-register.yaml` Türk hukukuna uyarlanırken amaç, otomatik yenileme ve fesih ihbar sürelerinin kaçırılmasını önlemektir.
+`ticari-sozlesmeler/skills/renewal-tracker/SKILL.md` ve `renewal-register.yaml` Türk hukukuna uyarlanırken amaç, otomatik yenileme ve fesih ihbar sürelerinin kaçırılmasını önlemektir.
 
 ### Kayıt Defteri Alanları
 
@@ -926,7 +926,7 @@ Yenileme takibi araştırmadır; fesih ihbarı göndermek, göndermemek veya yen
 
 ## 18. Sözleşme İnceleme Router Skill Ek Kuralları
 
-`commercial-legal/skills/review/SKILL.md` Türk hukukuna uyarlanırken bu skill'in esas görevi, gelen belgeyi doğru alt inceleme skill'ine yönlendirmek ve çıktıları tek raporda birleştirmektir.
+`ticari-sozlesmeler/skills/review/SKILL.md` Türk hukukuna uyarlanırken bu skill'in esas görevi, gelen belgeyi doğru alt inceleme skill'ine yönlendirmek ve çıktıları tek raporda birleştirmektir.
 
 ### Router Mantığı
 
@@ -959,7 +959,7 @@ açıkça belirtilmelidir.
 
 ## 19. SaaS ve Abonelik Sözleşmesi Skill Ek Kuralları
 
-`commercial-legal/skills/saas-msa-review/SKILL.md` Türk hukukuna uyarlanırken SaaS ve abonelik sözleşmelerinin yenileme, fiyat artışı, veri, çıkış ve hizmet seviyesi riskleri ayrı katman olarak incelenmelidir.
+`ticari-sozlesmeler/skills/saas-msa-review/SKILL.md` Türk hukukuna uyarlanırken SaaS ve abonelik sözleşmelerinin yenileme, fiyat artışı, veri, çıkış ve hizmet seviyesi riskleri ayrı katman olarak incelenmelidir.
 
 ### Türk Hukuku Kontrol Katmanı
 
@@ -1002,7 +1002,7 @@ SaaS sağlayıcısının müşteri verilerini model eğitimi, ürün iyileştirm
 
 ## 20. Tedarikçi Sözleşmesi İnceleme Skill Ek Kuralları
 
-`commercial-legal/skills/vendor-agreement-review/SKILL.md` Türk hukukuna uyarlanırken amaç, tedarikçi sözleşmesini playbook'a göre incelemek, sapmaları işaretlemek ve gerekiyorsa redline metni üretmektir.
+`ticari-sozlesmeler/skills/vendor-agreement-review/SKILL.md` Türk hukukuna uyarlanırken amaç, tedarikçi sözleşmesini playbook'a göre incelemek, sapmaları işaretlemek ve gerekiyorsa redline metni üretmektir.
 
 ### Ön Kontroller
 
@@ -1046,7 +1046,7 @@ Revizyon önerileri küçük ve uygulanabilir olmalıdır. Yeni hukuki yapı kur
 
 ## 21. İş Birimi Özet Raporu Skill Ek Kuralları
 
-`commercial-legal/skills/stakeholder-summary/SKILL.md` Türk hukukuna uyarlanırken amaç, avukat incelemesini hukukçu olmayan iş birimi için okunabilir bir karar özetine çevirmektir.
+`ticari-sozlesmeler/skills/stakeholder-summary/SKILL.md` Türk hukukuna uyarlanırken amaç, avukat incelemesini hukukçu olmayan iş birimi için okunabilir bir karar özetine çevirmektir.
 
 ### Hedef ve Gizlilik
 

@@ -13,7 +13,7 @@ $plugins = @(
     "is-hukuku",            # eski ad: employment-legal
     "dava-yonetimi",        # eski ad: litigation-legal
     "kvkk-uyum",            # eski ad: privacy-legal
-    "commercial-legal",
+    "ticari-sozlesmeler",   # eski ad: commercial-legal
     "corporate-legal",
     "product-legal",
     "regulatory-legal",

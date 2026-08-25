@@ -72,7 +72,7 @@ schema:
     - id: penalty_clause
       label: "Cezai Şart"
       type: currency
-      prompt: "Cezai şart var mı? Tutar/formül ve TBK m.179-185 bakımından fahişlik veya birlikte talep riski var mı?"
+      prompt: "Cezai şart var mı? Tutar/formül ve TBK m.179-182 bakımından fahişlik veya birlikte talep riski var mı?"
 
     - id: indemnification
       label: "Tazmin / Garanti"

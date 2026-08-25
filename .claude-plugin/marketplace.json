@@ -5,9 +5,9 @@
   },
   "plugins": [
     {
-      "name": "commercial-legal",
-      "source": "./commercial-legal",
-      "description": "Türk ticari sözleşme pratiğine göre uyarlandı; hukuki dayanak doğrulama turu sürüyor.",
+      "name": "ticari-sozlesmeler",
+      "source": "./ticari-sozlesmeler",
+      "description": "Türk ticari sözleşme pratiğine göre uyarlandı; hukuki dayanak katmanı tamamlandı (cezai şart TBK m.179-182 düzeltmesi dahil).",
       "author": {
         "name": "hukuki-yetenek-seti"
       }

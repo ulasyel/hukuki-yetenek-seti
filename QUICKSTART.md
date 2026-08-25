@@ -17,7 +17,7 @@ Yol farklıysa `Legal Turkish` klasörünü terminale sürükleyebilirsiniz.
 Örnek:
 
 ```text
-/plugin install commercial-legal@legal-turkish
+/plugin install ticari-sozlesmeler@legal-turkish
 ```
 
 veya:
@@ -35,7 +35,7 @@ Plugin komutları yeniden başlatmadan görünmeyebilir.
 Ticari hukuk için:
 
 ```text
-/commercial-legal:cold-start-interview
+/ticari-sozlesmeler:kurulum-mulakati
 ```
 
 Dava / ihtarname / uyuşmazlık işleri için:
@@ -49,19 +49,19 @@ Dava / ihtarname / uyuşmazlık işleri için:
 Ticari sözleşme:
 
 ```text
-/commercial-legal:review
+/ticari-sozlesmeler:inceleme
 ```
 
 Gizlilik sözleşmesi:
 
 ```text
-/commercial-legal:review
+/ticari-sozlesmeler:inceleme
 ```
 
 Yenileme takibi:
 
 ```text
-/commercial-legal:renewal-tracker
+/ticari-sozlesmeler:yenileme-takip
 ```
 
 İhtarname ön hazırlık:

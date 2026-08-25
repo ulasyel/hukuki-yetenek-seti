@@ -77,6 +77,27 @@ Ayrıca: `claude-for-legal` → `hukuki-yetenek-seti`; ip-legal `infringement-tr
 
 Ayrıca: product-legal ve ai-governance-legal içindeki `/privacy-legal:*` çapraz komutları yeni adlara bağlandı.
 
+### commercial-legal → `ticari-sozlesmeler` (2026-08-25)
+
+| Eski skill | Yeni skill |
+|---|---|
+| amendment-history | tadil-gecmisi |
+| cold-start-interview | kurulum-mulakati |
+| customize | ozellestir |
+| escalation-flagger | eskalasyon-yonlendirme |
+| matter-workspace | dosya-alani |
+| nda-review | gizlilik-sozlesme-inceleme |
+| renewal-tracker | yenileme-takip |
+| review | inceleme |
+| review-proposals | playbook-oneri-inceleme |
+| saas-msa-review | saas-abonelik-inceleme |
+| stakeholder-summary | paydas-ozeti |
+| vendor-agreement-review | tedarikci-sozlesme-inceleme |
+
+Agent'lar: `deal-debrief.md` → `imza-degerlendirme.md` · `playbook-monitor.md` → `playbook-izleyici.md` · `renewal-watcher.md` → `yenileme-gozlemci.md`
+
+**Bu turda hukuki düzeltme:** Tüm skill/agent'larda "TBK m.179-185" ibaresi **TBK m.179-182** olarak düzeltildi (ceza sözleşmesi bölümü m.182'de biter; m.183+ alacağın devri). Ayrıca QUICKSTART ve adaptasyon rehberi içindeki komut örnekleri güncellendi.
+
 ## Bekleyen Plugin'ler
 
 commercial-legal, corporate-legal, litigation-legal, privacy-legal, product-legal, regulatory-legal, ip-legal, ai-governance-legal — ilgili turlarda bu tabloya eklenecek.

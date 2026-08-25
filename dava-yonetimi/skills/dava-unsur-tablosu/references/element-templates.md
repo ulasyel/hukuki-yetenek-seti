@@ -91,7 +91,7 @@ Her chart'ta kaynak satırına şunu yaz:
 5. Fahişlik, indirim, tacirler arası uygulama ve kamu düzeni tartışması.
 6. Zarar ispatı gerekip gerekmediği ve tazminatla birlikte talep ilişkisi.
 
-**Kaynak notu:** TBK m.179-185 ve TTK tacir hükümleri güncel metinden doğrulanmalıdır.
+**Kaynak notu:** Cezai şart TBK m.179–182'dir (m.183 itibarıyla Alacağın Devri bölümü başlar; aşırı cezayı hâkim kendiliğinden indirir — m.182). Yargı PRO ile güncel metinden teyit edilmiştir (2026-08-25). TTK tacir hükümleri için bkz. `dava-yonetimi/references/hukuki-dayanak.md`.
 
 ### Sözleşmenin geçersizliği / irade sakatlığı
 
