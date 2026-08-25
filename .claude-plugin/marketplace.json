@@ -1,0 +1,80 @@
+{
+  "name": "hukuki-yetenek-seti",
+  "owner": {
+    "name": "Av. Muzaffer Ulaş Yel"
+  },
+  "plugins": [
+    {
+      "name": "commercial-legal",
+      "source": "./commercial-legal",
+      "description": "Türk ticari sözleşme pratiğine göre uyarlandı; hukuki dayanak doğrulama turu sürüyor.",
+      "author": {
+        "name": "hukuki-yetenek-seti"
+      }
+    },
+    {
+      "name": "corporate-legal",
+      "source": "./corporate-legal",
+      "description": "Türk şirketler hukuku (TTK/SPK/MERSİS) pratiğine göre uyarlandı; hukuki dayanak doğrulama turu sürüyor.",
+      "author": {
+        "name": "hukuki-yetenek-seti"
+      }
+    },
+    {
+      "name": "litigation-legal",
+      "source": "./litigation-legal",
+      "description": "Türkiye yargılama ve dava pratiğine (HMK/İİK/UYAP) göre uyarlandı; hukuki dayanak doğrulama turu sürüyor.",
+      "author": {
+        "name": "hukuki-yetenek-seti"
+      }
+    },
+    {
+      "name": "privacy-legal",
+      "source": "./privacy-legal",
+      "description": "KVKK pratiğine göre uyarlandı; hukuki dayanak doğrulama turu sürüyor.",
+      "author": {
+        "name": "hukuki-yetenek-seti"
+      }
+    },
+    {
+      "name": "employment-legal",
+      "source": "./employment-legal",
+      "description": "Türk iş hukuku (İK/SGK/6325 arabuluculuk) pratiğine göre uyarlandı; hukuki dayanak doğrulama turu sürüyor.",
+      "author": {
+        "name": "hukuki-yetenek-seti"
+      }
+    },
+    {
+      "name": "product-legal",
+      "source": "./product-legal",
+      "description": "Türk ürün, tüketici, reklam ve e-ticaret pratiğine (6502/6563) göre uyarlandı; hukuki dayanak doğrulama turu sürüyor.",
+      "author": {
+        "name": "hukuki-yetenek-seti"
+      }
+    },
+    {
+      "name": "regulatory-legal",
+      "source": "./regulatory-legal",
+      "description": "Türkiye regülasyon izleme pratiğine (Resmî Gazete/mevzuat.gov.tr/kurumlar) göre uyarlandı; hukuki dayanak doğrulama turu sürüyor.",
+      "author": {
+        "name": "hukuki-yetenek-seti"
+      }
+    },
+    {
+      "name": "ip-legal",
+      "source": "./ip-legal",
+      "description": "Türk fikri mülkiyet pratiğine (FSEK/SMK/PVK/5651) göre uyarlanıyor; clearance/takedown skill'leri yeniden yazım aşamasında.",
+      "author": {
+        "name": "hukuki-yetenek-seti"
+      }
+    },
+    {
+      "name": "ai-governance-legal",
+      "source": "./ai-governance-legal",
+      "description": "Türkiye AI yönetişimi ve KVKK odağıyla başlangıç uyarlaması yapıldı; ikinci faz sürüyor.",
+      "author": {
+        "name": "hukuki-yetenek-seti"
+      }
+    }
+  ]
+}
