@@ -1,4 +1,4 @@
-# hukuki-yetenek-seti — opencode kurulum / guncelleme
+﻿# hukuki-yetenek-seti — opencode kurulum / guncelleme
 # Kullanim: powershell -ExecutionPolicy Bypass -File scripts\opencode-guncelle.ps1
 # Yapar: (1) repoyu %USERPROFILE%\.opencode\skills altina klonlar veya ceker,
 #        (2) her plugin icin skills kokune junction olusturur/duzeltir.
@@ -34,7 +34,7 @@ foreach ($p in $plugins) {
     $target = Join-Path $repoDir $p
     $link   = Join-Path $skillsRoot $p
 
-    if (-not (Test-Path -LiteralPath $target)) { Write-Warning "$p repoda yok — atlandi"; continue }
+    if (-not (Test-Path -LiteralPath $target)) { Write-Warning "$p repoda yok - atlandi"; continue }
 
     if (Test-Path -LiteralPath $link) {
         $item = Get-Item -LiteralPath $link -Force
