@@ -24,7 +24,7 @@ Bu deponun ayırt edici ilkesi üçlüdür:
 | `dava-yonetimi` | Dava yönetimi (HMK/CMK/UYAP) | İlk tur ✓ · dayanak katmanı ✓ · adlandırma ✓ |
 | `kvkk-uyum` | KVKK / veri koruma | İlk tur ✓ · dayanak katmanı ✓ · adlandırma ✓ |
 | `urun-hukuku` | Ürün/tüketici/reklam/e-ticaret (6502/6563) | İlk tur ✓ · dayanak katmanı ✓ · adlandırma ✓ |
-| `regulatory-legal` | Regülasyon izleme (Resmî Gazete/kurumlar) | İlk tur uyarlama ✓ · doğrulama turu sürüyor |
+| `mevzuat-takip` | Regülasyon izleme (Resmî Gazete/kurumlar) | İlk tur ✓ · dayanak katmanı ✓ · adlandırma ✓ |
 | `ip-legal` | Fikri mülkiyet (FSEK/SMK/PVK/5651) | Yeniden yazım aşamasında |
 | `ai-governance-legal` | AI yönetişimi (KVKK/TTK ticari sır/FSEK ekseninde) | Başlangıç uyarlaması |
 

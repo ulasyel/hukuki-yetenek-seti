@@ -1,12 +1,12 @@
 ---
-name: reg-feed-watcher
+name: duzenleme-radari
 description: Türkiye odaklı düzenleyici kaynakları kontrol eder, yeni gelişmeleri önem eşiğine göre sınıflandırır ve aksiyon gerektirenleri policy-diff / comments / gaps akışına devreder. Kullanım: "regulatory update", "kaynakları kontrol et", "Resmi Gazete'de ne var", "KVKK/SPK/BDDK gündemi".
 argument-hint: "[opsiyonel: --since YYYY-MM-DD]"
 ---
 
-# /reg-feed-watcher
+# /duzenleme-radari
 
-1. `~/.claude/plugins/config/claude-for-legal/regulatory-legal/CLAUDE.md` dosyasını oku: izlenen kurumlar, önem eşiği, kaynaklar, çıktı yolu.
+1. `~/.claude/plugins/config/hukuki-yetenek-seti/mevzuat-takip/CLAUDE.md` dosyasını oku: izlenen kurumlar, önem eşiği, kaynaklar, çıktı yolu.
 2. `references/source-catalog.md` kataloğuyla kapsam boşluklarını kontrol et.
 3. Yapılandırılmış kaynakları tara veya kullanıcı metnini tekil gelişme olarak işle.
 4. Çıktıyı önem seviyesine göre ver; kaynak etiketlerini ve doğrulama uyarılarını koru.
@@ -25,7 +25,7 @@ Taramadan önce izleme listesi ile kaynak kataloğunu karşılaştır:
 
 Kapsam boşluğu tek seferlik ve somut yazılır:
 
-> **Kapsam boşluğu:** İzleme listesinde `[kurum/alan]` var, fakat yapılandırılmış kaynak yok. Katalogda önerilen başlangıç kaynakları: `[kaynak 1]`, `[kaynak 2]`. Eklemek için `/regulatory-legal:cold-start-interview --redo` ya da `/regulatory-legal:customize` kullanın.
+> **Kapsam boşluğu:** İzleme listesinde `[kurum/alan]` var, fakat yapılandırılmış kaynak yok. Katalogda önerilen başlangıç kaynakları: `[kaynak 1]`, `[kaynak 2]`. Eklemek için `/mevzuat-takip:kurulum-mulakati --redo` ya da `/mevzuat-takip:ozellestir` kullanın.
 
 ## Kaynak Çekme
 
@@ -87,7 +87,7 @@ FYI üstündeki her kalem için:
 **[Kurum] - [Başlık]** `[kaynak etiketi]`
 [Tek cümle özet]. [Neden ilgili]. Yürürlük/geçiş: [tarih].
 [Link]
--> Öneri: `/regulatory-legal:policy-diff` ile [muhtemel politika] karşılaştırılsın.
+-> Öneri: `/mevzuat-takip:politika-karsilastirma` ile [muhtemel politika] karşılaştırılsın.
 
 ### İncelemeye Değer
 
@@ -100,8 +100,8 @@ FYI üstündeki her kalem için:
 
 ---
 
-**Görüş/taslak takip:** [N] açık karar - `/regulatory-legal:comments`
-**Açık gap:** [N] - `/regulatory-legal:gaps`
+**Görüş/taslak takip:** [N] açık karar - `/mevzuat-takip:gorus-sureleri`
+**Açık gap:** [N] - `/mevzuat-takip:acik-gapler`
 
 **Kaynak doğrulama:** Bu çıktı bir çalışma taslağıdır. Bağlayıcı işlem yapmadan önce Resmi Gazete, Mevzuat Bilgi Sistemi veya ilgili kurumun resmi sayfasından metin, yürürlük tarihi ve güncellik doğrulanmalıdır.
 ```
@@ -114,9 +114,9 @@ FYI üstündeki her kalem için:
 
 ## Devir
 
-- Bağlayıcı ve politika etkili kalem -> `/regulatory-legal:policy-diff`
-- Taslak veya kamuoyu görüşü -> `/regulatory-legal:comments`
-- Diff sonucu boşluk bulursa -> `/regulatory-legal:gaps`
+- Bağlayıcı ve politika etkili kalem -> `/mevzuat-takip:politika-karsilastirma`
+- Taslak veya kamuoyu görüşü -> `/mevzuat-takip:gorus-sureleri`
+- Diff sonucu boşluk bulursa -> `/mevzuat-takip:acik-gapler`
 
 ## Yapmadıkları
 

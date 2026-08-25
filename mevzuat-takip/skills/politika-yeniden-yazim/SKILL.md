@@ -1,10 +1,10 @@
 ---
-name: policy-redraft
+name: politika-yeniden-yazim
 description: Policy-diff veya gaps sonucunda bulunan boşluğu kapatmak için Türkçe/İngilizce iç politika üzerinde öneri redraft üretir. Kaynak politika dosyasını değiştirmez; ayrı bir öneri memo'su yazar.
 argument-hint: "[GAP-ID veya gap açıklaması]"
 ---
 
-# /policy-redraft
+# /politika-yeniden-yazim
 
 ## İlkeler
 

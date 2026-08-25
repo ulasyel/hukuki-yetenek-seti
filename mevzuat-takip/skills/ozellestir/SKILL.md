@@ -1,10 +1,10 @@
 ---
-name: customize
+name: ozellestir
 description: Regulatory practice profilinde tek bir şeyi günceller: izlenen kurum, kaynak, önem eşiği, politika kütüphanesi, gap yanıt süreci, görüş takibi veya matter ayarları.
 argument-hint: "[bölüm adı veya istenen değişiklik]"
 ---
 
-# /customize
+# /ozellestir
 
 ## Ne zaman çalışır
 
@@ -12,7 +12,7 @@ Kullanıcı bütün cold-start görüşmesini yeniden yapmak istemeden regulator
 
 ## Akış
 
-1. `~/.claude/plugins/config/claude-for-legal/regulatory-legal/CLAUDE.md` dosyasını oku. Yoksa veya placeholder ise önce `/regulatory-legal:cold-start-interview` öner.
+1. `~/.claude/plugins/config/hukuki-yetenek-seti/mevzuat-takip/CLAUDE.md` dosyasını oku. Yoksa veya placeholder ise önce `/mevzuat-takip:kurulum-mulakati` öner.
 2. Mevcut profili kısa harita olarak göster:
    - Şirket / sektör / yargı alanı
    - İzlenen kurumlar: Resmi Gazete, Mevzuat, KVKK, Rekabet, SPK, BDDK, BTK, EPDK, TCMB vb.

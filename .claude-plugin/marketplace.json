@@ -53,9 +53,9 @@
       }
     },
     {
-      "name": "regulatory-legal",
-      "source": "./regulatory-legal",
-      "description": "Türkiye regülasyon izleme pratiğine (Resmî Gazete/mevzuat.gov.tr/kurumlar) göre uyarlandı; hukuki dayanak doğrulama turu sürüyor.",
+      "name": "mevzuat-takip",
+      "source": "./mevzuat-takip",
+      "description": "Türkiye regülasyon izleme pratiğine (Resmî Gazete/mevzuat.gov.tr/kurumlar) göre uyarlandı; kaynak kataloğu ve Yargı PRO karar erişimi bağlandı.",
       "author": {
         "name": "hukuki-yetenek-seti"
       }

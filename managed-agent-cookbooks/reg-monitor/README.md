@@ -2,7 +2,7 @@
 
 ## Overview
 
-Türkiye düzenleyici kaynaklarını zamanlanmış olarak kontrol eder, önem eşiğine göre sınıflandırır, maddi kalemlerde politika kütüphanesine hızlı gap kontrolü uygular ve digest yazar. Aynı kaynak mantığı [`reg-change-monitor`](../../regulatory-legal/agents/reg-change-monitor.md) ajanı ile [`reg-feed-watcher`](../../regulatory-legal/skills/reg-feed-watcher) / [`policy-diff`](../../regulatory-legal/skills/policy-diff) skill'lerinde kullanılır; bu dizin `POST /v1/agents` için Managed Agent cookbook'tur.
+Türkiye düzenleyici kaynaklarını zamanlanmış olarak kontrol eder, önem eşiğine göre sınıflandırır, maddi kalemlerde politika kütüphanesine hızlı gap kontrolü uygular ve digest yazar. Aynı kaynak mantığı [`reg-change-monitor`](../../mevzuat-takip/agents/reg-change-monitor.md) ajanı ile [`reg-feed-watcher`](../../mevzuat-takip/skills/reg-feed-watcher) / [`policy-diff`](../../mevzuat-takip/skills/policy-diff) skill'lerinde kullanılır; bu dizin `POST /v1/agents` için Managed Agent cookbook'tur.
 
 ## ⚠️ Before you deploy
 
@@ -33,7 +33,7 @@ Regülasyon kaynak içeriği (Resmi Gazete kayıtları, Mevzuat sayfaları, kuru
 | `materiality-filter` / Orchestrator | No | `Read`, `Grep`, `Glob`, `Agent` | gdrive (orchestrator only) |
 | **`digest-writer`** (Write-holder) | No | `Read`, `Write`, `Edit` | None |
 
-`feed-reader` length-capped, schema-validated JSON döndürür. `materiality-filter`, bu JSON ve diskteki regulatory-legal yapılandırması üzerinde saf hesaplama yapar — MCP yok, web yok. `digest-writer` `./out/reg-digest-<YYYY-MM-DD>.md` üretir ve Slack teslimi gerekiyorsa `handoff_request` çıkarır.
+`feed-reader` length-capped, schema-validated JSON döndürür. `materiality-filter`, bu JSON ve diskteki mevzuat-takip yapılandırması üzerinde saf hesaplama yapar — MCP yok, web yok. `digest-writer` `./out/reg-digest-<YYYY-MM-DD>.md` üretir ve Slack teslimi gerekiyorsa `handoff_request` çıkarır.
 
 **Handoffs:** the orchestrator routes the `handoff_request` from `digest-writer` to a Slack send worker using the channel from the deploying team's House style configuration. The agent never sends Slack messages itself.
 
@@ -45,7 +45,7 @@ Before you trust the output on your workflow:
 
 - **`feed-reader` için kaynakları belirleyin.** Varsayılan omurga Resmi Gazete, Mevzuat ve ilgili kurum sayfalarıdır. Güvenilir Türk hukuk veri tabanı, sektör birliği veya kurum RSS/HTML kaynağı kullanıyorsanız uçları `web_fetch` allowlist'e ekleyin ve orchestrator tarama planını buna göre ayarlayın.
 - **Opsiyonel veri tabanı bağlantılarını ayarlayın.** Lexpera, kurum içi hukuk veri tabanı veya benzeri bir kaynak kullanıyorsanız manifest içinde bağlantıyı açıkça yapılandırın.
-- **Configure the digest delivery channel.** The digest-writer emits a `handoff_request` that names a Slack channel. The orchestrator reads that channel from your regulatory-legal configuration's **House style → Reg digest** field. Set it before the first scheduled run or the handoff will dead-letter. Teams that want the digest by email or in a Confluence page instead should swap the handoff target in the orchestrator allowlist.
+- **Configure the digest delivery channel.** The digest-writer emits a `handoff_request` that names a Slack channel. The orchestrator reads that channel from your mevzuat-takip configuration's **House style → Reg digest** field. Set it before the first scheduled run or the handoff will dead-letter. Teams that want the digest by email or in a Confluence page instead should swap the handoff target in the orchestrator allowlist.
 - **Tune the materiality threshold.** The materiality-filter reads your configuration's `## Materiality threshold` section — always material / review-worthy / FYI. Confirm the tiers reflect your current risk posture before enabling scheduled runs; a threshold set too low floods the digest, too high and you miss obligations with deadlines.
 - **Update the watchlist.** The materiality-filter also reads the `## Regulators we watch` table. Add or remove regulators as your footprint changes.
 - **Confirm the work-product header.** The headless append in `agent.yaml` instructs the agent to prepend your configuration's work-product header. Verify the header language with your GC before turning this on.

@@ -4,7 +4,7 @@ Durum: `Tamamlandı - ilk tur`.
 
 ## Çekirdek Karar
 
-Orijinal regulatory-legal yapısı yabancı resmî gazete, proposed rule ve ABD ağırlıklı kurum mantığına dayanıyordu. Türkiye sürümünde omurga Resmi Gazete, Mevzuat Bilgi Sistemi ve kurumun kendi resmi duyuru/karar sayfasıdır.
+Orijinal mevzuat-takip yapısı yabancı resmî gazete, proposed rule ve ABD ağırlıklı kurum mantığına dayanıyordu. Türkiye sürümünde omurga Resmi Gazete, Mevzuat Bilgi Sistemi ve kurumun kendi resmi duyuru/karar sayfasıdır.
 
 ## Güncellenenler
 

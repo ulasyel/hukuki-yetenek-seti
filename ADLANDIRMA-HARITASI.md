@@ -134,6 +134,23 @@ Agent: `dataroom-watcher.md` → `veri-oda-gozlemci.md`
 
 Agent: `launch-watcher.md` → `lansman-gozlemci.md`. Ayrıca managed-agent-cookbooks/launch-radar referansları güncellendi.
 
+
 ## Bekleyen Plugin'ler
 
-commercial-legal, corporate-legal, litigation-legal, privacy-legal, product-legal, regulatory-legal, ip-legal, ai-governance-legal — ilgili turlarda bu tabloya eklenecek.
+### regulatory-legal -> mevzuat-takip (2026-08-25)
+
+| Eski skill | Yeni skill |
+|---|---|
+| cold-start-interview | kurulum-mulakati |
+| comments | gorus-sureleri |
+| customize | ozellestir |
+| gap-surfacer | gap-cekirdek |
+| gaps | acik-gapler |
+| matter-workspace | dosya-alani |
+| policy-diff | politika-karsilastirma |
+| policy-redraft | politika-yeniden-yazim |
+| reg-feed-watcher | duzenleme-radari |
+
+Agent: reg-change-monitor.md -> duzenleme-izleyici.md. Ayrica ai-governance capraz referansi ve managed-agent-cookbooks/reg-monitor guncellendi.
+
+ip-legal ve ai-governance-legal - ilgili turlarda eklenecek.

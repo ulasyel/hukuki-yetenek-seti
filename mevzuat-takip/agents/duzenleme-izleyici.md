@@ -19,9 +19,9 @@ Cadence `CLAUDE.md -> Feed configuration -> Check cadence` alanından gelir. Var
 ## İş Akışı
 
 1. `CLAUDE.md` dosyasından izleme listesi, önem eşiği, kaynaklar ve çıktı tercihini oku.
-2. `/regulatory-legal:reg-feed-watcher` mantığıyla kaynakları tara.
-3. Maddi/aksiyon gerekli kalemlerde politika etkisi muhtemelse `/regulatory-legal:policy-diff` çalıştırmayı öner veya yapılandırılmışsa kısa gap özeti ekle.
-4. Taslak/görüş kalemlerini `/regulatory-legal:comments` tracker'a devret.
+2. `/mevzuat-takip:duzenleme-radari` mantığıyla kaynakları tara.
+3. Maddi/aksiyon gerekli kalemlerde politika etkisi muhtemelse `/mevzuat-takip:politika-karsilastirma` çalıştırmayı öner veya yapılandırılmışsa kısa gap özeti ekle.
+4. Taslak/görüş kalemlerini `/mevzuat-takip:gorus-sureleri` tracker'a devret.
 5. Açık gap sayısını ve en eski gap yaşını digest'e koy.
 
 ## Çıktı

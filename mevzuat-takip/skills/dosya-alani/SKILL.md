@@ -1,18 +1,18 @@
 ---
-name: matter-workspace
+name: dosya-alani
 description: Birden çok müvekkil/iş/regülasyon projesi için ayrı matter workspace oluşturur, listeler, aktif hale getirir veya arşivler.
 argument-hint: "<new | list | switch | close | none> [slug]"
 ---
 
-# /matter-workspace
+# /dosya-alani
 
 ## Komutlar
 
-- `/regulatory-legal:matter-workspace new <slug>` - yeni matter oluşturur.
-- `/regulatory-legal:matter-workspace list` - matter listesini gösterir.
-- `/regulatory-legal:matter-workspace switch <slug>` - aktif matter seçer.
-- `/regulatory-legal:matter-workspace close <slug>` - matter'ı arşivler, silmez.
-- `/regulatory-legal:matter-workspace none` - practice-level bağlama döner.
+- `/mevzuat-takip:dosya-alani new <slug>` - yeni matter oluşturur.
+- `/mevzuat-takip:dosya-alani list` - matter listesini gösterir.
+- `/mevzuat-takip:dosya-alani switch <slug>` - aktif matter seçer.
+- `/mevzuat-takip:dosya-alani close <slug>` - matter'ı arşivler, silmez.
+- `/mevzuat-takip:dosya-alani none` - practice-level bağlama döner.
 
 ## Talimat
 
@@ -24,7 +24,7 @@ argument-hint: "<new | list | switch | close | none> [slug]"
 ## Depolama
 
 ```text
-~/.claude/plugins/config/claude-for-legal/regulatory-legal/
+~/.claude/plugins/config/hukuki-yetenek-seti/mevzuat-takip/
 ├── CLAUDE.md
 └── matters/
     ├── <slug>/

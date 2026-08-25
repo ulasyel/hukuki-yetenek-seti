@@ -1,18 +1,18 @@
 ---
-name: cold-start-interview
+name: kurulum-mulakati
 description: Türkiye regulatory setup görüşmesi: izlenen kurumları, kaynakları, önem eşiğini, politika kütüphanesini, gap response ve taslak/görüş takip ayarlarını kurar.
 argument-hint: "[--redo | --check-integrations | --full]"
 ---
 
-# /cold-start-interview
+# /kurulum-mulakati
 
 ## Amaç
 
-Her kurum çok şey yayımlar; kullanıcının ihtiyacı olan şey kendi sektörüne ve politika kütüphanesine göre anlamlı olanları yakalamaktır. Bu görüşme regulatory-legal profilini kurar.
+Her kurum çok şey yayımlar; kullanıcının ihtiyacı olan şey kendi sektörüne ve politika kütüphanesine göre anlamlı olanları yakalamaktır. Bu görüşme mevzuat-takip profilini kurar.
 
 ## İlk Kontrol
 
-`~/.claude/plugins/config/claude-for-legal/regulatory-legal/CLAUDE.md`:
+`~/.claude/plugins/config/hukuki-yetenek-seti/mevzuat-takip/CLAUDE.md`:
 
 - Yoksa görüşmeye başla.
 - `SETUP PAUSED` varsa kaldığı yerden devam etmeyi öner.
@@ -22,7 +22,7 @@ Her kurum çok şey yayımlar; kullanıcının ihtiyacı olan şey kendi sektör
 
 ## Kısa Preamble
 
-> `regulatory-legal`, Türkiye'de düzenleyici gelişmeleri izlemek, politika gap'i çıkarmak ve taslak/görüş sürelerini takip etmek içindir.
+> `mevzuat-takip`, Türkiye'de düzenleyici gelişmeleri izlemek, politika gap'i çıkarmak ve taslak/görüş sürelerini takip etmek içindir.
 >
 > Kısa kurulum: rol, sektör, izlenecek ana kurumlar. Tam kurulum: kaynaklar, önem eşiği, politika kütüphanesi, gap sahipleri ve görüş takip akışı.
 >
@@ -131,10 +131,10 @@ Eksik cevapları sessiz placeholder yapma; yazmadan önce kullanıcıya "bunlar 
 
 Kurulumdan sonra öner:
 
-- İlk kaynak izleme testi: `/regulatory-legal:reg-feed-watcher --since YYYY-MM-DD`
-- Politika kütüphanesi gap testi: `/regulatory-legal:policy-diff`
-- Açık gap görünümü: `/regulatory-legal:gaps`
-- Taslak/görüş görünümü: `/regulatory-legal:comments`
+- İlk kaynak izleme testi: `/mevzuat-takip:duzenleme-radari --since YYYY-MM-DD`
+- Politika kütüphanesi gap testi: `/mevzuat-takip:politika-karsilastirma`
+- Açık gap görünümü: `/mevzuat-takip:acik-gapler`
+- Taslak/görüş görünümü: `/mevzuat-takip:gorus-sureleri`
 
 ## Yapmadıkları
 

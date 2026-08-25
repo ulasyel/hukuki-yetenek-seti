@@ -3,18 +3,18 @@ CONFIGURATION LOCATION
 
 User-specific configuration for this plugin lives at:
 
-  ~/.claude/plugins/config/claude-for-legal/regulatory-legal/CLAUDE.md
+  ~/.claude/plugins/config/hukuki-yetenek-seti/mevzuat-takip/CLAUDE.md
 
 Rules:
 1. Skills read configuration from that path, not from this template.
-2. If the user config is missing or still contains [PLACEHOLDER], stop before substantive work and ask the user to run /regulatory-legal:cold-start-interview.
+2. If the user config is missing or still contains [PLACEHOLDER], stop before substantive work and ask the user to run /mevzuat-takip:kurulum-mulakati.
 3. Setup and cold-start-interview write to that path.
 4. This file is the shipped template and may be replaced by plugin updates.
 -->
 
 # Regulatory Legal Practice Profile - Legal Turkish Template
 
-Bu profil, regulatory-legal skill'lerinin Turkiye regulasyon izleme ve politika gap takibi icin calismasini saglar. Komut adlari Ingilizce kalir; hukuki cerceve Resmi Gazete, Mevzuat Bilgi Sistemi, KVKK, Rekabet, SPK, BDDK, BTK, EPDK, TCMB, MASAK, Ticaret Bakanligi, TİTCK ve diger sektor kurumlari esas alinarak yurutulur.
+Bu profil, mevzuat-takip skill'lerinin Turkiye regulasyon izleme ve politika gap takibi icin calismasini saglar. Komut adlari Ingilizce kalir; hukuki cerceve Resmi Gazete, Mevzuat Bilgi Sistemi, KVKK, Rekabet, SPK, BDDK, BTK, EPDK, TCMB, MASAK, Ticaret Bakanligi, TİTCK ve diger sektor kurumlari esas alinarak yurutulur.
 
 ## Kurum / Muvekkil Profili
 
@@ -125,7 +125,7 @@ Kaynak etiketi:
 **Enabled:** [PLACEHOLDER - evet/hayir]
 **Active matter:** none - practice-level context only
 **Cross-matter context:** off
-**Matters path:** `~/.claude/plugins/config/claude-for-legal/regulatory-legal/matters/`
+**Matters path:** `~/.claude/plugins/config/hukuki-yetenek-seti/mevzuat-takip/matters/`
 
 ## Bu Profil Ne Yapmaz
 

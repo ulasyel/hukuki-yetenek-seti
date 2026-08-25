@@ -1,4 +1,4 @@
-﻿# hukuki-yetenek-seti — opencode kurulum / guncelleme
+# hukuki-yetenek-seti — opencode kurulum / guncelleme
 # Kullanim: powershell -ExecutionPolicy Bypass -File scripts\opencode-guncelle.ps1
 # Yapar: (1) repoyu %USERPROFILE%\.opencode\skills altina klonlar veya ceker,
 #        (2) her plugin icin skills kokune junction olusturur/duzeltir.
@@ -16,7 +16,7 @@ $plugins = @(
     "ticari-sozlesmeler",   # eski ad: commercial-legal
     "sirketler-hukuku",     # eski ad: corporate-legal
     "urun-hukuku",          # eski ad: product-legal
-    "regulatory-legal",
+    "mevzuat-takip",         # eski ad: regulatory-legal
     "ip-legal",
     "ai-governance-legal"
 )

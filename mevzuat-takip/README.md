@@ -17,13 +17,13 @@ Turkiye regulasyon izleme ve politika gap takibi plugin'i. Komut adlari orijinal
 
 | Komut | Ne yapar |
 |---|---|
-| `/regulatory-legal:cold-start-interview` | Izlenecek kurumlari, politika kutuphanesini ve materiality esigini kurar |
-| `/regulatory-legal:reg-feed-watcher` | Izleme listesindeki resmi kaynaklari simdi kontrol eder |
-| `/regulatory-legal:policy-diff [duzenleme]` | Duzenleme degisikligini politika kutuphanesiyle karsilastirir |
-| `/regulatory-legal:gaps` | Acik gap tracker durumunu gosterir |
-| `/regulatory-legal:comments` | Taslak duzenleme / kamuoyu gorusu / gorus bildirme son tarihlerini takip eder |
-| `/regulatory-legal:policy-redraft` | Gap'i kapatacak politika degisikligi taslagi uretir |
-| `/regulatory-legal:matter-workspace` | Cok muvekkilli kullanimda matter izolasyonu yonetir |
+| `/mevzuat-takip:kurulum-mulakati` | Izlenecek kurumlari, politika kutuphanesini ve materiality esigini kurar |
+| `/mevzuat-takip:duzenleme-radari` | Izleme listesindeki resmi kaynaklari simdi kontrol eder |
+| `/mevzuat-takip:politika-karsilastirma [duzenleme]` | Duzenleme degisikligini politika kutuphanesiyle karsilastirir |
+| `/mevzuat-takip:acik-gapler` | Acik gap tracker durumunu gosterir |
+| `/mevzuat-takip:gorus-sureleri` | Taslak duzenleme / kamuoyu gorusu / gorus bildirme son tarihlerini takip eder |
+| `/mevzuat-takip:politika-yeniden-yazim` | Gap'i kapatacak politika degisikligi taslagi uretir |
+| `/mevzuat-takip:dosya-alani` | Cok muvekkilli kullanimda matter izolasyonu yonetir |
 
 ## Varsayilan Kaynak Omurgasi
 
@@ -38,7 +38,7 @@ Turkiye regulasyon izleme ve politika gap takibi plugin'i. Komut adlari orijinal
 ## Ilk Kurulum
 
 ```text
-/regulatory-legal:cold-start-interview
+/mevzuat-takip:kurulum-mulakati
 ```
 
 Kurulum; izlenecek kurumlari, sektorleri, kaynak URL'lerini, politika sahiplerini, materiality esigini, gap kapanis surecini ve gorus bildirme karar sahiplerini profil dosyasina yazar.

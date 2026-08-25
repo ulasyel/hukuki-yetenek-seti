@@ -4,7 +4,7 @@ name: reg-monitor
 model: claude-opus-4-7
 
 system:
-  file: ../../regulatory-legal/agents/reg-change-monitor.md
+  file: ../../mevzuat-takip/agents/reg-change-monitor.md
   append: |
     You are running headless. Write the digest and any gap summaries to ./out/;
     do not post to Slack directly — return a handoff_request if Slack delivery
@@ -30,7 +30,7 @@ mcp_servers:
   - { type: url, name: gdrive, url: "${GDRIVE_MCP_URL}" }
 
 skills:
-  - { from_plugin: ../../regulatory-legal }
+  - { from_plugin: ../../mevzuat-takip }
 
 callable_agents:
   - { manifest: ./subagents/feed-reader.yaml }

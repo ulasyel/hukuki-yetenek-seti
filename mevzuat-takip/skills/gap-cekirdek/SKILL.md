@@ -1,7 +1,7 @@
 ---
-name: gap-surfacer
+name: gap-cekirdek
 description: >
-  Reference skill: /regulatory-legal:gaps ve /regulatory-legal:comments için ortak tracker çerçevesi. Türkiye regülasyon değişikliklerinden doğan politika/prosedür gap'lerini, taslak/görüş kararlarını, sahipleri, son tarihleri ve bildirimleri yönetir.
+  Reference skill: /mevzuat-takip:acik-gapler ve /mevzuat-takip:gorus-sureleri için ortak tracker çerçevesi. Türkiye regülasyon değişikliklerinden doğan politika/prosedür gap'lerini, taslak/görüş kararlarını, sahipleri, son tarihleri ve bildirimleri yönetir.
 user-invocable: false
 ---
 
@@ -22,7 +22,7 @@ Slack/e-posta/Teams gibi herhangi bir mesaj gönderilmeden önce:
 
 ## Tracker Şeması
 
-`~/.claude/plugins/config/claude-for-legal/regulatory-legal/gap-tracker.yaml`:
+`~/.claude/plugins/config/hukuki-yetenek-seti/mevzuat-takip/gap-tracker.yaml`:
 
 ```yaml
 gaps:
@@ -115,7 +115,7 @@ Son tarih: [tarih]
 ## Mod 3: Kapatma
 
 ```
-/regulatory-legal:gaps --close GAP-001
+/mevzuat-takip:acik-gapler --close GAP-001
 Çözüm: "Politika v2.3 güncellendi, [tarih] onaylandı."
 ```
 
@@ -124,7 +124,7 @@ Non-lawyer rolünde, gap kapatma veya uyum sertifikasyonu hukuki sonuç doğurab
 ## Mod 4: Risk Kabul
 
 ```
-/regulatory-legal:gaps --accept GAP-002
+/mevzuat-takip:acik-gapler --accept GAP-002
 Gerekçe: "Yükümlülük yalnızca [koşul] için geçerli; bizde yok. [tetikleyici] olursa yeniden bakılacak."
 Kabul eden: [yetkili kişi/rol]
 ```

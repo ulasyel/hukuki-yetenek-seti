@@ -1,10 +1,10 @@
 ---
-name: comments
+name: gorus-sureleri
 description: Türkiye'deki taslak düzenleme ve kamuoyu görüşü sürelerini takip eder; görüş verilecek/verilmeyecek kararlarını ve son tarihleri kaydeder. Kullanım: "açık görüş süreleri", "taslak takip", "comment tracker", "--decide CMT-ID".
 argument-hint: "[opsiyonel: --decide CMT-ID]"
 ---
 
-# /comments
+# /gorus-sureleri
 
 ## Amaç
 
@@ -44,7 +44,7 @@ Taslak düzenleme ve kamuoyu görüşü çağrılarında asıl risk son tarihin 
 ## Karar Kaydetme
 
 ```
-/regulatory-legal:comments --decide CMT-001
+/mevzuat-takip:gorus-sureleri --decide CMT-001
 Karar: [gorus-verilecek / gorus-verilmeyecek / birlik-uzerinden / ertelendi / sunuldu]
 Gerekçe: "[kısa gerekçe]"
 ```

@@ -1,10 +1,10 @@
 ---
-name: policy-diff
+name: politika-karsilastirma
 description: Belirli bir Türkiye regülasyon değişikliğini politika kütüphanesiyle karşılaştırır; hangi iç politika/prosedürün etkilendiğini ve boşluğun ne olduğunu çıkarır. Kullanım: "bu düzenlemeyi politikalarla karşılaştır", "gap analysis", "hangi politika etkilenir".
 argument-hint: "[düzenleme adı, linki veya metni]"
 ---
 
-# /policy-diff
+# /politika-karsilastirma
 
 1. `CLAUDE.md` içindeki politika kütüphanesini ve önem eşiğini yükle.
 2. Düzenleme statüsünü birincil kaynaktan doğrula.
@@ -66,7 +66,7 @@ Girdi taslak, kamuoyu görüşü, kurul taslağı veya sektör görüşü çağr
 
 - Hangi politikaların ileride etkilenebileceğini yaz.
 - Görüş son tarihini ve karar sahibini belirt.
-- `/regulatory-legal:comments` tracker'a devret.
+- `/mevzuat-takip:gorus-sureleri` tracker'a devret.
 - "Bugün uygulanacak uyum yükümlülüğü yok" cümlesini açıkça koy.
 
 ## Çıktı
@@ -120,4 +120,4 @@ Girdi taslak, kamuoyu görüşü, kurul taslağı veya sektör görüşü çağr
 
 ## Devir
 
-Partial/full/new-policy gap'ler `/regulatory-legal:gaps` tracker'a gider. Taslak/görüş kararları `/regulatory-legal:comments` tarafına gider.
+Partial/full/new-policy gap'ler `/mevzuat-takip:acik-gapler` tracker'a gider. Taslak/görüş kararları `/mevzuat-takip:gorus-sureleri` tarafına gider.

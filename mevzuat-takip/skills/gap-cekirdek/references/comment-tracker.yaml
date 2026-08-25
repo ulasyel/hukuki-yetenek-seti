@@ -1,6 +1,6 @@
 # Taslak / Görüş Tracker
 # reg-feed-watcher taslak düzenleme veya kamuoyu görüşü süreci gördüğünde doldurur.
-# /regulatory-legal:comments ile yönetilir.
+# /mevzuat-takip:gorus-sureleri ile yönetilir.
 
 comments:
   - id: CMT-001

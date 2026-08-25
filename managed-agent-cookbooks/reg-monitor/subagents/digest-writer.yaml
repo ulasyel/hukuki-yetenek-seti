@@ -80,6 +80,6 @@ tools:
 
 mcp_servers: []
 skills:
-  - { path: ../../../regulatory-legal/skills/gap-surfacer }
-  - { path: ../../../regulatory-legal/skills/policy-diff }
+  - { path: ../../../mevzuat-takip/skills/gap-surfacer }
+  - { path: ../../../mevzuat-takip/skills/policy-diff }
 callable_agents: []

@@ -18,7 +18,7 @@ Durum etiketleri:
 | commercial-legal → `ticari-sozlesmeler` | ✅ | **Sistematik atıf hatası düzeltildi:** "TBK m.179-185" → **m.179-182** (12 dosyada); TBK m.93/m.394 şüpheleri teyitle temizlendi | **Tur tamamlandı** (2026-08-25): dayanak katmanı + adlandırma |
 | corporate-legal → `sirketler-hukuku` | ✅ | "Hisse devri TTK m.495" atfı düzeltildi (**m.487 vd.**); KVKK m.8'in yurt içi aktarım için yürürlükte olduğu teyit edildi | **Tur tamamlandı** (2026-08-25): dayanak katmanı + 11 madde teyidi + adlandırma |
 | product-legal → `urun-hukuku` | ✅ | — | **Tur tamamlandı** (2026-08-25): dayanak katmanı (6502/6563 + iki yönetmelik teyidi) + adlandırma |
-| regulatory-legal | ✅ | — | Doğrulama turu + adlandırma |
+| regulatory-legal → `mevzuat-takip` | ✅ | — | **Tur tamamlandı** (2026-08-25): kaynak dayanak katmanı (Yargı PRO kurum erişimi) + adlandırma |
 | ip-legal | ✅* | *`clearance`: uydurma emsal ("AMF Inc. v. Yargıtay Boats", gerçeği *Sleekcraft*) ve Lanham Act/TESS kalıntıları · `takedown`: DMCA §512 iskeleti, kendi içinde çelişen süreler, kırık cümleler · `ip-renewal-watcher` agent: USPTO TSDR referansı | 🔄 clearance + takedown yeniden yazımı → sonra doğrulama turu |
 | ai-governance-legal | ⬜ başlangıç | CLAUDE.md guardrail'leri kısmen çevrilmemiş; AIA/reg-gap/policy-staller Türkiye ekseninde tamamlanmadı | İkinci faz |
 | managed-agent-cookbooks | ✅ | Gerçek UYAP/Yargı MCP bağlantısıyla smoke test yok | Smoke test |
@@ -38,7 +38,7 @@ Durum etiketleri:
 
 ## İşlem Sırası
 
-~~employment~~ ✓ → ~~litigation~~ ✓ → ~~privacy/KVKK~~ ✓ → ~~commercial~~ ✓ → ~~corporate~~ ✓ → ~~product~~ ✓ (2026-08-25) → regulatory → IP (yeniden yazım dahil) → ai-governance
+~~employment~~ ✓ → ~~litigation~~ ✓ → ~~privacy/KVKK~~ ✓ → ~~commercial~~ ✓ → ~~corporate~~ ✓ → ~~product~~ ✓ → ~~regulatory~~ ✓ (2026-08-25) → IP (yeniden yazım dahil) → ai-governance
 
 Her plugin turunda: denetim (residual/uydurma/ölü referans) → Yargı PRO dayanak araştırması (`hukuki-dayanak.md`) → atıf teyidi (teyitsiz silinir) → Türkçe adlandırma → marketplace senkronu → commit.
 
