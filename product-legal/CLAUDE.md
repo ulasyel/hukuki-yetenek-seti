@@ -114,7 +114,7 @@ Tutar, idari para cezasi, basvuru/esik degeri, Kurul/Reklam Kurulu karari, platf
 
 ## KVKK / AI / Guvenlik Kapilari
 
-KVKK iceren her lansmanda `/privacy-legal:use-case-triage` onerilir. AI, otomatik karar, model egitimi, sentetik icerik veya AI vendor varsa `/ai-governance-legal:use-case-triage` ve gerekirse vendor incelemesi tetiklenir. Guvenlik ve tedarikci riskleri hukuk degerlendirmesine yazilir ama teknik onay varsayilmaz.
+KVKK iceren her lansmanda `/kvkk-uyum:kullanim-triyaji` onerilir. AI, otomatik karar, model egitimi, sentetik icerik veya AI vendor varsa `/ai-governance-legal:use-case-triage` ve gerekirse vendor incelemesi tetiklenir. Guvenlik ve tedarikci riskleri hukuk degerlendirmesine yazilir ama teknik onay varsayilmaz.
 
 ## Matter Workspaces
 

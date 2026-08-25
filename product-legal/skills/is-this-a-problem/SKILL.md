@@ -51,7 +51,7 @@ Ornek:
 ```markdown
 Bakmak gerekir - yeni vendor'a musteri verisi gidiyorsa KVKK, yurt disina aktarim ve guvenlik review kapisi aciliyor.
 
-Sonraki adim: veri akisina bakip `/privacy-legal:use-case-triage` calistiralim.
+Sonraki adim: veri akisina bakip `/kvkk-uyum:kullanim-triyaji` calistiralim.
 ```
 
 ## Ne zaman kullanma

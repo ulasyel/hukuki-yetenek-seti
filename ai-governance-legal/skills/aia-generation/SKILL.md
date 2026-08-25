@@ -323,7 +323,7 @@ One of them has to change — not both flagged and left open.]
 **Conditions (if any):**
 - [ ] [specific action before deployment — owner, deadline]
 
-**Privacy review required?** [Yes — run `/privacy-legal:pia-generation`, if the plugin is installed /
+**Privacy review required?** [Yes — run `/kvkk-uyum:vked-taslagi`, if the plugin is installed /
 No]
 
 **Sign-off:** [name, date]
@@ -380,7 +380,7 @@ Flag every mismatch. One of them has to change before deployment.
 - **To product / engineering:** Conditions list with owners and deadlines. Not
   "add oversight" — "add a human review step before any automated email is sent,
   owner: [product lead], before launch."
-- **To privacy:** If personal data is involved, flag: "Run `/privacy-legal:pia-generation [system name]` in parallel, if the plugin is installed — the AIA doesn't substitute for a PIA."
+- **To privacy:** If personal data is involved, flag: "Run `/kvkk-uyum:vked-taslagi [system name]` in parallel, if the plugin is installed — the AIA doesn't substitute for a PIA."
 - **To vendor-ai-review:** If a new vendor is involved, flag: "If there's no AI addendum reviewed for [vendor], run `/ai-governance-legal:vendor-ai-review` before production."
 - **To reg-gap-analysis:** If new regulatory obligations emerged (EU AI Act (ve Türkiye uyumu) high-risk, new sector rule), that skill tracks the gap.
 

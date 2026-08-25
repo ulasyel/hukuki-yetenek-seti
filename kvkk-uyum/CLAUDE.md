@@ -3,11 +3,11 @@ CONFIGURATION LOCATION
 
 User-specific configuration for this plugin lives at:
 
-  ~/.claude/plugins/config/claude-for-legal/privacy-legal/CLAUDE.md
+  ~/.claude/plugins/config/hukuki-yetenek-seti/kvkk-uyum/CLAUDE.md
 
 Rules:
 1. Skills read configuration from that path, not from this template.
-2. If the user config is missing or still contains [PLACEHOLDER], stop before substantive work and ask the user to run /privacy-legal:cold-start-interview.
+2. If the user config is missing or still contains [PLACEHOLDER], stop before substantive work and ask the user to run /kvkk-uyum:kurulum-mulakati.
 3. Setup and cold-start-interview write to that path.
 4. This file is the shipped template and may be replaced by plugin updates.
 -->

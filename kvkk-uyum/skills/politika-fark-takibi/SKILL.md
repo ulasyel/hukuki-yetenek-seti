@@ -1,5 +1,5 @@
 ---
-name: policy-monitor
+name: politika-fark-takibi
 description: >
   Gizlilik politikası, aydınlatma metinleri, açık rıza metinleri, çerez/CMP,
   İYS/ticari ileti, VERBIS/envanter ve sektör bildirimlerinin fiili uygulamayla
@@ -9,7 +9,7 @@ description: >
 argument-hint: "[yeni faaliyet açıklaması | --sweep]"
 ---
 
-# /policy-monitor
+# /politika-fark-takibi
 
 ## Modlar
 
@@ -19,7 +19,7 @@ argument-hint: "[yeni faaliyet açıklaması | --sweep]"
 
 ## Başlamadan
 
-1. `~/.claude/plugins/config/claude-for-legal/privacy-legal/CLAUDE.md` dosyasını oku.
+1. `~/.claude/plugins/config/hukuki-yetenek-seti/kvkk-uyum/CLAUDE.md` dosyasını oku.
 2. `## Aydınlatma / Politika Taahhütleri`, `## KVKK Çekirdek Kontrolleri`, `## Yurt Dışına Aktarım`, `## Çıktı Kuralları` bölümlerini yükle.
 3. Gerçek gizlilik politikası, aydınlatma, açık rıza, çerez, İYS, VERBIS/envanter ve saklama-imha dokümanlarının yolunu kontrol et.
 4. Profilde belge yolu yoksa doğrudan sorgu yapılabilir; sweep için kurulum eksikliği bulgu olarak yazılır.

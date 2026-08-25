@@ -99,9 +99,9 @@ These three plugins are designed to work together. AI governance is the third le
 - **Product counsel** detects when a launch has an AI component → hands off to
   `/ai-governance-legal:use-case-triage` and `/ai-governance-legal:aia-generation`
 - **Privacy** detects when an AI use case involves personal data → hands off to
-  `/privacy-legal:pia-generation`, if the plugin is installed
+  `/kvkk-uyum:vked-taslagi`, if the plugin is installed
 - **AI governance** detects when an impact assessment raises data protection issues →
-  hands off to `/privacy-legal:pia-generation`, if the plugin is installed
+  hands off to `/kvkk-uyum:vked-taslagi`, if the plugin is installed
 
 The handoff is explicit: each plugin flags when the other is needed and states what
 question to answer there.

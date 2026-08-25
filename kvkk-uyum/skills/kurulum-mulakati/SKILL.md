@@ -1,5 +1,5 @@
 ---
-name: cold-start-interview
+name: kurulum-mulakati
 description: >
   Legal Turkish privacy/KVKK kurulum mülakatını çalıştırır. KVKK rolü,
   veri sorumlusu/veri işleyen pozisyonu, VERBIS, aydınlatma, açık rıza,
@@ -9,9 +9,9 @@ description: >
 argument-hint: "[--redo] [--check-integrations]"
 ---
 
-# /cold-start-interview
+# /kurulum-mulakati
 
-Bu skill `~/.claude/plugins/config/claude-for-legal/privacy-legal/CLAUDE.md` dosyasını Türk KVKK pratiğine göre oluşturur veya günceller.
+Bu skill `~/.claude/plugins/config/hukuki-yetenek-seti/kvkk-uyum/CLAUDE.md` dosyasını Türk KVKK pratiğine göre oluşturur veya günceller.
 
 ## Akış
 
@@ -25,7 +25,7 @@ Bu skill `~/.claude/plugins/config/claude-for-legal/privacy-legal/CLAUDE.md` dos
 
 Şunu söyle:
 
-> `privacy-legal` KVKK işleri içindir: yeni veri işleme faaliyeti triyajı, VKED/PIA, veri işleyen sözleşmesi, ilgili kişi başvurusu, politika drift takibi, yurt dışına aktarım ve veri ihlali ilk değerlendirmesi.
+> `kvkk-uyum` KVKK işleri içindir: yeni veri işleme faaliyeti triyajı, VKED/PIA, veri işleyen sözleşmesi, ilgili kişi başvurusu, politika drift takibi, yurt dışına aktarım ve veri ihlali ilk değerlendirmesi.
 >
 > Kısa kurulum temel rol, veri kategorileri, VERBIS, politika ve eskalasyonları kurar. Tam kurulum DPA playbook, yurt dışı aktarım, ihlal süreci, saklama-imha ve örnek belgelerden house style çıkarır.
 >
@@ -135,9 +135,9 @@ Sonra sor:
 
 ## Yazılacak Yer
 
-`~/.claude/plugins/config/claude-for-legal/privacy-legal/CLAUDE.md`
+`~/.claude/plugins/config/hukuki-yetenek-seti/kvkk-uyum/CLAUDE.md`
 
-Template olarak plugin içindeki `privacy-legal/CLAUDE.md` kullanılır.
+Template olarak plugin içindeki `kvkk-uyum/CLAUDE.md` kullanılır.
 
 ## Bu Skill Ne Yapmaz
 

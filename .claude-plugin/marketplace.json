@@ -29,9 +29,9 @@
       }
     },
     {
-      "name": "privacy-legal",
-      "source": "./privacy-legal",
-      "description": "KVKK pratiğine göre uyarlandı; hukuki dayanak doğrulama turu sürüyor.",
+      "name": "kvkk-uyum",
+      "source": "./kvkk-uyum",
+      "description": "KVKK pratiğine göre uyarlandı; hukuki dayanak katmanı tamamlandı (m.5-13 + Kurul 2019/10 ve 2019/271).",
       "author": {
         "name": "hukuki-yetenek-seti"
       }

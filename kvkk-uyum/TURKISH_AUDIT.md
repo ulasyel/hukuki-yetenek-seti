@@ -1,4 +1,4 @@
-# privacy-legal - Türk Hukuku Uyarlama Denetimi
+# kvkk-uyum - Türk Hukuku Uyarlama Denetimi
 
 Durum: `Tamamlandı - ilk tur KVKK çekirdeği`
 

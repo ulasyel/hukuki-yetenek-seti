@@ -16,7 +16,7 @@ Her çıktı avukat/hukukçu incelemesine tabi taslaktır. Kurul bildirimi, ilgi
 ## İlk Kurulum
 
 ```
-/privacy-legal:cold-start-interview
+/kvkk-uyum:kurulum-mulakati
 ```
 
 Hazır olması yararlı bilgiler:
@@ -27,21 +27,21 @@ Hazır olması yararlı bilgiler:
 - Bir örnek VKED/PIA veya iç privacy review,
 - Yurt dışına aktarım ve saklama/imha politikası.
 
-Profil `~/.claude/plugins/config/claude-for-legal/privacy-legal/CLAUDE.md` yoluna yazılır ve plugin güncellemelerinden etkilenmez.
+Profil `~/.claude/plugins/config/hukuki-yetenek-seti/kvkk-uyum/CLAUDE.md` yoluna yazılır ve plugin güncellemelerinden etkilenmez.
 
 ## Komutlar
 
 | Komut | İşlev |
 |---|---|
-| `/privacy-legal:cold-start-interview` | KVKK pratik profilini kurar |
-| `/privacy-legal:use-case-triage [faaliyet]` | Yeni veri işleme faaliyeti için ilerleyebilir / VKED gerekli / dur seçeneklerini verir |
-| `/privacy-legal:pia-generation [faaliyet]` | VKED / privacy impact assessment taslağı üretir |
-| `/privacy-legal:dpa-review [dosya]` | Veri işleyen, veri sorumluları arası aktarım veya yurt dışı aktarım sözleşmesini inceler |
-| `/privacy-legal:dsar-response` | İlgili kişi başvurusu için doğrulama, sistem taraması ve yanıt taslağı üretir |
-| `/privacy-legal:reg-gap-analysis [mevzuat]` | Yeni KVKK/Kurul/Resmi Gazete düzenlemesine göre gap analizi çıkarır |
-| `/privacy-legal:policy-monitor` | Politika, aydınlatma metni, CMP/çerez ve uygulama çıktıları arasında drift arar |
-| `/privacy-legal:customize` | Profilde tek alan değişikliği yapar |
-| `/privacy-legal:matter-workspace` | Çok müvekkilli kullanımda dosya izolasyonu sağlar |
+| `/kvkk-uyum:kurulum-mulakati` | KVKK pratik profilini kurar |
+| `/kvkk-uyum:kullanim-triyaji [faaliyet]` | Yeni veri işleme faaliyeti için ilerleyebilir / VKED gerekli / dur seçeneklerini verir |
+| `/kvkk-uyum:vked-taslagi [faaliyet]` | VKED / privacy impact assessment taslağı üretir |
+| `/kvkk-uyum:veri-isleyen-sozlesme [dosya]` | Veri işleyen, veri sorumluları arası aktarım veya yurt dışı aktarım sözleşmesini inceler |
+| `/kvkk-uyum:ilgili-kisi-basvurusu` | İlgili kişi başvurusu için doğrulama, sistem taraması ve yanıt taslağı üretir |
+| `/kvkk-uyum:duzenleme-uyum-analizi [mevzuat]` | Yeni KVKK/Kurul/Resmi Gazete düzenlemesine göre gap analizi çıkarır |
+| `/kvkk-uyum:politika-fark-takibi` | Politika, aydınlatma metni, CMP/çerez ve uygulama çıktıları arasında drift arar |
+| `/kvkk-uyum:ozellestir` | Profilde tek alan değişikliği yapar |
+| `/kvkk-uyum:dosya-alani` | Çok müvekkilli kullanımda dosya izolasyonu sağlar |
 
 ## Temel Guardrail'ler
 
@@ -55,7 +55,7 @@ Profil `~/.claude/plugins/config/claude-for-legal/privacy-legal/CLAUDE.md` yolun
 ## Dosya Yapısı
 
 ```
-privacy-legal/
+kvkk-uyum/
 ├── CLAUDE.md
 ├── README.md
 ├── references/

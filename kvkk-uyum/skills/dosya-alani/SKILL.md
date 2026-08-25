@@ -1,5 +1,5 @@
 ---
-name: matter-workspace
+name: dosya-alani
 description: >
   Privacy/KVKK matter workspace'lerini yönetir: yeni dosya açma, listeleme,
   aktif dosya değiştirme, arşivleme veya practice-level çalışmaya dönme.
@@ -7,30 +7,30 @@ description: >
 argument-hint: "<new | list | switch | close | none> [slug]"
 ---
 
-# /matter-workspace
+# /dosya-alani
 
 ## Komutlar
 
-- `/privacy-legal:matter-workspace new <slug>` - yeni KVKK matter klasörü açar.
-- `/privacy-legal:matter-workspace list` - aktif ve arşiv matter'ları listeler.
-- `/privacy-legal:matter-workspace switch <slug>` - aktif matter'ı değiştirir.
-- `/privacy-legal:matter-workspace close <slug>` - matter'ı arşivler; silmez.
-- `/privacy-legal:matter-workspace none` - practice-level bağlama döner.
+- `/kvkk-uyum:dosya-alani new <slug>` - yeni KVKK matter klasörü açar.
+- `/kvkk-uyum:dosya-alani list` - aktif ve arşiv matter'ları listeler.
+- `/kvkk-uyum:dosya-alani switch <slug>` - aktif matter'ı değiştirir.
+- `/kvkk-uyum:dosya-alani close <slug>` - matter'ı arşivler; silmez.
+- `/kvkk-uyum:dosya-alani none` - practice-level bağlama döner.
 
 ## Başlamadan
 
-1. `~/.claude/plugins/config/claude-for-legal/privacy-legal/CLAUDE.md` dosyasını oku.
+1. `~/.claude/plugins/config/hukuki-yetenek-seti/kvkk-uyum/CLAUDE.md` dosyasını oku.
 2. `## Matter Workspaces` bölümünü kontrol et.
 3. `Enabled` kapalıysa kullanıcıya şunu söyle:
 
-   > Matter workspace kapalı. In-house / tek müvekkil kullanımında privacy plugin practice-level bağlamla çalışır. Çok müvekkilli çalışıyorsanız `/privacy-legal:cold-start-interview --redo` ile matter workspace'i açabilirsiniz.
+   > Matter workspace kapalı. In-house / tek müvekkil kullanımında privacy plugin practice-level bağlamla çalışır. Çok müvekkilli çalışıyorsanız `/kvkk-uyum:kurulum-mulakati --redo` ile matter workspace'i açabilirsiniz.
 
 4. Yazmadan önce yapılacak değişikliği göster ve onay al.
 
 ## Saklama Yapısı
 
 ```text
-~/.claude/plugins/config/claude-for-legal/privacy-legal/
+~/.claude/plugins/config/hukuki-yetenek-seti/kvkk-uyum/
 ├── CLAUDE.md
 └── matters/
     ├── <slug>/

@@ -1,5 +1,5 @@
 ---
-name: dpa-review
+name: veri-isleyen-sozlesme
 description: >
   Veri işleme sözleşmesi, veri işleyen sözleşmesi, DPA veya kişisel veri
   aktarımı içeren tedarikçi/müşteri ekini Türk KVKK uygulamasına göre inceler.
@@ -11,13 +11,13 @@ description: >
 argument-hint: "[dosya | Drive link | yapıştırılmış metin]"
 ---
 
-# /dpa-review
+# /veri-isleyen-sozlesme
 
 ## Başlamadan
 
-1. `~/.claude/plugins/config/claude-for-legal/privacy-legal/CLAUDE.md` dosyasını oku.
+1. `~/.claude/plugins/config/hukuki-yetenek-seti/kvkk-uyum/CLAUDE.md` dosyasını oku.
 2. `## Veri İşleyen / DPA Playbook`, `## Yurt Dışına Aktarım`, `## Aydınlatma / Politika Taahhütleri` ve `## Çıktı Kuralları` bölümlerini yükle.
-3. Profil placeholder ağırlıklıysa önce `/privacy-legal:cold-start-interview` öner.
+3. Profil placeholder ağırlıklıysa önce `/kvkk-uyum:kurulum-mulakati` öner.
 4. `references/currency-watch.md` dosyasını güncellik kontrol listesi olarak oku.
 5. `## Matter Workspaces` açıksa aktif matter'ı yükle; kapalıysa practice-level çalış.
 

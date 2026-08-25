@@ -14,7 +14,7 @@ Durum etiketleri:
 |---|---|---|---|
 | `is-hukuku` (eski adı: employment-legal) | ✅ | — | **Tur tamamlandı** (2026-08-25): dayanak katmanı (`references/hukuki-dayanak.md`) + atıf teyidi + Türkçe adlandırma |
 | litigation-legal → `dava-yonetimi` | ✅ | FRE 408 ölü referansı düzeltildi; "HMK m.200 tanıklıktan çekinme" yanlış atfı **m.247 vd.** olarak düzeltildi; matter-briefing'te İngilizce kalan satır Türkçeleştirildi | **Tur tamamlandı** (2026-08-25): dayanak katmanı + 20+ madde teyidi + adlandırma |
-| privacy-legal | ✅ | — | Doğrulama turu + adlandırma |
+| privacy-legal → `kvkk-uyum` | ✅ | — | **Tur tamamlandı** (2026-08-25): dayanak katmanı (m.5–13 + 7499 değişikliği + Kurul 2019/10, 2019/271) + adlandırma; "72 saat" nüansı dayanakta netleştirildi |
 | commercial-legal | ✅ | — | Doğrulama turu + adlandırma |
 | corporate-legal | ✅ | — | Doğrulama turu + adlandırma |
 | product-legal | ✅ | — | Doğrulama turu + adlandırma |
@@ -38,7 +38,7 @@ Durum etiketleri:
 
 ## İşlem Sırası
 
-~~employment~~ ✓ (2026-08-25) → ~~litigation~~ ✓ (2026-08-25) → privacy/KVKK → commercial → corporate → product → regulatory → IP (yeniden yazım dahil) → ai-governance
+~~employment~~ ✓ (2026-08-25) → ~~litigation~~ ✓ (2026-08-25) → ~~privacy/KVKK~~ ✓ (2026-08-25) → commercial → corporate → product → regulatory → IP (yeniden yazım dahil) → ai-governance
 
 Her plugin turunda: denetim (residual/uydurma/ölü referans) → Yargı PRO dayanak araştırması (`hukuki-dayanak.md`) → atıf teyidi (teyitsiz silinir) → Türkçe adlandırma → marketplace senkronu → commit.
 

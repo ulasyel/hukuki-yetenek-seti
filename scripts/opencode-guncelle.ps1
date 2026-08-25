@@ -12,9 +12,9 @@ $repoDir    = Join-Path $skillsRoot "hukuki-yetenek-seti"
 $plugins = @(
     "is-hukuku",            # eski ad: employment-legal
     "dava-yonetimi",        # eski ad: litigation-legal
+    "kvkk-uyum",            # eski ad: privacy-legal
     "commercial-legal",
     "corporate-legal",
-    "privacy-legal",
     "product-legal",
     "regulatory-legal",
     "ip-legal",

@@ -1,5 +1,5 @@
 ---
-name: dsar-response
+name: ilgili-kisi-basvurusu
 description: >
   KVKK kapsamında ilgili kişi başvurusunu sınıflandırır ve yanıt taslağı üretir.
   Erişim, silme/yok etme/anonim hale getirme, düzeltme, itiraz, aktarım bilgisi,
@@ -9,13 +9,13 @@ description: >
 argument-hint: "[başvuru metni veya açıklaması]"
 ---
 
-# /dsar-response
+# /ilgili-kisi-basvurusu
 
 ## Başlamadan
 
 İlgili kişi başvurusu kişisel veri içerir. Gereksiz kimlik belgesi, özel nitelikli veri ve üçüncü kişi verisini yapıştırmadan önce maskele. Dosya adında ilgili kişinin adını kullanma.
 
-1. `~/.claude/plugins/config/claude-for-legal/privacy-legal/CLAUDE.md` dosyasını oku.
+1. `~/.claude/plugins/config/hukuki-yetenek-seti/kvkk-uyum/CLAUDE.md` dosyasını oku.
 2. `## İlgili Kişi Başvurusu`, `## KVKK Çekirdek Kontrolleri`, `## Çıktı Kuralları` bölümlerini yükle.
 3. Matter workspace açıksa aktif matter'ı yükle.
 4. Sistem listesi, kimlik doğrulama yöntemi veya sorumlu ekip eksikse bunu ilk bulgu olarak yaz.

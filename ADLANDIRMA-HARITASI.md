@@ -61,6 +61,22 @@ Agent: `agents/docket-watcher.md` → `agents/uyap-takip.md`
 
 Ayrıca: `claude-for-legal` → `hukuki-yetenek-seti`; ip-legal `infringement-triage` ve QUICKSTART içindeki çapraz komutlar yeni adlara bağlandı.
 
+### privacy-legal → `kvkk-uyum` (2026-08-25)
+
+| Eski skill | Yeni skill |
+|---|---|
+| cold-start-interview | kurulum-mulakati |
+| customize | ozellestir |
+| dpa-review | veri-isleyen-sozlesme |
+| dsar-response | ilgili-kisi-basvurusu |
+| matter-workspace | dosya-alani |
+| pia-generation | vked-taslagi |
+| policy-monitor | politika-fark-takibi |
+| reg-gap-analysis | duzenleme-uyum-analizi |
+| use-case-triage | kullanim-triyaji |
+
+Ayrıca: product-legal ve ai-governance-legal içindeki `/privacy-legal:*` çapraz komutları yeni adlara bağlandı.
+
 ## Bekleyen Plugin'ler
 
 commercial-legal, corporate-legal, litigation-legal, privacy-legal, product-legal, regulatory-legal, ip-legal, ai-governance-legal — ilgili turlarda bu tabloya eklenecek.

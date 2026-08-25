@@ -1,5 +1,5 @@
 ---
-name: use-case-triage
+name: kullanim-triyaji
 description: >
   Yeni veri işleme faaliyeti, ürün özelliği, tedarikçi, AI/model eğitimi,
   çalışan izleme, pazarlama veya aktarım akışını KVKK açısından hızlıca
@@ -8,7 +8,7 @@ description: >
 argument-hint: "[veri işleme faaliyeti veya özellik açıklaması]"
 ---
 
-# /use-case-triage
+# /kullanim-triyaji
 
 ## Amaç
 
@@ -16,8 +16,8 @@ Yeni bir faaliyetin KVKK bakımından hangi kapıdan geçmesi gerektiğini belir
 
 ## Başlamadan
 
-1. `~/.claude/plugins/config/claude-for-legal/privacy-legal/CLAUDE.md` dosyasını oku.
-2. Config eksikse kullanıcıyı `/privacy-legal:cold-start-interview` komutuna yönlendir.
+1. `~/.claude/plugins/config/hukuki-yetenek-seti/kvkk-uyum/CLAUDE.md` dosyasını oku.
+2. Config eksikse kullanıcıyı `/kvkk-uyum:kurulum-mulakati` komutuna yönlendir.
 3. `references/currency-watch.md` dosyasını kontrol listesi olarak oku.
 4. Matter workspace açıksa aktif matter'ı yükle.
 

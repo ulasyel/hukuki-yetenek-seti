@@ -1,5 +1,5 @@
 ---
-name: pia-generation
+name: vked-taslagi
 description: >
   Yeni veri işleme faaliyeti için Türk KVKK pratiğine uygun VKED/PIA taslağı
   üretir. Amaç, veri kategorisi, rol, hukuki sebep, aydınlatma, açık rıza,
@@ -8,7 +8,7 @@ description: >
 argument-hint: "[faaliyet veya ürün özelliği]"
 ---
 
-# /pia-generation
+# /vked-taslagi
 
 ## Amaç
 

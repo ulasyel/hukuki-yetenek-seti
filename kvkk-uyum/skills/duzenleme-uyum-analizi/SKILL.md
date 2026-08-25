@@ -1,5 +1,5 @@
 ---
-name: reg-gap-analysis
+name: duzenleme-uyum-analizi
 description: >
   Yeni veya değişen KVKK, Kurul kararı, Resmi Gazete düzenlemesi, rehber,
   ilke kararı, sektör düzenlemesi veya mahkeme/regülatör gelişmesini mevcut
@@ -9,7 +9,7 @@ description: >
 argument-hint: "[düzenleme adı, karar linki veya metin]"
 ---
 
-# /reg-gap-analysis
+# /duzenleme-uyum-analizi
 
 ## Amaç
 
@@ -17,7 +17,7 @@ Bu skill, yeni bir Türkiye veri koruma gelişmesini mevcut uygulama ile karşı
 
 ## Başlamadan
 
-1. `~/.claude/plugins/config/claude-for-legal/privacy-legal/CLAUDE.md` dosyasını oku.
+1. `~/.claude/plugins/config/hukuki-yetenek-seti/kvkk-uyum/CLAUDE.md` dosyasını oku.
 2. Şu bölümleri yükle: `## KVKK Çekirdek Kontrolleri`, `## Yurt Dışına Aktarım`, `## Aydınlatma / Politika Taahhütleri`, `## İlgili Kişi Başvurusu`, `## Veri İhlali`, `## Çıktı Kuralları`.
 3. `references/currency-watch.md` içindeki güncellik başlıklarını kontrol et.
 4. Düzenleme kaynağı kullanıcı tarafından verilmemişse birincil kaynağı iste veya resmi kaynağa göre doğrulanması gerektiğini belirt.

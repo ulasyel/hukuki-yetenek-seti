@@ -1,5 +1,5 @@
 ---
-name: customize
+name: ozellestir
 description: >
   Privacy/KVKK practice profilini kısmi olarak günceller. Risk iştahı,
   eskalasyon kişileri, veri sorumlusu/veri işleyen playbook'u, yurt dışına
@@ -9,7 +9,7 @@ description: >
 argument-hint: "[bölüm adı veya değiştirmek istediğiniz şey]"
 ---
 
-# /customize
+# /ozellestir
 
 ## Ne Zaman Kullanılır
 
@@ -17,10 +17,10 @@ Kullanıcı profilin bir bölümünü değiştirmek ister: örneğin "alt işley
 
 ## Akış
 
-1. `~/.claude/plugins/config/claude-for-legal/privacy-legal/CLAUDE.md` dosyasını oku.
+1. `~/.claude/plugins/config/hukuki-yetenek-seti/kvkk-uyum/CLAUDE.md` dosyasını oku.
 2. Profil yoksa veya placeholder ağırlıklıysa şunu söyle:
 
-   > Önce `/privacy-legal:cold-start-interview` çalışmalı. `customize`, kurulmuş profilde tekil değişiklik yapmak içindir.
+   > Önce `/kvkk-uyum:kurulum-mulakati` çalışmalı. `customize`, kurulmuş profilde tekil değişiklik yapmak içindir.
 
 3. Değiştirilebilir haritayı göster:
 
