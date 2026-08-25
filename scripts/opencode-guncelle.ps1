@@ -1,8 +1,8 @@
-# hukuki-yetenek-seti — opencode kurulum / guncelleme
+﻿# hukuki-yetenek-seti - opencode kurulum / guncelleme
 # Kullanim: powershell -ExecutionPolicy Bypass -File scripts\opencode-guncelle.ps1
 # Yapar: (1) repoyu %USERPROFILE%\.opencode\skills altina klonlar veya ceker,
 #        (2) her plugin icin skills kokune junction olusturur/duzeltir.
-# Not: Ayni adda gercek (junction olmayan) klasor varsa dokunmaz — manuel yedekleyin.
+# Not: Ayni adda gercek (junction olmayan) klasor varsa dokunmaz - manuel yedekleyin.
 $ErrorActionPreference = "Stop"
 
 $repoUrl   = "https://github.com/ulasyel/hukuki-yetenek-seti.git"
@@ -47,7 +47,7 @@ foreach ($p in $plugins) {
                 Write-Output "hazir:      $p"
             }
         } else {
-            Write-Warning "$p konumunda gercek klasor var — dokunulmadi; once yedekleyin (_eski-kopyalar)"
+            Write-Warning "$p konumunda gercek klasor var - dokunulmadi; once yedekleyin (_eski-kopyalar)"
         }
     } else {
         New-Item -ItemType Junction -Path $link -Target $target | Out-Null
