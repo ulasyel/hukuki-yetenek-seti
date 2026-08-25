@@ -135,22 +135,27 @@ Agent: `dataroom-watcher.md` → `veri-oda-gozlemci.md`
 Agent: `launch-watcher.md` → `lansman-gozlemci.md`. Ayrıca managed-agent-cookbooks/launch-radar referansları güncellendi.
 
 
-## Bekleyen Plugin'ler
-
-### regulatory-legal -> mevzuat-takip (2026-08-25)
+### ip-legal -> fikri-mulkiyet (2026-08-25)
 
 | Eski skill | Yeni skill |
 |---|---|
+| cease-desist | ip-ihtarnamesi |
+| clearance | benzerlik-taramasi |
 | cold-start-interview | kurulum-mulakati |
-| comments | gorus-sureleri |
 | customize | ozellestir |
-| gap-surfacer | gap-cekirdek |
-| gaps | acik-gapler |
+| fto-triage | engel-taramasi |
+| infringement-triage | tecavuz-triyaji |
+| invention-intake | bulus-girdisi |
+| ip-clause-review | fikri-maddeler-inceleme |
 | matter-workspace | dosya-alani |
-| policy-diff | politika-karsilastirma |
-| policy-redraft | politika-yeniden-yazim |
-| reg-feed-watcher | duzenleme-radari |
+| oss-review | acik-kaynak-inceleme |
+| portfolio | portfoy-takip |
+| takedown | uyar-kaldirir |
 
-Agent: reg-change-monitor.md -> duzenleme-izleyici.md. Ayrica ai-governance capraz referansi ve managed-agent-cookbooks/reg-monitor guncellendi.
+Agent: ip-renewal-watcher.md -> ip-yenileme-gozlemci.md
 
-ip-legal ve ai-governance-legal - ilgili turlarda eklenecek.
+Bu turda: clearance SKILL.md ve takedown SKILL.md tamamen yeniden yazildi (uydurma emsal *Sleekcraft* kalintisi ve DMCA 512 iskeleti silindi; SMK m.6/9/29 + FSEK Ek Madde 4/3 + 5651 m.4 dogrulanmis metinlerle). fto-triage, infringement-triage, ip-clause-review, oss-review, cease-desist ve ip-renewal-watcher icindeki USC/Westlaw/CourtListener/TESS kalintilari temizlendi.
+
+## Bekleyen Plugin'ler
+
+ai-governance-legal - ilgili turda eklenecek.

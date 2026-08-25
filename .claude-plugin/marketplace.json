@@ -61,9 +61,9 @@
       }
     },
     {
-      "name": "ip-legal",
-      "source": "./ip-legal",
-      "description": "Türk fikri mülkiyet pratiğine (FSEK/SMK/PVK/5651) göre uyarlanıyor; clearance/takedown skill'leri yeniden yazım aşamasında.",
+      "name": "fikri-mulkiyet",
+      "source": "./fikri-mulkiyet",
+      "description": "Türk fikri mülkiyet pratiğine (SMK/FSEK/5651) göre uyarlandı; clearance ve takedown skill'leri doğrulanmış dayanaklarla yeniden yazıldı.",
       "author": {
         "name": "hukuki-yetenek-seti"
       }

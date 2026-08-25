@@ -1,4 +1,4 @@
-# Adding a Connector
+﻿# Adding a Connector
 
 The plugins are at their best when connected to authoritative sources. If you build or operate a legal data source, research tool, CLM, DMS, eDiscovery platform, or practice management system, we want your MCP connector in the suite.
 
@@ -25,11 +25,11 @@ Connectors shipped in the default `.mcp.json` of each plugin:
 |---|---|
 | **Slack** | all 12 |
 | **Google Drive** (`gdrive`) | all 12 |
-| **CourtListener** | legal-clinic, ip-legal, litigation-legal, law-student |
-| **Descrybe** | legal-clinic, ip-legal, law-student |
+| **CourtListener** | legal-clinic, fikri-mulkiyet, litigation-legal, law-student |
+| **Descrybe** | legal-clinic, fikri-mulkiyet, law-student |
 | **Definely** | commercial-legal, sirketler-hukuku |
 | **iManage** | commercial-legal, sirketler-hukuku |
-| **Solve Intelligence** | sirketler-hukuku, ip-legal |
+| **Solve Intelligence** | sirketler-hukuku, fikri-mulkiyet |
 | **TopCounsel** | commercial-legal, sirketler-hukuku, litigation-legal |
 | **Box** | sirketler-hukuku |
 | **Ironclad** | commercial-legal |
@@ -49,10 +49,10 @@ See the `.mcp.json` in each plugin directory for the authoritative list.
 
 These would make specific plugins significantly more useful. If you build or operate one, see "How to submit" above.
 
-- **IP management systems** (Anaqua, Clarivate IPfolio, AppColl, Patrix, Alt Legal, FoundationIP) — full docket sync for `ip-legal` portfolio tracking
+- **IP management systems** (Anaqua, Clarivate IPfolio, AppColl, Patrix, Alt Legal, FoundationIP) — full docket sync for `fikri-mulkiyet` portfolio tracking
 - **USPTO by customer number** — full portfolio status and deadlines, not just per-application lookup
-- **USPTO TSDR / Trademark Status** — trademark status and deadlines for `ip-legal` brand management
-- **Jira / Linear / Asana for OSS requests** — `ip-legal` OSS clearance can monitor and respond to incoming tickets
+- **USPTO TSDR / Trademark Status** — trademark status and deadlines for `fikri-mulkiyet` brand management
+- **Jira / Linear / Asana for OSS requests** — `fikri-mulkiyet` OSS clearance can monitor and respond to incoming tickets
 - **Thomson Reuters** (CoCounsel, Practical Law, Westlaw) — research and drafting for every plugin
 - **SS&C Intralinks / Datasite** — VDR access for `sirketler-hukuku` diligence
 - **Relativity / Everlaw beyond read** — eDiscovery workflow for `litigation-legal`

@@ -1,4 +1,4 @@
-# NOTICE — Türev Eser ve Atıf Bildirimi
+﻿# NOTICE — Türev Eser ve Atıf Bildirimi
 
 Bu depo (`hukuki-yetenek-seti`), Apache License 2.0 lisanslı üç kaynaktan türetilmiş bir birleşik çalışmadır.
 
@@ -26,6 +26,6 @@ Bu depo (`hukuki-yetenek-seti`), Apache License 2.0 lisanslı üç kaynaktan tü
   - Plugin ve skill adlarının Türkçeleştirilmesi (`ADLANDIRMA-HARITASI.md` ile izlenir)
   - Her plugin için Yargı PRO MCP üzerinden birincil kaynak teyidi ve `references/hukuki-dayanak.md` hukuki dayanak katmanının eklenmesi
   - Doğrulanamayan spesifikasi mevzuat/karar atıflarının skill metinlerinden çıkarılması
-  - `ip-legal` içindeki DMCA/Lanham kalıntılarının FSEK/SMK/PVK/5651 ekseninde tamamen yeniden yazılması
+  - `fikri-mulkiyet` içindeki DMCA/Lanham kalıntılarının FSEK/SMK/PVK/5651 ekseninde tamamen yeniden yazılması
 
 Lisans: Apache License 2.0 — bkz. `LICENSE`. Bu depo hiçbir kurumun resmi ürünü değildir; tüm çıktılar avukat incelemesine tabi taslaktır.
