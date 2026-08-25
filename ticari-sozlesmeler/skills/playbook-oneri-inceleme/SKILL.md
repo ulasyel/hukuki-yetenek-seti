@@ -7,7 +7,7 @@ description: >
 argument-hint: "[no arguments needed - works from the pending proposals file]"
 ---
 
-# /inceleme-proposals
+# /playbook-oneri-inceleme
 
 Playbook-monitor ajanının oluşturduğu bekleyen playbook güncelleme önerilerini tek tek hukukçu onayına sunar. Onay olmadan `CLAUDE.md` dosyasını değiştirmez.
 

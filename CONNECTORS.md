@@ -1,66 +1,48 @@
-# Adding a Connector
+# Connector Ekleme
 
-The plugins are at their best when connected to authoritative sources. If you build or operate a legal data source, research tool, CLM, DMS, eDiscovery platform, or practice management system, we want your MCP connector in the suite.
+Plugin'ler yetkili kaynaklara bağlandığında en iyi şekilde çalışır. Hukuki veri kaynağı, araştırma aracı, CLM, DMS, e-keşif platformu veya uygulama yönetim sistemi geliştiriyorsanız/işletiyorsanız, MCP connector'unuzu bu sete eklemenizi isteriz.
 
-## What makes a good legal MCP connector
+## İyi bir hukuk MCP connector'u nasıl olmalı
 
-- **Remote MCP server over HTTPS** with OAuth or API-key auth (streamable HTTP or SSE transport)
-- **Read-heavy tools** — search, fetch, list. Write tools (create, send, file) need an explicit confirmation prompt on the client side; say so in your tool descriptions.
-- **Provenance in results** — return the source, date retrieved, and a citation-ready identifier. The plugins tag every cite by source; your connector should make that possible.
-- **No instruction-like content in results** — the plugins treat retrieved content as data, not commands. If your tool results include metadata or system notes, mark them clearly so they don't look like embedded directives.
-- **Rate limits and errors that degrade gracefully** — the plugins have a fallback for when a connector isn't responding; a clean error is better than a timeout.
+- **HTTPS üzerinden uzak MCP sunucusu** — OAuth veya API-key kimlik doğrulaması (streamable HTTP veya SSE transport)
+- **Okuma ağırlıklı araçlar** — arama, getirme, listeleme. Yazma araçları (oluşturma, gönderme, dosyalama) istemci tarafında açık onay adımı gerektirir; bunu araç açıklamalarında belirtin.
+- **Sonuçlarda provenance** — kaynak, çekilme tarihi ve atıfa hazır tanımlayıcı döndürün. Plugin'ler her atıfı kaynağıyla etiketler; connector'ınız bunu mümkün kılmalıdır.
+- **Sonuçlarda talimat benzeri içerik yok** — plugin'ler alınan içeriği veri olarak görür, komut olarak değil. Araç sonuçlarınız meta veri/sistem notu içeriyorsa, gömülü yönerge gibi görünmeyecek şekilde işaretleyin.
+- **Zarif bozulma** — plugin'ler connector yanıt vermediğinde manuel yola düşer; temiz bir hata mesajı timeout'tan iyidir.
 
-## How to submit
+## Nasıl katkı verilir
 
-1. Publish your MCP server and document its tools, auth flow, and data coverage.
-2. Open a PR adding your server to the relevant plugin's `.mcp.json` with the URL, auth method, and a one-line description of what it gives Claude.
-3. Include a note on which practice areas / plugins it's most useful for.
-4. We'll test against the plugin workflows and merge. Connectors that pass the retrieval-quality and injection-resistance checks go in the default `.mcp.json`; others get documented in the plugin README for users to add themselves.
+1. MCP sunucunuzu yayınlayın; araçları, kimlik akışını ve veri kapsamını belgeleyin.
+2. İlgili plugin'in `.mcp.json` dosyasına eklemek için PR açın: URL, kimlik yöntemi ve Claude'a ne kazandırdığına dair tek satır açıklama ile.
+3. Hangi pratik alanları/plugin'leri için en kullanışlı olduğunu not edin.
+4. Plugin iş akışlarıyla test ederiz; erişim kalitesi ve injection direnci kontrollerini geçenler varsayılan `.mcp.json`'a girer; diğerleri kullanıcıların kendi ekleyebilmesi için README'de belgelenir.
 
-## Current connectors
+## Mevcut connector'lar
 
-Connectors shipped in the default `.mcp.json` of each plugin:
+Her plugin'in `.mcp.json` dosyasında bulunanlar:
 
-| Connector | Plugins |
+| Connector | Plugin'ler |
 |---|---|
-| **Slack** | all 12 |
-| **Google Drive** (`gdrive`) | all 12 |
-| **CourtListener** | legal-clinic, fikri-mulkiyet, litigation-legal, law-student |
-| **Descrybe** | legal-clinic, fikri-mulkiyet, law-student |
-| **Definely** | commercial-legal, sirketler-hukuku |
-| **iManage** | commercial-legal, sirketler-hukuku |
-| **Solve Intelligence** | sirketler-hukuku, fikri-mulkiyet |
-| **TopCounsel** | commercial-legal, sirketler-hukuku, litigation-legal |
-| **Box** | sirketler-hukuku |
-| **Ironclad** | commercial-legal |
-| **DocuSign / DocuSign CLM** | commercial-legal |
-| **Everlaw** | litigation-legal |
-| **Trellis** | litigation-legal |
-| **Aurora** | litigation-legal |
-| **Courtroom5** | legal-clinic |
-| **Lawve AI** | legal-builder-hub |
-| **Linear** | urun-hukuku |
-| **Atlassian (Jira)** | urun-hukuku |
-| **Asana** | urun-hukuku |
+| **Yargı PRO** (`https://yargimcp.surucu.dev/mcp`) | Yargıtay/Danıştay/AYM/AİHM kararları + mevzuat.gov.tr + kurum kararları (KVKK, Rekabet, SPK, BDDK, BTK, EPDK, GİB vb.) — atıf doğrulamasının omurgası |
+| **Slack** | operasyonel (opsiyonel) |
+| **Google Drive** | operasyonel (opsiyonel) |
 
-See the `.mcp.json` in each plugin directory for the authoritative list.
+Ayrıca geliştiricinin açık kaynak projeleri: [saidsurucu/yargi-mcp](https://github.com/saidsurucu/yargi-mcp) ve [saidsurucu/mevzuat-mcp](https://github.com/saidsurucu/mevzuat-mcp).
 
-## Wanted connectors
+Yetkili liste için her plugin dizinindeki `.mcp.json` dosyasına bakın.
 
-These would make specific plugins significantly more useful. If you build or operate one, see "How to submit" above.
+## Aranan connector'lar
 
-- **IP management systems** (Anaqua, Clarivate IPfolio, AppColl, Patrix, Alt Legal, FoundationIP) — full docket sync for `fikri-mulkiyet` portfolio tracking
-- **USPTO by customer number** — full portfolio status and deadlines, not just per-application lookup
-- **USPTO TSDR / Trademark Status** — trademark status and deadlines for `fikri-mulkiyet` brand management
-- **Jira / Linear / Asana for OSS requests** — `fikri-mulkiyet` OSS clearance can monitor and respond to incoming tickets
-- **Thomson Reuters** (CoCounsel, Practical Law, Westlaw) — research and drafting for every plugin
-- **SS&C Intralinks / Datasite** — VDR access for `sirketler-hukuku` diligence
-- **Relativity / Everlaw beyond read** — eDiscovery workflow for `litigation-legal`
-- **State bar CLE trackers** — `law-student` bar prep
-- **Court e-filing systems** (PACER write, state e-filing) — with a hard irreversibility gate, obviously
-- **Global AI Regulation Tracker** (techieray.com/GlobalAIRegulationTracker) — jurisdiction-tagged AI regulation tracking with structured API. Curated, verified, multi-jurisdiction. Would be a primary-source-adjacent feed for `yz-yonetisim` and `mevzuat-takip`.
-- **Regulatory primary sources** — a connector to official registers (eCFR, Federal Register, EUR-Lex, legislation.gov.uk, Federal Register of Legislation AU, Singapore Statutes Online) that bypasses the agent-blockers many legislative sites use. A curated regulatory knowledge base would be a high-value addition.
+Şu connector'lar ilgili plugin'leri belirgin biçimde güçlendirir:
 
-## Questions
+- **TÜRKPATENT sicil erişimi** — marka/patent tescil durumu ve yenileme tarihleri için `fikri-mulkiyet` portföy takibi
+- **UYAP entegrasyonu** — dosya evrak akışı ve kesin süre takibi için `dava-yonetimi`
+- **MKK / KAP veri erişimi** — halka açık şirket bildirimleri için `sirketler-hukuku`
+- **VDR erişimi** (Intralinks / Datasite benzeri) — `sirketler-hukuku` durum tespiti
+- **Jira / Linear / Asana OSS talep takibi** — `fikri-mulkiyet` açık kaynak incelemesi
+- **Resmi mevzuat kaynakları** — RG fihristi ve kurum duyuru beslemelerinin yapılandırılmış API'si — `mevzuat-takip` için birincil kaynak katmanı
+- **AB mevzuatı erişimi** (EUR-Lex) — AB Yapay Zekâ Yasası gibi karşılaştırmalı rejimler için `yz-yonetisim`
 
-Open an issue on this repo. For partnership or integration questions, see the contact on each plugin's README.
+## Sorular
+
+Bu depoda issue açın.

@@ -46,10 +46,10 @@ Examples of this rule in practice:
   calendar correctly only because the user thought to ask about weekdays. The
   register schema and the Mode 2 output should carry the business-day roll-back
   themselves.
-- An FLSA back-pay computation should not get the regular-rate formula right
-  only because the model happens to remember §207(e). The skill should have a
-  §207(e) checklist that forces the inclusions, the 0.5× vs. 1.5× posture, the
-  liquidated-damages doubling, and the SOL lookback into every answer.
+- A cezai şart (TBK m.179–182) review should not flag the fahişlik risk correctly
+  only because the model happens to remember m.182. The skill should have a
+  checklist that forces the proportionality posture, the asıl borç validity
+  link, and the hâkimin kendiliğinden indirme rule into every answer.
 
 ## A few concrete things that follow
 

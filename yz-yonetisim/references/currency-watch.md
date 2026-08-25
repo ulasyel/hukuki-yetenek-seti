@@ -27,9 +27,9 @@ AI law moves faster than model training data. Before relying on an effective dat
 
 ## Federal (US)
 
-- EEOC AI guidance (2023) still in effect. Watch for a notice-and-comment rule.
+- Turkiye: KVKK Kurulu YZ odakli calismalari ve sektor duzenleyici duyurulari izlenir.
 - FTC §5 theory expanding: *FTC v. Humor Rainbow/OkCupid* (March 2026) — undisclosed training-data sharing as a §5 violation.
-- Executive orders change with administrations. Verify current policy.
+- AB Uygulama takvimi degisebilir; EUR-Lex uzerinden teyit edin.
 
 ## How to use this file
 

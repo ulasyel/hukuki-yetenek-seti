@@ -49,7 +49,7 @@ Profil şu yola yazılır:
 | `/ticari-sozlesmeler:yenileme-takip` | Yenileme ve fesih ihbar pencerelerini gösterir |
 | `/ticari-sozlesmeler:eskalasyon-yonlendirme` | Risk veya playbook sapmasını doğru onay makamına yönlendirir |
 | `/ticari-sozlesmeler:tadil-gecmisi [file(s)]` | Ana sözleşme, ek protokol, zeyilname ve tadil geçmişini izler |
-| `/ticari-sozlesmeler:inceleme-proposals` | Playbook güncelleme önerilerini hukukçu onayına sunar |
+| `/ticari-sozlesmeler:playbook-oneri-inceleme` | Playbook güncelleme önerilerini hukukçu onayına sunar |
 | `/ticari-sozlesmeler:dosya-alani` | Çok müvekkilli çalışma için dosya bağlamlarını yönetir |
 
 ## Skill'ler

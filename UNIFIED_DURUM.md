@@ -31,9 +31,9 @@ Durum etiketleri:
 | README.md | ✅ yeni kimlikle yazıldı; plugin tabloları turlar ilerledikçe güncellenir |
 | INSTALL.md | ✅ opencode öncelikli kurulum yazıldı |
 | NOTICE / LICENSE | ✅ NOTICE üç kaynağı bildirir; LICENSE Apache 2.0 dokunulmadı |
-| CONNECTORS.md | 🔄 ABD ağırlıklı connector listesi; Yargı PRO/UYAP/UETS/KEP çizgisiyle yeniden yazılacak |
-| CONTRIBUTING.md | 🔄 Türk katkı kuralları + atıf disiplini bağlantısı eklenecek |
-| QUICKSTART.md | 🔄 yeni kimliğe göre güncellenecek |
+| CONNECTORS.md | ✅ Yargı PRO merkezli olarak yeniden yazıldı; aranan connector'lar Türkiye pratik ekseninde |
+| CONTRIBUTING.md | ✅ Örnekler Türk hukukuna çevrildi; atıf disiplinine bağlandı |
+| QUICKSTART.md | ✅ komut örnekleri yeni Türkçe adlara bağlandı |
 | CODE_OF_CONDUCT.md | ✅ olduğu gibi kaldı |
 
 ## İşlem Sırası

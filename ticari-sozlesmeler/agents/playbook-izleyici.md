@@ -84,7 +84,7 @@ Format:
 ```markdown
 # Playbook Update Proposals
 Generated: [ISO datetime]
-To review: `/ticari-sozlesmeler:inceleme-proposals`
+To review: `/ticari-sozlesmeler:playbook-oneri-inceleme`
 
 ## Proposal 1
 ...
