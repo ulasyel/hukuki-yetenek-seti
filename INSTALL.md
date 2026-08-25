@@ -4,6 +4,19 @@ Set iki platformda çalışır: **opencode** (öncelikli) ve Claude Code. Her ik
 
 ## opencode (öncelikli)
 
+**Önerilen yöntem — git klonu + junction:** Repoyu doğrudan skill klasörüne klonlayıp plugin'leri junction ile bağlamak, güncellemeleri tek komuta indirger:
+
+```powershell
+# Bu repodan:
+powershell -ExecutionPolicy Bypass -File scripts\opencode-guncelle.ps1
+```
+
+Betik; `%USERPROFILE%\.opencode\skills\hukuki-yetenek-seti` altına klon açar (yoksa), `git pull --ff-only` ile günceller ve 9 plugin için `~/.opencode/skills/<plugin>` junction'larını kurar/düzeltir. Aynı adda **gerçek klasör** varsa güvenlik gereği dokunmaz — önce onu yedekleyin.
+
+Bundan sonra seti güncellemek = betiği tekrar çalıştırmak. Repo güncellendiği anda tüm skill'ler güncellenmiş olur.
+
+### Elle kurulum (alternatif)
+
 opencode, `~/.opencode/skills/` altındaki klasörleri tarar. Plugin klasörünü olduğu gibi kopyalamak yeterlidir:
 
 ```
