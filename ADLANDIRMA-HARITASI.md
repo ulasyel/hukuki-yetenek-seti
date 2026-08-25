@@ -33,6 +33,34 @@ Agent: `agents/leave-tracker.md` → `agents/izin-takip.md`
 
 Ayrıca tüm plugin içinde: `claude-for-legal` → `hukuki-yetenek-seti` (yapılandırma yolları).
 
+### litigation-legal → `dava-yonetimi` (2026-08-25)
+
+| Eski skill | Yeni skill |
+|---|---|
+| brief-section-drafter | dilekce-bolumu-taslagi |
+| chronology | kronoloji |
+| claim-chart | dava-unsur-tablosu |
+| cold-start-interview | kurulum-mulakati |
+| customize | ozellestir |
+| demand-draft | ihtarname-hazirla |
+| demand-intake | ihtarname-girdisi |
+| demand-received | gelen-ihtarname-triyaji |
+| deposition-prep | isticvap-tanik-hazirlik |
+| legal-hold | delil-muhafaza |
+| matter-briefing | dosya-brifingi |
+| matter-close | dosya-kapatma |
+| matter-intake | dosya-acilis |
+| matter-update | dosya-guncelleme |
+| matter-workspace | dosya-alani |
+| oc-status | dis-buro-durum |
+| portfolio-status | portfoy-durum |
+| privilege-log-review | gizlilik-kutugu-inceleme |
+| subpoena-triage | muzekkere-triyaji |
+
+Agent: `agents/docket-watcher.md` → `agents/uyap-takip.md`
+
+Ayrıca: `claude-for-legal` → `hukuki-yetenek-seti`; ip-legal `infringement-triage` ve QUICKSTART içindeki çapraz komutlar yeni adlara bağlandı.
+
 ## Bekleyen Plugin'ler
 
 commercial-legal, corporate-legal, litigation-legal, privacy-legal, product-legal, regulatory-legal, ip-legal, ai-governance-legal — ilgili turlarda bu tabloya eklenecek.

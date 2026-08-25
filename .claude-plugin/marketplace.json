@@ -21,9 +21,9 @@
       }
     },
     {
-      "name": "litigation-legal",
-      "source": "./litigation-legal",
-      "description": "Türkiye yargılama ve dava pratiğine (HMK/İİK/UYAP) göre uyarlandı; hukuki dayanak doğrulama turu sürüyor.",
+      "name": "dava-yonetimi",
+      "source": "./dava-yonetimi",
+      "description": "Türkiye yargılama pratiğine (HMK/CMK/UYAP) göre uyarlandı; hukuki dayanak katmanı tamamlandı.",
       "author": {
         "name": "hukuki-yetenek-seti"
       }

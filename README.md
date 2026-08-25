@@ -21,6 +21,7 @@ Bu deponun ayırt edici ilkesi üçlüdür:
 | `litigation-legal` | Dava yönetimi (HMK/İİK/UYAP) | İlk tur uyarlama ✓ · doğrulama turu sürüyor |
 | `privacy-legal` | KVKK / veri koruma | İlk tur uyarlama ✓ · doğrulama turu sürüyor |
 | `is-hukuku` | İş hukuku (İK/SGK/arabuluculuk) | İlk tur ✓ · dayanak katmanı ✓ · adlandırma ✓ |
+| `dava-yonetimi` | Dava yönetimi (HMK/CMK/UYAP) | İlk tur ✓ · dayanak katmanı ✓ · adlandırma ✓ |
 | `product-legal` | Ürün/tüketici/reklam/e-ticaret (6502/6563) | İlk tur uyarlama ✓ · doğrulama turu sürüyor |
 | `regulatory-legal` | Regülasyon izleme (Resmî Gazete/kurumlar) | İlk tur uyarlama ✓ · doğrulama turu sürüyor |
 | `ip-legal` | Fikri mülkiyet (FSEK/SMK/PVK/5651) | Yeniden yazım aşamasında |

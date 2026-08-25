@@ -41,7 +41,7 @@ Ticari hukuk için:
 Dava / ihtarname / uyuşmazlık işleri için:
 
 ```text
-/litigation-legal:cold-start-interview
+/dava-yonetimi:kurulum-mulakati
 ```
 
 ## 5. İlk Komutlar
@@ -67,13 +67,13 @@ Yenileme takibi:
 İhtarname ön hazırlık:
 
 ```text
-/litigation-legal:demand-intake
+/dava-yonetimi:ihtarname-girdisi
 ```
 
 İhtarname taslak:
 
 ```text
-/litigation-legal:demand-draft <slug>
+/dava-yonetimi:ihtarname-hazirla <slug>
 ```
 
 ## Not

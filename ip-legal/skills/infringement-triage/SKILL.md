@@ -384,7 +384,7 @@ patent mode uses the same format with "accused product" substituted for
 ### Handoff to the full claim chart
 
 For a detailed element-by-element claim chart suitable for infringement or
-invalidity contentions, run `/litigation-legal:claim-chart`. This triage's
+invalidity contentions, run `/dava-yonetimi:dava-unsur-tablosu`. This triage's
 claim chart is a first pass to identify the strongest and weakest mappings;
 the litigation claim chart builds the full chart with pin cites, claim
 construction flags, dependent claims, and the verification workflow that
