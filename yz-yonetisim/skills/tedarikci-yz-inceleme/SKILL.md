@@ -1,5 +1,5 @@
 ---
-name: vendor-ai-review
+name: tedarikci-yz-inceleme
 description: >
   Tedarikçi sözleşmelerindeki Yapay Zeka (AI) kullanım şartlarını, model eğitimi
   izinlerini ve fikri mülkiyet atıflarını inceler. Veri sorumlusu/işleyen rollerini
@@ -8,7 +8,7 @@ description: >
 argument-hint: "[sözleşme metnini yapıştırın]"
 ---
 
-# /vendor-ai-review (Tedarikçi AI / Copilot Sözleşme İncelemesi)
+# /tedarikci-yz-inceleme (Tedarikçi AI / Copilot Sözleşme İncelemesi)
 
 ## Amaç
 

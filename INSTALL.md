@@ -1,4 +1,4 @@
-﻿# Kurulum
+# Kurulum
 
 Set iki platformda çalışır: **opencode** (öncelikli) ve Claude Code. Her ikisi de aynı markdown tabanlı skill dosyalarını (`SKILL.md`) okur; platforma göre kurulum yolu farklıdır.
 
@@ -27,7 +27,7 @@ hedef:  %USERPROFILE%\.opencode\skills\employment-legal\
 Tüm set için (repo kökünde PowerShell):
 
 ```powershell
-$plugins = "is-hukuku","dava-yonetimi","kvkk-uyum","ticari-sozlesmeler","sirketler-hukuku","urun-hukuku","mevzuat-takip","fikri-mulkiyet","ai-governance-legal"
+$plugins = "is-hukuku","dava-yonetimi","kvkk-uyum","ticari-sozlesmeler","sirketler-hukuku","urun-hukuku","mevzuat-takip","fikri-mulkiyet","yz-yonetisim"
 foreach ($p in $plugins) {
     Copy-Item -Recurse -Force -LiteralPath ".\$p" -Destination "$env:USERPROFILE\.opencode\skills\"
 }

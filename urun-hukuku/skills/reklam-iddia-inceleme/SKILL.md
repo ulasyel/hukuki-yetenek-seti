@@ -84,5 +84,5 @@ Non-lawyer kullanici icin "Yayinlanabilir" ifadesi hukukcu incelemesi sonrasi ku
 ## Handoff
 
 - KVKK/cerez/hedefleme varsa `/kvkk-uyum:kullanim-triyaji`.
-- AI iddiasi varsa `/ai-governance-legal:use-case-triage`.
+- AI iddiasi varsa `/yz-yonetisim:kullanim-triyaji`.
 - Sektor iddiasi varsa ilgili uzman/hukukcu onayi.

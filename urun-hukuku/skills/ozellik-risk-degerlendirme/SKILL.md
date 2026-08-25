@@ -76,6 +76,6 @@ Profildeki risk istahi, sektor ve gecmis kararlar okunmadan genel hukuki risk no
 ## Handoff
 
 - KVKK/veri varsa `/kvkk-uyum:vked-taslagi` veya `use-case-triage`.
-- AI varsa `/ai-governance-legal:aia-generation`.
+- AI varsa `/yz-yonetisim:aia-generation`.
 - Reklam iddiasi varsa `/urun-hukuku:reklam-iddia-inceleme`.
 - Regule sektor varsa ilgili uzman/hukukcu ve guncel resmi kaynak kontrolu.

@@ -1,5 +1,5 @@
 ---
-name: policy-starter
+name: politika-taslagi
 description: >
   Draft a firm AI usage policy from published model policies, adapted to your
   practice profile — a research-and-synthesis tool whose output is a draft for
@@ -10,27 +10,27 @@ description: >
 argument-hint: "[optional — scope hint, e.g. 'firm-wide', 'legal team only', 'update existing']"
 ---
 
-# /policy-starter
+# /politika-taslagi
 
-1. Read `~/.claude/plugins/config/claude-for-legal/ai-governance-legal/CLAUDE.md`. If the practice profile is unpopulated, stop and direct to `/ai-governance-legal:cold-start-interview`.
+1. Read `~/.claude/plugins/config/hukuki-yetenek-seti/yz-yonetisim/CLAUDE.md`. If the practice profile is unpopulated, stop and direct to `/yz-yonetisim:kurulum-mulakati`.
 2. Use the framework below.
 3. Run the scope interview — which sections does the policy need to cover, who's the audience, what's the deployment context. Do not skip to drafting.
-4. Web search for the current published model policies and guidance relevant to the deployment context (ABA, state bars, ILTA, CLOC, NIST, peer-firm / peer-company policies, current state AI laws, EU AI Act (ve Türkiye uyumu), sector regulators as applicable).
+4. Web search for the current published model policies and guidance relevant to the deployment context (ABA, state bars, ILTA, CLOC, NIST, peer-firm / peer-company policies, current state AI laws, AB Yapay Zekâ Yasası, sector regulators as applicable).
 5. Draft the selected sections, sourced from the model policies, with `[review]` flags on every choice point and `[review]` open questions at the bottom of each section.
 6. Output with the draft header ("DRAFT FOR INTERNAL LEGAL REVIEW — NOT FOR DISTRIBUTION"), the sources block, the reviewer note, and the adoption checklist.
 7. Close with the next-steps decision tree.
 
 ```
-/ai-governance-legal:policy-starter
-/ai-governance-legal:policy-starter "we need an AI policy for our 30-lawyer firm"
-/ai-governance-legal:policy-starter "update our existing policy for the 2026 state AI laws"
+/yz-yonetisim:politika-taslagi
+/yz-yonetisim:politika-taslagi "we need an AI policy for our 30-lawyer firm"
+/yz-yonetisim:politika-taslagi "update our existing policy for the 2026 state AI laws"
 ```
 
 ---
 
 ## Matter context
 
-**Matter context.** Check `## Matter workspaces` in the practice-level CLAUDE.md. If `Enabled` is `✗` (the default for in-house users), skip the rest of this paragraph — skills use practice-level context and the matter machinery is invisible. If enabled and there is no active matter, ask: "Which matter is this for? Run `/ai-governance-legal:matter-workspace switch <slug>` or say `practice-level`." Load the active matter's `matter.md` for matter-specific context and overrides. Write outputs to the matter folder at `~/.claude/plugins/config/claude-for-legal/ai-governance-legal/matters/<matter-slug>/`. Never read another matter's files unless `Cross-matter context` is `on`.
+**Matter context.** Check `## Matter workspaces` in the practice-level CLAUDE.md. If `Enabled` is `✗` (the default for in-house users), skip the rest of this paragraph — skills use practice-level context and the matter machinery is invisible. If enabled and there is no active matter, ask: "Which matter is this for? Run `/yz-yonetisim:dosya-alani switch <slug>` or say `practice-level`." Load the active matter's `matter.md` for matter-specific context and overrides. Write outputs to the matter folder at `~/.claude/plugins/config/hukuki-yetenek-seti/yz-yonetisim/matters/<matter-slug>/`. Never read another matter's files unless `Cross-matter context` is `on`.
 
 ---
 
@@ -63,7 +63,7 @@ The discipline of this skill:
 This skill does NOT finalize, distribute, publish, or even recommend a specific
 position on the hard calls. It produces a draft and surfaces the choices.
 
-## Read `~/.claude/plugins/config/claude-for-legal/ai-governance-legal/CLAUDE.md` first
+## Read `~/.claude/plugins/config/hukuki-yetenek-seti/yz-yonetisim/CLAUDE.md` first
 
 Before drafting, always read the practice profile. The sections that drive the
 draft:
@@ -117,7 +117,7 @@ policies and guidance.
 |---|---|
 | US | ABA Formal Opinion 512, state bar guidance (CA, FL, NY, TX all have published AI guidance), ILTA model policy, CLOC templates, peer firm published AI policies |
 | UK | Solicitors Regulation Authority risk outlook, Law Society AI principles, ICO AI guidance, Bar Council guidance |
-| EU | EU AI Act (ve Türkiye uyumu) compliance framework (Article 4 AI literacy, Article 17 quality management), national DPA AI guidance (CNIL, DSB, Garante, AEPD), EDPB guidelines, EU institutions' AI policies |
+| EU | AB Yapay Zekâ Yasası compliance framework (Article 4 AI literacy, Article 17 quality management), national DPA AI guidance (CNIL, DSB, Garante, AEPD), EDPB guidelines, EU institutions' AI policies |
 | Australia | Law Council of Australia AI guidelines, OAIC AI guidance, yerel mevzuat society guidance, Australian AI Ethics Framework |
 | Singapore | PDPC Model AI Governance Framework, MinLaw guidance, MAS AI fairness principles (for financial services) |
 | Canada | Law Society of Ontario/BC/Alberta AI guidance, OPC AI guidance, TBS Directive on Automated Decision-Making |
@@ -143,7 +143,7 @@ flag.** The user has to decide; the skill presents options.
 DRAFT FOR INTERNAL LEGAL REVIEW — NOT FOR DISTRIBUTION
 Prepared for: [firm / company name from practice profile]
 Date: [today's date]
-Prepared by: ai-governance-legal policy-starter skill, adapted from published model policies
+Prepared by: yz-yonetisim policy-starter skill, adapted from published model policies
 Not for adoption, distribution, posting, or reliance until reviewed, adapted, and approved by [attorney / GC / managing partner / executive committee per the governance team section of the practice profile].
 ```
 
@@ -164,7 +164,7 @@ A table of the model policies / guidance / regulations the draft drew from:
 | [State] Bar Op. [X] | [url] | [date] | Disclosure to clients |
 | [peer firm] published AI policy | [url] | [date] | Scope language |
 | Colorado SB 24-205 | [url] | [date] | High-risk AI definition |
-| EU AI Act (ve Türkiye uyumu), Art. [X] | [url] | [date] | Vendor flow-down |
+| AB Yapay Zekâ Yasası, Art. [X] | [url] | [date] | Vendor flow-down |
 
 ### Executive summary
 
@@ -251,9 +251,9 @@ profile. The most common next steps:
    them with the attorney; the skill re-runs with the decisions baked in.
 2. **Stakeholder summary** — produce a one-page version for the board or
    executive committee explaining what the policy does and doesn't do.
-3. **Training materials** — once the policy is adopted, `/ai-governance-legal:aia-generation` can be used to produce per-use-case training notes.
-4. **Vendor sweep** — once the policy is adopted, `/ai-governance-legal:vendor-ai-review` should be run against the vendors the policy references to check conformance.
-5. **Gap check against new regulation** — pair with `/ai-governance-legal:reg-gap-analysis` to test the draft against a specific regulation or guidance before adoption.
+3. **Training materials** — once the policy is adopted, `/yz-yonetisim:etki-degerlendirme` can be used to produce per-use-case training notes.
+4. **Vendor sweep** — once the policy is adopted, `/yz-yonetisim:tedarikci-yz-inceleme` should be run against the vendors the policy references to check conformance.
+5. **Gap check against new regulation** — pair with `/yz-yonetisim:duzenleme-uyum-analizi` to test the draft against a specific regulation or guidance before adoption.
 
 ## Output scope reminder
 

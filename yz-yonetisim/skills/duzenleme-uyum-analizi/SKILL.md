@@ -1,38 +1,38 @@
 ---
-name: reg-gap-analysis
+name: duzenleme-uyum-analizi
 description: >
   Diff a new AI regulation or guidance against your current governance posture —
   surfaces gaps, priorities, and a remediation plan with owners and deadlines.
   Use when an AI regulation moves (or you learn about one you missed), or when
   user says "new reg just dropped", "does [regulation] affect us", "gap analysis
-  for EU AI Act (ve Türkiye uyumu)", "compliance check against [AI law or guidance]", or pastes
+  for AB Yapay Zekâ Yasası", "compliance check against [AI law or guidance]", or pastes
   regulatory text.
 argument-hint: "[regulation name, or paste regulatory text, or attach a document]"
 ---
 
-# /reg-gap-analysis
+# /duzenleme-uyum-analizi
 
-1. Read `~/.claude/plugins/config/hukuki-yetenek-seti/ai-governance-legal/CLAUDE.md`. Confirm regulatory footprint and use case registry are populated.
+1. Read `~/.claude/plugins/config/hukuki-yetenek-seti/yz-yonetisim/CLAUDE.md`. Confirm regulatory footprint and use case registry are populated.
 2. Use the framework below.
 3. Scope: does this regulation apply? (Jurisdiction, threshold, builder/deployer, sector.) If not, one line and done.
-4. Extract requirements. Diff against current state in `~/.claude/plugins/config/hukuki-yetenek-seti/ai-governance-legal/CLAUDE.md`.
+4. Extract requirements. Diff against current state in `~/.claude/plugins/config/hukuki-yetenek-seti/yz-yonetisim/CLAUDE.md`.
 5. Prioritize gaps. Output: remediation plan with must-do / should-do / already compliant / accepted gaps.
 6. Save as dated markdown doc for the file.
 
 ```
-/ai-governance-legal:reg-gap-analysis "EU AI Act (ve Türkiye uyumu) high-risk provisions"
+/yz-yonetisim:duzenleme-uyum-analizi "AB Yapay Zekâ Yasası high-risk provisions"
 ```
 
 ---
 
 ## Purpose
 
-The EU AI Act (ve Türkiye uyumu) goes live. Colorado passes an AI law. The CFPB issues model risk
+The AB Yapay Zekâ Yasası goes live. Colorado passes an AI law. The CFPB issues model risk
 guidance. The Rekabet Kurumu / Ticaret Bakanlığı publishes an AI enforcement policy. Something moves — and now
 you need to know what, if anything, you have to change.
 
 This skill diffs the new requirement against your current AI governance posture
-(per `~/.claude/plugins/config/hukuki-yetenek-seti/ai-governance-legal/CLAUDE.md` — use case registry, vendor positions, impact assessment practices,
+(per `~/.claude/plugins/config/hukuki-yetenek-seti/yz-yonetisim/CLAUDE.md` — use case registry, vendor positions, impact assessment practices,
 and AI policy commitments) and produces a gap list with a remediation plan.
 
 The AI regulatory landscape is moving faster than any other area of law right now.
@@ -42,7 +42,7 @@ judgment call.
 
 ## Load current state
 
-Read `~/.claude/plugins/config/hukuki-yetenek-seti/ai-governance-legal/CLAUDE.md`:
+Read `~/.claude/plugins/config/hukuki-yetenek-seti/yz-yonetisim/CLAUDE.md`:
 - `## Regulatory footprint` — what already applies
 - `## Use case registry` — what AI you're actually running, and under what conditions
 - `## AI policy commitments` — what you've publicly or contractually committed to
@@ -111,7 +111,7 @@ For each requirement:
 
 **Regulation says:** [requirement, quoted or paraphrased]
 
-**We currently:** [what `~/.claude/plugins/config/hukuki-yetenek-seti/ai-governance-legal/CLAUDE.md` / AI policy / use case registry / assessment
+**We currently:** [what `~/.claude/plugins/config/hukuki-yetenek-seti/yz-yonetisim/CLAUDE.md` / AI policy / use case registry / assessment
 practice shows]
 
 **Gap:** [None | Partial | Full]
@@ -184,17 +184,17 @@ Do not rely on hardcoded reference tables for specific regimes. For each regulat
 
 Cite primary sources with pinpoint references. Flag ambiguity for attorney judgment.
 
-> **No silent supplement.** If a research query to the configured legal research tool (Westlaw, EUR-Lex, regulator sites, or firm platform) returns few or no results for a regime's text, delegated act, or guidance, report what was found and stop. Do NOT fill the gap from web search or model knowledge without asking. Say: "The search returned [N] results from [tool]. Coverage appears thin for [regime / topic]. Options: (1) broaden the search query, (2) try a different research tool, (3) search the web — results will be tagged `[web search — verify]` and should be checked against the issuing authority before relying, or (4) flag as unverified and stop. Which would you like?" A lawyer decides whether to accept lower-confidence sources.
+> **No silent supplement.** If a research query to the configured legal research tool (Yargı PRO, EUR-Lex, regulator sites, or firm platform) returns few or no results for a regime's text, delegated act, or guidance, report what was found and stop. Do NOT fill the gap from web search or model knowledge without asking. Say: "The search returned [N] results from [tool]. Coverage appears thin for [regime / topic]. Options: (1) broaden the search query, (2) try a different research tool, (3) search the web — results will be tagged `[web search — verify]` and should be checked against the issuing authority before relying, or (4) flag as unverified and stop. Which would you like?" A lawyer decides whether to accept lower-confidence sources.
 >
 > **Source attribution tiering.** Tag every citation in the gap analysis with its source. For model-knowledge citations, use one of three tiers rather than a single blanket "verify" tag:
 >
-> - `[settled]` — stable, well-known statutory and regulatory references unlikely to have changed (e.g., KVKK Art. 22, the existence of Regulation (EU) 2024/1689 as the EU AI Act (ve Türkiye uyumu), Colorado AI Act as C.R.S. § 6-1-1701 et seq.). Still verify before filing, but lower priority.
+> - `[settled]` — stable, well-known statutory and regulatory references unlikely to have changed (e.g., KVKK Art. 22, the existence of Regulation (EU) 2024/1689 as the AB Yapay Zekâ Yasası, Colorado AI Act as C.R.S. § 6-1-1701 et seq.). Still verify before filing, but lower priority.
 > - `[verify]` — model-knowledge citations that are real but should be verified: specific delegated / implementing acts, regulator guidance, standards, enforcement actions, case holdings, thresholds, effective dates, phase-in provisions, harmonized-standards references.
-> - `[verify-pinpoint]` — pinpoint citations (specific article numbers, annex references, subsection letters, paragraph numbers, standard-clause references) carry the highest fabrication risk and should ALWAYS be verified against a primary source. EU AI Act (ve Türkiye uyumu) article numbers in particular shifted during consolidation; every pinpoint cite to the Act should be verified against the Official Journal text.
+> - `[verify-pinpoint]` — pinpoint citations (specific article numbers, annex references, subsection letters, paragraph numbers, standard-clause references) carry the highest fabrication risk and should ALWAYS be verified against a primary source. AB Yapay Zekâ Yasası article numbers in particular shifted during consolidation; every pinpoint cite to the Act should be verified against the Official Journal text.
 >
-> Tool-retrieved citations keep their source tag (`[Westlaw]`, `[EUR-Lex]`, `[regulator site]`, or the MCP tool name); web-search citations remain `[web search — verify]`; user-supplied citations remain `[user provided]`. The tiering surfaces the real verification work — a reader who verifies everything verifies nothing. Never strip or collapse the tags.
+> Tool-retrieved citations keep their source tag (`[Yargı PRO]`, `[EUR-Lex]`, `[regulator site]`, or the MCP tool name); web-search citations remain `[web search — verify]`; user-supplied citations remain `[user provided]`. The tiering surfaces the real verification work — a reader who verifies everything verifies nothing. Never strip or collapse the tags.
 >
-> **For non-lawyer users, uncertain dates, thresholds, and phase-in provisions go in a confirm-list, not inline.** A `[verify]` tag on "effective February 1, 2026" reads as "effective February 1, 2026" to a non-lawyer who doesn't know what the tag means. Read `## Who's using this` in `~/.claude/plugins/config/hukuki-yetenek-seti/ai-governance-legal/CLAUDE.md`. If Role is **Non-lawyer** and a date, deadline, phase-in, threshold, or effective-date assertion is uncertain (would carry `[verify]` or `[verify-pinpoint]` if inline), replace the inline assertion with "effective date: confirm with counsel" (or "threshold: confirm with counsel") and collect all uncertain items in a final gap-analysis section titled: "**Things I'm not certain about — ask your attorney to confirm before relying on this:**" with each item listed (what I said, what's uncertain, why it matters to the gap). Lawyer-role users keep the inline `[verify]` treatment.
+> **For non-lawyer users, uncertain dates, thresholds, and phase-in provisions go in a confirm-list, not inline.** A `[verify]` tag on "effective February 1, 2026" reads as "effective February 1, 2026" to a non-lawyer who doesn't know what the tag means. Read `## Who's using this` in `~/.claude/plugins/config/hukuki-yetenek-seti/yz-yonetisim/CLAUDE.md`. If Role is **Non-lawyer** and a date, deadline, phase-in, threshold, or effective-date assertion is uncertain (would carry `[verify]` or `[verify-pinpoint]` if inline), replace the inline assertion with "effective date: confirm with counsel" (or "threshold: confirm with counsel") and collect all uncertain items in a final gap-analysis section titled: "**Things I'm not certain about — ask your attorney to confirm before relying on this:**" with each item listed (what I said, what's uncertain, why it matters to the gap). Lawyer-role users keep the inline `[verify]` treatment.
 
 ---
 
@@ -220,7 +220,7 @@ status as items close.
 If the gap analysis concludes "no gaps, we're compliant," still write the doc. It's
 useful evidence that you looked, and useful baseline when the regulation is amended.
 
-**Cite check before relying on this.** Citations here were generated by an AI model and have not been verified against primary sources. Before relying on any citation — statute, regulation, delegated act, guidance, or case — run a verification pass against a legal research tool (Westlaw, CourtListener, or your firm's platform) for accuracy, currency, and subsequent history. Fabricated or misquoted citations in filed materials have resulted in sanctions. Source tags on each citation (e.g., `[EUR-Lex]`, `[web search — verify]`) show where it came from; `verify` tags carry higher fabrication risk and should be checked first.
+**Cite check before relying on this.** Citations here were generated by an AI model and have not been verified against primary sources. Before relying on any citation — statute, regulation, delegated act, guidance, or case — run a verification pass against a legal research tool (Yargı PRO veya büro platformunuz) for accuracy, currency, and subsequent history. Fabricated or misquoted citations in filed materials have resulted in sanctions. Source tags on each citation (e.g., `[EUR-Lex]`, `[web search — verify]`) show where it came from; `verify` tags carry higher fabrication risk and should be checked first.
 
 ---
 
@@ -230,7 +230,7 @@ End with the next-steps decision tree per CLAUDE.md `## Outputs`. Customize the 
 
 ## What this skill does not do
 
-- It doesn't interpret ambiguous regulatory language authoritatively. The EU AI Act (ve Türkiye uyumu)
+- It doesn't interpret ambiguous regulatory language authoritatively. The AB Yapay Zekâ Yasası
   in particular has significant interpretive questions that aren't resolved yet.
   When the reg is genuinely ambiguous: say so, state the conservative read, and
   flag for outside counsel if the issue is material.

@@ -20,7 +20,7 @@ Durum etiketleri:
 | product-legal → `urun-hukuku` | ✅ | — | **Tur tamamlandı** (2026-08-25): dayanak katmanı (6502/6563 + iki yönetmelik teyidi) + adlandırma |
 | regulatory-legal → `mevzuat-takip` | ✅ | — | **Tur tamamlandı** (2026-08-25): kaynak dayanak katmanı (Yargı PRO kurum erişimi) + adlandırma |
 | ip-legal → `fikri-mulkiyet` | ✅ | **Yeniden yazım tamamlandı:** clearance (SMK m.6/9/29 + BAM/FSHHM emsalleri) ve takedown (FSEK Ek Madde 4/3 + 5651 m.4) tamamen yeniden yazıldı; uydurma "*AMF Inc. v. Yargıtay Boats*" silindi; fto/infringement/ip-clause/oss/cease-desist/renewal-watcher kalıntıları temizlendi | **Tur tamamlandı** (2026-08-25): dayanak katmanı + adlandırma |
-| ai-governance-legal | ⬜ başlangıç | CLAUDE.md guardrail'leri kısmen çevrilmemiş; AIA/reg-gap/policy-staller Türkiye ekseninde tamamlanmadı | İkinci faz |
+| ai-governance-legal → `yz-yonetisim` | ⬜→✅ ilk tur | "EU AI Act (ve Türkiye uyumu)" artefaktı ve Westlaw/CourtListener etiketleri temizlendi; ABD örnekleri kısmen kaldı | **Adlandırma + dayanak tamamlandı** (2026-08-25); içerik ikinci faza kaldı |
 | managed-agent-cookbooks | ✅ | Gerçek UYAP/Yargı MCP bağlantısıyla smoke test yok | Smoke test |
 | references (kök) | ✅ | Adaptasyon kaynak arşivi mevcut; alan bazlı dayanak dosyaları yok | Plugin turlarıyla birlikte doldurulacak |
 
@@ -38,7 +38,7 @@ Durum etiketleri:
 
 ## İşlem Sırası
 
-~~employment~~ ✓ → ~~litigation~~ ✓ → ~~privacy/KVKK~~ ✓ → ~~commercial~~ ✓ → ~~corporate~~ ✓ → ~~product~~ ✓ → ~~regulatory~~ ✓ → ~~IP~~ ✓ (2026-08-25) → ai-governance
+~~employment~~ ✓ → ~~litigation~~ ✓ → ~~privacy/KVKK~~ ✓ → ~~commercial~~ ✓ → ~~corporate~~ ✓ → ~~product~~ ✓ → ~~regulatory~~ ✓ → ~~IP~~ ✓ → ~~ai-governance~~ ✓ (2026-08-25)
 
 Her plugin turunda: denetim (residual/uydurma/ölü referans) → Yargı PRO dayanak araştırması (`hukuki-dayanak.md`) → atıf teyidi (teyitsiz silinir) → Türkçe adlandırma → marketplace senkronu → commit.
 

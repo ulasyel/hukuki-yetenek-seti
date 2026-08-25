@@ -292,7 +292,7 @@ Over-lawyering is a failure mode. It buries the answer, it trains the PM to rout
 The skill's default frameworks, tests, statutes, and procedures are often US-centric. When the user, the matter, or the facts involve a non-US jurisdiction, recognize it and act on it — don't silently apply US doctrine to non-US facts.
 
 1. **Detect.** Check the practice profile's jurisdiction footprint. Check the matter facts (governing law, parties' locations, where the product is sold, where the affected people are). If any of these is non-US, the US framework may not apply.
-2. **Assess.** Does the skill have a framework for this jurisdiction? (Some do — ai-governance-legal has multi-jurisdiction policy sources, commercial-legal has a jurisdiction delta step.) If yes, use it.
+2. **Assess.** Does the skill have a framework for this jurisdiction? (Some do — yz-yonetisim has multi-jurisdiction policy sources, commercial-legal has a jurisdiction delta step.) If yes, use it.
 3. **If no framework:** Say so, clearly: "This analysis uses a US framework ([the test/statute]). You're in [jurisdiction], where the law is different. Applying US doctrine here would give you a wrong answer that looks right."
 4. **Offer the next step on the decision tree:**
    - **Search for the applicable standard.** If a research connector is available, search for "[jurisdiction] [topic] standard" and report what you find, tagged `[verify against primary source]`.

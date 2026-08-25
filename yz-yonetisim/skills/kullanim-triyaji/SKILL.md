@@ -1,5 +1,5 @@
 ---
-name: use-case-triage
+name: kullanim-triyaji
 description: >
   Önerilen bir Yapay Zeka (AI) kullanım senaryosunu şirket politikasına
   ve envantere göre inceler — Onaylı, Şartlı Onaylı veya Reddedildi (Onaylanmadı) 
@@ -8,7 +8,7 @@ description: >
 argument-hint: "[kullanım senaryosunu aciklayin]"
 ---
 
-# /use-case-triage (Yapay Zeka Kullanım Senaryosu Triyajı)
+# /kullanim-triyaji (Yapay Zeka Kullanım Senaryosu Triyajı)
 
 ## Amaç
 
@@ -18,7 +18,7 @@ Bu skill, iş birimlerinden gelen "Şu amaçla X yapay zeka aracını kullanabil
 
 ## İş Akışı
 
-1. `~/.claude/plugins/config/claude-for-legal/ai-governance-legal/CLAUDE.md` dosyasını oku. 
+1. `~/.claude/plugins/config/hukuki-yetenek-seti/yz-yonetisim/CLAUDE.md` dosyasını oku. 
 2. `## Yapay Zeka Kullanım Envanteri` ve `## Kırmızı Çizgiler (Red Lines)` bölümlerini kontrol et.
 3. Senaryo belirsizse (hangi veri kullanılacak, hangi tool, vb.) eksik bilgileri netleştirmesi için kullanıcıya soru sor.
 4. Kayıt (Registry) taraması yap → Kırmızı Çizgi (Red line) kontrolü yap → Sınıflandır.

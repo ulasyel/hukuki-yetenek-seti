@@ -69,9 +69,9 @@
       }
     },
     {
-      "name": "ai-governance-legal",
-      "source": "./ai-governance-legal",
-      "description": "Türkiye AI yönetişimi ve KVKK odağıyla başlangıç uyarlaması yapıldı; ikinci faz sürüyor.",
+      "name": "yz-yonetisim",
+      "source": "./yz-yonetisim",
+      "description": "Türkiye YZ yönetişimi (KVKK/TTK ticari sır/FSEK çerçevesi; AB YZ Yasası karşılaştırmalı) başlangıç uyarlamasıyla uyarlandı; adlandırma tamamlandı.",
       "author": {
         "name": "hukuki-yetenek-seti"
       }

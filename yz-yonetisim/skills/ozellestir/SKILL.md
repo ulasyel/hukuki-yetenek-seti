@@ -1,5 +1,5 @@
 ---
-name: customize
+name: ozellestir
 description: >
   Guided customization of your AI governance practice profile — change one thing
   without re-running the whole cold-start interview. Adjust risk posture,
@@ -10,11 +10,11 @@ description: >
 argument-hint: "[section name, or describe what you want to change]"
 ---
 
-# /customize
+# /ozellestir
 
 ## When this runs
 
-The user typed `/ai-governance-legal:customize`. They want to change something
+The user typed `/yz-yonetisim:ozellestir`. They want to change something
 in their practice profile — a risk posture, an escalation contact, a playbook
 position, a jurisdiction, an output format — without re-running the whole
 cold-start interview and without hand-editing YAML.
@@ -22,12 +22,12 @@ cold-start interview and without hand-editing YAML.
 ## What to do
 
 1. **Read the config.** Read
-   `~/.claude/plugins/config/claude-for-legal/ai-governance-legal/CLAUDE.md`
-   (and `~/.claude/plugins/config/claude-for-legal/company-profile.md` one
+   `~/.claude/plugins/config/hukuki-yetenek-seti/yz-yonetisim/CLAUDE.md`
+   (and `~/.claude/plugins/config/hukuki-yetenek-seti/company-profile.md` one
    level up). If the plugin config does not exist or still contains
    `[PLACEHOLDER]` values, say:
 
-   > You haven't run setup yet. Run `/ai-governance-legal:cold-start-interview`
+   > You haven't run setup yet. Run `/yz-yonetisim:kurulum-mulakati`
    > first — customize is for adjusting a profile you already have.
 
 2. **Show the customizable map.** List what's in the profile, grouped, with a
@@ -36,7 +36,7 @@ cold-start interview and without hand-editing YAML.
    - **Company / who you are** — name, industry, jurisdictions, stage, practice
      setting *(shared across all 12 plugins — changes flow through
      `company-profile.md`)*
-   - **Regulatory footprint** — EU AI Act (ve Türkiye uyumu), state AI laws, sector regulators in
+   - **Regulatory footprint** — AB Yapay Zekâ Yasası, state AI laws, sector regulators in
      scope
    - **Risk posture** — conservative / middle / aggressive, what each means for
      triage and AIA output
@@ -44,7 +44,7 @@ cold-start interview and without hand-editing YAML.
    - **Use case registry** — approved / conditional / never entries, and
      conditions attached to each
    - **AI system inventory** — per-system role (provider / deployer / etc.) and
-     tier under the EU AI Act (ve Türkiye uyumu). Run `/ai-governance-legal:ai-inventory` for
+     tier under the AB Yapay Zekâ Yasası. Run `/yz-yonetisim:yz-envanteri` for
      the dedicated editor.
    - **Vendor AI governance** — training-on-data, liability, model-change
      notice, and other positions in your vendor AI playbook
@@ -78,7 +78,7 @@ cold-start interview and without hand-editing YAML.
 
 5. **For shared-profile changes** (company name, industry, jurisdictions,
    practice setting, stage): write to
-   `~/.claude/plugins/config/claude-for-legal/company-profile.md` and note:
+   `~/.claude/plugins/config/hukuki-yetenek-seti/company-profile.md` and note:
 
    > This change affects all 12 plugins — any plugin that reads your
    > jurisdiction footprint now sees [new value].
@@ -86,7 +86,7 @@ cold-start interview and without hand-editing YAML.
 6. **Close.**
 
    > Done. Your next output will reflect the change. Anything else? You can
-   > run `/ai-governance-legal:customize` anytime.
+   > run `/yz-yonetisim:ozellestir` anytime.
 
 ## Guardrails
 
@@ -96,7 +96,7 @@ cold-start interview and without hand-editing YAML.
   items but won't route them to a specific person.")
 - **Flag internal inconsistency.** If the change would make the profile
   inconsistent (e.g., risk posture aggressive + escalation "everything goes to
-  the GC"; or "EU AI Act (ve Türkiye uyumu) in scope" + "no systems flagged for the EU"), flag
+  the GC"; or "AB Yapay Zekâ Yasası in scope" + "no systems flagged for the EU"), flag
   the tension and ask which one they want.
 - **Flag guardrail degradation.** If the user asks to turn off a guardrail
   ("stop adding the `[review]` flag," "drop the citations warning," "skip the

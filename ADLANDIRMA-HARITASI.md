@@ -156,6 +156,23 @@ Agent: ip-renewal-watcher.md -> ip-yenileme-gozlemci.md
 
 Bu turda: clearance SKILL.md ve takedown SKILL.md tamamen yeniden yazildi (uydurma emsal *Sleekcraft* kalintisi ve DMCA 512 iskeleti silindi; SMK m.6/9/29 + FSEK Ek Madde 4/3 + 5651 m.4 dogrulanmis metinlerle). fto-triage, infringement-triage, ip-clause-review, oss-review, cease-desist ve ip-renewal-watcher icindeki USC/Westlaw/CourtListener/TESS kalintilari temizlendi.
 
+### ai-governance-legal -> yz-yonetisim (2026-08-25)
+
+| Eski skill | Yeni skill |
+|---|---|
+| cold-start-interview | kurulum-mulakati |
+| customize | ozellestir |
+| use-case-triage | kullanim-triyaji |
+| aia-generation | etki-degerlendirme |
+| vendor-ai-review | tedarikci-yz-inceleme |
+| reg-gap-analysis | duzenleme-uyum-analizi |
+| policy-monitor | politika-fark-takibi |
+| policy-starter | politika-taslagi |
+| ai-inventory | yz-envanteri |
+| matter-workspace | dosya-alani |
+
+Bu turda: "EU AI Act (ve Türkiye uyumu)" string artefakti temizlendi (-> AB Yapay Zeka Yasasi), Westlaw/CourtListener etiketleri Yargi PRO'ya cevrildi, FLSA ornegi notrallesti, dayanak katmani eklendi. US ornekleri (Colorado/BIPA/NYC) bu baslangic uyarlama plugininde kismen kalmistir - ikinci faz kapsaminda derinlestirilecektir.
+
 ## Bekleyen Plugin'ler
 
-ai-governance-legal - ilgili turda eklenecek.
+Yok - tum plugin turlari tamamlandi (2026-08-25).

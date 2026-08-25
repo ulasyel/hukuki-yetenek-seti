@@ -15,7 +15,7 @@ argument-hint: "[PRD file | Drive link | tracker ticket ID]"
 2. PRD, ticket, tasarim, checkout akisi, reklam/plans, policy ve hedef pazar bilgisini topla.
 3. `references/seven-category-framework.md` icindeki Turk product launch framework'unu veya profilin kendi framework'unu uygula.
 4. Bulgulari profil risk kalibrasyonuna gore `Dusuk / Orta / Yuksek / Bloke` olarak sinifla.
-5. KVKK varsa `/kvkk-uyum:kullanim-triyaji`; AI varsa `/ai-governance-legal:use-case-triage`; reklam iddiasi varsa `/urun-hukuku:reklam-iddia-inceleme` handoff'u yap.
+5. KVKK varsa `/kvkk-uyum:kullanim-triyaji`; AI varsa `/yz-yonetisim:kullanim-triyaji`; reklam iddiasi varsa `/urun-hukuku:reklam-iddia-inceleme` handoff'u yap.
 6. Ic hukuk notu ve paylasilabilir ticket yorumu olarak iki ayri cikti uret.
 
 ## Girdi Kontrolu

@@ -24,27 +24,27 @@ assessment looks like here. Then it reads your seed documents and learns your re
 positions and house style.
 
 ```
-/ai-governance-legal:cold-start-interview
+/yz-yonetisim:kurulum-mulakati
 ```
 
 ## Commands
 
 | Command | Does |
 |---|---|
-| `/ai-governance-legal:cold-start-interview` | Cold-start interview — writes your practice profile |
-| `/ai-governance-legal:use-case-triage [use case]` | Classify a use case against your registry (approved / conditional / never) |
-| `/ai-governance-legal:aia-generation [use case]` | Run an AI impact assessment (AIA) in your house style |
-| `/ai-governance-legal:vendor-ai-review [vendor/file]` | Review a vendor AI agreement against your positions |
-| `/ai-governance-legal:reg-gap-analysis [regulation]` | Diff a new regulation or guidance against current policy/practice |
-| `/ai-governance-legal:policy-monitor` | Weekly sweep for AI policy drift, or direct query for a proposed new practice |
-| `/ai-governance-legal:policy-starter` | Draft a firm AI usage policy from published model policies, adapted to your practice profile (draft for attorney review) |
-| `/ai-governance-legal:matter-workspace` | Manage matter workspaces (multi-client private practice only) — new, list, switch, close, none |
+| `/yz-yonetisim:kurulum-mulakati` | Cold-start interview — writes your practice profile |
+| `/yz-yonetisim:kullanim-triyaji [use case]` | Classify a use case against your registry (approved / conditional / never) |
+| `/yz-yonetisim:etki-degerlendirme [use case]` | Run an AI impact assessment (AIA) in your house style |
+| `/yz-yonetisim:tedarikci-yz-inceleme [vendor/file]` | Review a vendor AI agreement against your positions |
+| `/yz-yonetisim:duzenleme-uyum-analizi [regulation]` | Diff a new regulation or guidance against current policy/practice |
+| `/yz-yonetisim:politika-fark-takibi` | Weekly sweep for AI policy drift, or direct query for a proposed new practice |
+| `/yz-yonetisim:politika-taslagi` | Draft a firm AI usage policy from published model policies, adapted to your practice profile (draft for attorney review) |
+| `/yz-yonetisim:dosya-alani` | Manage matter workspaces (multi-client private practice only) — new, list, switch, close, none |
 
 ## Skills
 
 | Skill | Purpose |
 |---|---|
-| **cold-start-interview** | Writes `~/.claude/plugins/config/hukuki-yetenek-seti/ai-governance-legal/CLAUDE.md` from interview + seed docs |
+| **cold-start-interview** | Writes `~/.claude/plugins/config/hukuki-yetenek-seti/yz-yonetisim/CLAUDE.md` from interview + seed docs |
 | **use-case-triage** | Classifies use cases against the registry; flags missing assessments |
 | **aia-generation** | AI impact assessment (AIA) in house format |
 | **vendor-ai-review** | AI-specific vendor contract review against governance positions |
@@ -58,18 +58,18 @@ positions and house style.
 ### 1. Setup
 
 ```
-/ai-governance-legal:cold-start-interview
+/yz-yonetisim:kurulum-mulakati
 ```
 
 Have ready (if they exist): your AI or acceptable use policy, one prior impact assessment,
 key vendor AI agreements, model inventory or approved tool list.
 
-Your configuration is stored at `~/.claude/plugins/config/hukuki-yetenek-seti/ai-governance-legal/CLAUDE.md` and survives plugin updates.
+Your configuration is stored at `~/.claude/plugins/config/hukuki-yetenek-seti/yz-yonetisim/CLAUDE.md` and survives plugin updates.
 
 ### 2. Triage a new use case
 
 ```
-/ai-governance-legal:use-case-triage "Sales team wants to use AI to score leads automatically"
+/yz-yonetisim:kullanim-triyaji "Sales team wants to use AI to score leads automatically"
 ```
 
 Output: risk tier, registry match or gap, required conditions, impact assessment needed
@@ -78,7 +78,7 @@ or not.
 ### 3. Run an impact assessment
 
 ```
-/ai-governance-legal:aia-generation "AI-powered resume screening for HR"
+/yz-yonetisim:etki-degerlendirme "AI-powered resume screening for HR"
 ```
 
 Intake questions → impact assessment in your house format → policy consistency check →
@@ -87,7 +87,7 @@ mitigation conditions.
 ### 4. Review a vendor AI agreement
 
 ```
-/ai-governance-legal:vendor-ai-review openai-terms.pdf
+/yz-yonetisim:tedarikci-yz-inceleme openai-terms.pdf
 ```
 
 Output: term-by-term vs. your positions, proposed redlines, gaps to escalate.
@@ -97,7 +97,7 @@ Output: term-by-term vs. your positions, proposed redlines, gaps to escalate.
 These three plugins are designed to work together. AI governance is the third leg.
 
 - **Product counsel** detects when a launch has an AI component → hands off to
-  `/ai-governance-legal:use-case-triage` and `/ai-governance-legal:aia-generation`
+  `/yz-yonetisim:kullanim-triyaji` and `/yz-yonetisim:etki-degerlendirme`
 - **Privacy** detects when an AI use case involves personal data → hands off to
   `/kvkk-uyum:vked-taslagi`, if the plugin is installed
 - **AI governance** detects when an impact assessment raises data protection issues →
@@ -109,7 +109,7 @@ question to answer there.
 ## File structure
 
 ```
-ai-governance-legal/
+yz-yonetisim/
 ├── CLAUDE.md
 ├── README.md
 └── skills/
@@ -125,7 +125,7 @@ ai-governance-legal/
 
 ## How it learns
 
-Your practice profile at `~/.claude/plugins/config/hukuki-yetenek-seti/ai-governance-legal/CLAUDE.md` isn't static — it improves as you use the plugin. Skills tell you when an output used a default you should tune. The `policy-monitor` agent watches for drift between your AI governance policy and your practice and proposes updates. You can re-run setup, edit the file directly, or tell a skill to record a new position.
+Your practice profile at `~/.claude/plugins/config/hukuki-yetenek-seti/yz-yonetisim/CLAUDE.md` isn't static — it improves as you use the plugin. Skills tell you when an output used a default you should tune. The `policy-monitor` agent watches for drift between your AI governance policy and your practice and proposes updates. You can re-run setup, edit the file directly, or tell a skill to record a new position.
 
 ## Notes
 
@@ -139,6 +139,6 @@ Your practice profile at `~/.claude/plugins/config/hukuki-yetenek-seti/ai-govern
   ask which hat you're wearing for each task.
 - Gap analysis is manual (you point it at a regulation or guidance doc). For automated
   monitoring, pair with the `mevzuat-takip` plugin, if the plugin is installed.
-- The `## Company profile` section is the first block of `~/.claude/plugins/config/hukuki-yetenek-seti/ai-governance-legal/CLAUDE.md` by convention. If
+- The `## Company profile` section is the first block of `~/.claude/plugins/config/hukuki-yetenek-seti/yz-yonetisim/CLAUDE.md` by convention. If
   you run other `-counsel` plugins, you can copy it across rather than re-entering
   the same context.

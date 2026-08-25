@@ -1,7 +1,7 @@
 ---
-name: ai-inventory
+name: yz-envanteri
 description: >
-  EU AI Act (ve Türkiye uyumu) per-system inventory — track each AI system's role (provider,
+  AB Yapay Zekâ Yasası per-system inventory — track each AI system's role (provider,
   deployer, importer, distributor, authorized representative, product
   manufacturer) and risk tier (prohibited, high-risk, limited, minimal,
   GPAI, GPAI+systemic). Role and tier are assessed per system, not per
@@ -11,11 +11,11 @@ description: >
 argument-hint: "[list | add | edit <id> | classify <id> | show <id>]"
 ---
 
-# /ai-inventory
+# /yz-envanteri
 
 ## When this runs
 
-The user wants to manage their AI system inventory under the EU AI Act (ve Türkiye uyumu). The
+The user wants to manage their AI system inventory under the AB Yapay Zekâ Yasası. The
 core idea the skill exists to enforce: **role and tier are per-system, not
 per-company.** A single organization can be a *provider* of System A, a
 *deployer* of System B, and an *importer* of System C. Each combination
@@ -26,12 +26,12 @@ obligations themselves are derived in conversation, not from a table.
 ## What to do
 
 1. **Read the config.** Read
-   `~/.claude/plugins/config/claude-for-legal/ai-governance-legal/CLAUDE.md`.
+   `~/.claude/plugins/config/hukuki-yetenek-seti/yz-yonetisim/CLAUDE.md`.
    If it doesn't exist or still has `[PLACEHOLDER]` markers, direct the user
-   to `/ai-governance-legal:cold-start-interview` first.
+   to `/yz-yonetisim:kurulum-mulakati` first.
 
 2. **Read the inventory.** Inventory lives at
-   `~/.claude/plugins/config/claude-for-legal/ai-governance-legal/ai-systems.yaml`.
+   `~/.claude/plugins/config/hukuki-yetenek-seti/yz-yonetisim/ai-systems.yaml`.
    If it doesn't exist, create it with an empty `systems:` list when the
    first `add` runs.
 
@@ -73,7 +73,7 @@ review within 30 days."
 Ask, one field at a time (or accept a paste). The required fields are
 `name`, `owner`, `description`, `status`, `eu_nexus`. The rest can be
 deferred — say so explicitly: "you can come back to classification with
-`/ai-governance-legal:ai-inventory classify <id>`."
+`/yz-yonetisim:yz-envanteri classify <id>`."
 
 1. **Name.** Short label for the system.
 2. **Owner.** Person or team accountable for it day-to-day.
@@ -82,7 +82,7 @@ deferred — say so explicitly: "you can come back to classification with
 4. **Status.** `planned | in_development | in_production | deprecated`.
 5. **EU nexus.** Is the system deployed in the EU/EEA, offered to users in
    the EU/EEA, or used to produce outputs that affect people in the
-   EU/EEA? If any of these are true, EU AI Act (ve Türkiye uyumu) analysis applies.
+   EU/EEA? If any of these are true, AB Yapay Zekâ Yasası analysis applies.
 6. **Proceed to classification?** Offer to run the walk-through now, or
    skip and come back later.
 
@@ -197,7 +197,7 @@ Annex entry that matched, tagged `[verify against current AI Act text]`.
 Offer three next steps:
 1. "Want me to walk through obligations for this system? I'll do it in
    conversation — I don't derive them from a table."
-2. "Want to run `/ai-governance-legal:aia-generation` to produce a full
+2. "Want to run `/yz-yonetisim:etki-degerlendirme` to produce a full
    impact assessment?"
 3. "Want to set a next review date? I'll add it to the inventory."
 
@@ -230,7 +230,7 @@ contain a hardcoded role × tier → obligations table.
 
 When the user asks "what are my obligations for System X?", the skill
 does the analysis **in conversation**, tagged `[verify]`, and routes to
-`/ai-governance-legal:aia-generation` for the formal impact assessment
+`/yz-yonetisim:etki-degerlendirme` for the formal impact assessment
 if needed.
 
 This is deliberate:

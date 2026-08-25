@@ -1,4 +1,4 @@
-﻿# hukuki-yetenek-seti
+# hukuki-yetenek-seti
 
 Türk hukuku pratiği için Claude Code **ve** opencode uyumlu yetenek (skill) seti. [anthropics/claude-for-legal](https://github.com/anthropics/claude-for-legal) projesinin iskeletini; iki Türk uyarlamasının ([ZekaiSuni/claude-for-legal-turkish](https://github.com/ZekaiSuni/claude-for-legal-turkish) içerik uyarlaması ve [kapital-legal/claude-for-tr-legal](https://github.com/kapital-legal/claude-for-tr-legal) metodolojisi) tek çatıda birleştirir.
 
@@ -26,7 +26,7 @@ Bu deponun ayırt edici ilkesi üçlüdür:
 | `urun-hukuku` | Ürün/tüketici/reklam/e-ticaret (6502/6563) | İlk tur ✓ · dayanak katmanı ✓ · adlandırma ✓ |
 | `mevzuat-takip` | Regülasyon izleme (Resmî Gazete/kurumlar) | İlk tur ✓ · dayanak katmanı ✓ · adlandırma ✓ |
 | `fikri-mulkiyet` | Fikri mülkiyet (SMK/FSEK/5651) | İlk tur ✓ · clearance/takedown yeniden yazıldı ✓ · dayanak katmanı ✓ · adlandırma ✓ |
-| `ai-governance-legal` | AI yönetişimi (KVKK/TTK ticari sır/FSEK ekseninde) | Başlangıç uyarlaması |
+| `yz-yonetisim` | YZ yönetişimi (KVKK/TTK ticari sır/FSEK ekseninde) | İlk tur ✓ · dayanak katmanı ✓ · adlandırma ✓ |
 
 Güncel ve dürüst durum matrisi: [UNIFIED_DURUM.md](UNIFIED_DURUM.md)
 

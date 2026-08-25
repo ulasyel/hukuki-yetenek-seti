@@ -1,4 +1,4 @@
-﻿# Adding a Connector
+# Adding a Connector
 
 The plugins are at their best when connected to authoritative sources. If you build or operate a legal data source, research tool, CLM, DMS, eDiscovery platform, or practice management system, we want your MCP connector in the suite.
 
@@ -58,7 +58,7 @@ These would make specific plugins significantly more useful. If you build or ope
 - **Relativity / Everlaw beyond read** — eDiscovery workflow for `litigation-legal`
 - **State bar CLE trackers** — `law-student` bar prep
 - **Court e-filing systems** (PACER write, state e-filing) — with a hard irreversibility gate, obviously
-- **Global AI Regulation Tracker** (techieray.com/GlobalAIRegulationTracker) — jurisdiction-tagged AI regulation tracking with structured API. Curated, verified, multi-jurisdiction. Would be a primary-source-adjacent feed for `ai-governance-legal` and `mevzuat-takip`.
+- **Global AI Regulation Tracker** (techieray.com/GlobalAIRegulationTracker) — jurisdiction-tagged AI regulation tracking with structured API. Curated, verified, multi-jurisdiction. Would be a primary-source-adjacent feed for `yz-yonetisim` and `mevzuat-takip`.
 - **Regulatory primary sources** — a connector to official registers (eCFR, Federal Register, EUR-Lex, legislation.gov.uk, Federal Register of Legislation AU, Singapore Statutes Online) that bypasses the agent-blockers many legislative sites use. A curated regulatory knowledge base would be a high-value addition.
 
 ## Questions
